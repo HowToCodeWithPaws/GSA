@@ -326,9 +326,9 @@ namespace GSA {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint1 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(1,
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea9 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series9 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint9 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(1,
 				5));
 			this->comboFunctions = (gcnew System::Windows::Forms::ComboBox());
 			this->comboExtremum = (gcnew System::Windows::Forms::ComboBox());
@@ -490,10 +490,9 @@ namespace GSA {
 			this->comboFunctions->Enabled = false;
 			this->comboFunctions->FormattingEnabled = true;
 			this->comboFunctions->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"linear y = x", L"square y = x**2", L"optimal power flow" });
-			this->comboFunctions->Location = System::Drawing::Point(313, 24);
-			this->comboFunctions->Margin = System::Windows::Forms::Padding(2);
+			this->comboFunctions->Location = System::Drawing::Point(470, 37);
 			this->comboFunctions->Name = L"comboFunctions";
-			this->comboFunctions->Size = System::Drawing::Size(113, 21);
+			this->comboFunctions->Size = System::Drawing::Size(168, 28);
 			this->comboFunctions->TabIndex = 1;
 			this->comboFunctions->SelectedIndexChanged += gcnew System::EventHandler(this, &MainForm::comboFunctions_SelectedIndexChanged);
 			// 
@@ -502,42 +501,38 @@ namespace GSA {
 			this->comboExtremum->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboExtremum->FormattingEnabled = true;
 			this->comboExtremum->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"minimum", L"maximum" });
-			this->comboExtremum->Location = System::Drawing::Point(430, 24);
-			this->comboExtremum->Margin = System::Windows::Forms::Padding(2);
+			this->comboExtremum->Location = System::Drawing::Point(645, 37);
 			this->comboExtremum->Name = L"comboExtremum";
-			this->comboExtremum->Size = System::Drawing::Size(65, 21);
+			this->comboExtremum->Size = System::Drawing::Size(96, 28);
 			this->comboExtremum->TabIndex = 2;
 			// 
 			// labelFunction
 			// 
 			this->labelFunction->AutoSize = true;
-			this->labelFunction->Location = System::Drawing::Point(310, 9);
-			this->labelFunction->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelFunction->MaximumSize = System::Drawing::Size(100, 26);
+			this->labelFunction->Location = System::Drawing::Point(465, 14);
+			this->labelFunction->MaximumSize = System::Drawing::Size(150, 40);
 			this->labelFunction->Name = L"labelFunction";
-			this->labelFunction->Size = System::Drawing::Size(98, 13);
+			this->labelFunction->Size = System::Drawing::Size(147, 20);
 			this->labelFunction->TabIndex = 3;
 			this->labelFunction->Text = L"function to optimize";
 			// 
 			// labelExtremum
 			// 
 			this->labelExtremum->AutoSize = true;
-			this->labelExtremum->Location = System::Drawing::Point(427, 9);
-			this->labelExtremum->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelExtremum->MaximumSize = System::Drawing::Size(100, 26);
+			this->labelExtremum->Location = System::Drawing::Point(640, 14);
+			this->labelExtremum->MaximumSize = System::Drawing::Size(150, 40);
 			this->labelExtremum->Name = L"labelExtremum";
-			this->labelExtremum->Size = System::Drawing::Size(87, 13);
+			this->labelExtremum->Size = System::Drawing::Size(131, 20);
 			this->labelExtremum->TabIndex = 4;
 			this->labelExtremum->Text = L"type of extremum";
 			// 
 			// labelDimensionsNumber
 			// 
 			this->labelDimensionsNumber->AutoSize = true;
-			this->labelDimensionsNumber->Location = System::Drawing::Point(182, 9);
-			this->labelDimensionsNumber->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelDimensionsNumber->MaximumSize = System::Drawing::Size(113, 26);
+			this->labelDimensionsNumber->Location = System::Drawing::Point(273, 14);
+			this->labelDimensionsNumber->MaximumSize = System::Drawing::Size(170, 40);
 			this->labelDimensionsNumber->Name = L"labelDimensionsNumber";
-			this->labelDimensionsNumber->Size = System::Drawing::Size(70, 13);
+			this->labelDimensionsNumber->Size = System::Drawing::Size(104, 20);
 			this->labelDimensionsNumber->TabIndex = 5;
 			this->labelDimensionsNumber->Text = L"N dimensions";
 			// 
@@ -549,40 +544,36 @@ namespace GSA {
 				L"1", L"2", L"3", L"4", L"5", L"6",
 					L"7", L"8", L"9", L"10"
 			});
-			this->comboDimensionsNumber->Location = System::Drawing::Point(184, 24);
-			this->comboDimensionsNumber->Margin = System::Windows::Forms::Padding(2);
+			this->comboDimensionsNumber->Location = System::Drawing::Point(276, 37);
 			this->comboDimensionsNumber->Name = L"comboDimensionsNumber";
-			this->comboDimensionsNumber->Size = System::Drawing::Size(39, 21);
+			this->comboDimensionsNumber->Size = System::Drawing::Size(56, 28);
 			this->comboDimensionsNumber->TabIndex = 6;
 			this->comboDimensionsNumber->SelectedIndexChanged += gcnew System::EventHandler(this, &MainForm::comboDimensionsNumber_SelectedIndexChanged);
 			// 
 			// trackBar1
 			// 
 			this->trackBar1->Enabled = false;
-			this->trackBar1->Location = System::Drawing::Point(476, 74);
-			this->trackBar1->Margin = System::Windows::Forms::Padding(2);
+			this->trackBar1->Location = System::Drawing::Point(714, 114);
 			this->trackBar1->Name = L"trackBar1";
-			this->trackBar1->Size = System::Drawing::Size(131, 45);
+			this->trackBar1->Size = System::Drawing::Size(196, 69);
 			this->trackBar1->TabIndex = 7;
 			this->trackBar1->Visible = false;
 			this->trackBar1->Scroll += gcnew System::EventHandler(this, &MainForm::trackBar1_Scroll);
 			// 
 			// textBox1Max
 			// 
-			this->textBox1Max->Location = System::Drawing::Point(603, 75);
-			this->textBox1Max->Margin = System::Windows::Forms::Padding(2);
+			this->textBox1Max->Location = System::Drawing::Point(904, 115);
 			this->textBox1Max->Name = L"textBox1Max";
-			this->textBox1Max->Size = System::Drawing::Size(28, 20);
+			this->textBox1Max->Size = System::Drawing::Size(40, 26);
 			this->textBox1Max->TabIndex = 8;
 			this->textBox1Max->Visible = false;
 			this->textBox1Max->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox1Max_TextChanged);
 			// 
 			// textBox1Min
 			// 
-			this->textBox1Min->Location = System::Drawing::Point(451, 74);
-			this->textBox1Min->Margin = System::Windows::Forms::Padding(2);
+			this->textBox1Min->Location = System::Drawing::Point(676, 114);
 			this->textBox1Min->Name = L"textBox1Min";
-			this->textBox1Min->Size = System::Drawing::Size(28, 20);
+			this->textBox1Min->Size = System::Drawing::Size(40, 26);
 			this->textBox1Min->TabIndex = 9;
 			this->textBox1Min->Visible = false;
 			this->textBox1Min->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox1Min_TextChanged);
@@ -600,31 +591,28 @@ namespace GSA {
 					L"81", L"82", L"83", L"84", L"85", L"86", L"87", L"88", L"89", L"90", L"91", L"92", L"93", L"94", L"95", L"96", L"97", L"98",
 					L"99", L"100"
 			});
-			this->comboAgentsNumber->Location = System::Drawing::Point(259, 24);
-			this->comboAgentsNumber->Margin = System::Windows::Forms::Padding(2);
+			this->comboAgentsNumber->Location = System::Drawing::Point(388, 37);
 			this->comboAgentsNumber->Name = L"comboAgentsNumber";
-			this->comboAgentsNumber->Size = System::Drawing::Size(50, 21);
+			this->comboAgentsNumber->Size = System::Drawing::Size(73, 28);
 			this->comboAgentsNumber->TabIndex = 11;
 			// 
 			// labelAgentsNumber
 			// 
 			this->labelAgentsNumber->AutoSize = true;
-			this->labelAgentsNumber->Location = System::Drawing::Point(256, 9);
-			this->labelAgentsNumber->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelAgentsNumber->MaximumSize = System::Drawing::Size(100, 26);
+			this->labelAgentsNumber->Location = System::Drawing::Point(384, 14);
+			this->labelAgentsNumber->MaximumSize = System::Drawing::Size(150, 40);
 			this->labelAgentsNumber->Name = L"labelAgentsNumber";
-			this->labelAgentsNumber->Size = System::Drawing::Size(50, 13);
+			this->labelAgentsNumber->Size = System::Drawing::Size(73, 20);
 			this->labelAgentsNumber->TabIndex = 10;
 			this->labelAgentsNumber->Text = L"N agents";
 			// 
 			// labelConversionType
 			// 
 			this->labelConversionType->AutoSize = true;
-			this->labelConversionType->Location = System::Drawing::Point(516, 9);
-			this->labelConversionType->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelConversionType->MaximumSize = System::Drawing::Size(100, 26);
+			this->labelConversionType->Location = System::Drawing::Point(774, 14);
+			this->labelConversionType->MaximumSize = System::Drawing::Size(150, 40);
 			this->labelConversionType->Name = L"labelConversionType";
-			this->labelConversionType->Size = System::Drawing::Size(82, 13);
+			this->labelConversionType->Size = System::Drawing::Size(119, 20);
 			this->labelConversionType->TabIndex = 13;
 			this->labelConversionType->Text = L"conversion type";
 			// 
@@ -633,10 +621,9 @@ namespace GSA {
 			this->comboConversionType->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboConversionType->FormattingEnabled = true;
 			this->comboConversionType->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"number of iterations", L"difference between iterations" });
-			this->comboConversionType->Location = System::Drawing::Point(519, 24);
-			this->comboConversionType->Margin = System::Windows::Forms::Padding(2);
+			this->comboConversionType->Location = System::Drawing::Point(778, 37);
 			this->comboConversionType->Name = L"comboConversionType";
-			this->comboConversionType->Size = System::Drawing::Size(165, 21);
+			this->comboConversionType->Size = System::Drawing::Size(246, 28);
 			this->comboConversionType->TabIndex = 12;
 			this->comboConversionType->SelectedIndexChanged += gcnew System::EventHandler(this, &MainForm::comboConversionType_SelectedIndexChanged);
 			// 
@@ -709,21 +696,19 @@ namespace GSA {
 					L"979", L"980", L"981", L"982", L"983", L"984", L"985", L"986", L"987", L"988", L"989", L"990", L"991", L"992", L"993", L"994",
 					L"995", L"996", L"997", L"998", L"999", L"1000"
 			});
-			this->comboConversion->Location = System::Drawing::Point(688, 24);
-			this->comboConversion->Margin = System::Windows::Forms::Padding(2);
+			this->comboConversion->Location = System::Drawing::Point(1032, 37);
 			this->comboConversion->Name = L"comboConversion";
-			this->comboConversion->Size = System::Drawing::Size(39, 21);
+			this->comboConversion->Size = System::Drawing::Size(56, 28);
 			this->comboConversion->TabIndex = 15;
 			this->comboConversion->Visible = false;
 			// 
 			// labelConversion
 			// 
 			this->labelConversion->AutoSize = true;
-			this->labelConversion->Location = System::Drawing::Point(685, 2);
-			this->labelConversion->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelConversion->MaximumSize = System::Drawing::Size(100, 26);
+			this->labelConversion->Location = System::Drawing::Point(1028, 3);
+			this->labelConversion->MaximumSize = System::Drawing::Size(150, 40);
 			this->labelConversion->Name = L"labelConversion";
-			this->labelConversion->Size = System::Drawing::Size(59, 13);
+			this->labelConversion->Size = System::Drawing::Size(85, 20);
 			this->labelConversion->TabIndex = 14;
 			this->labelConversion->Text = L"conversion";
 			this->labelConversion->Visible = false;
@@ -732,41 +717,37 @@ namespace GSA {
 			// 
 			this->comboSpecialDimensionsNumber->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboSpecialDimensionsNumber->FormattingEnabled = true;
-			this->comboSpecialDimensionsNumber->Location = System::Drawing::Point(748, 24);
-			this->comboSpecialDimensionsNumber->Margin = System::Windows::Forms::Padding(2);
+			this->comboSpecialDimensionsNumber->Location = System::Drawing::Point(1122, 37);
 			this->comboSpecialDimensionsNumber->Name = L"comboSpecialDimensionsNumber";
-			this->comboSpecialDimensionsNumber->Size = System::Drawing::Size(39, 21);
+			this->comboSpecialDimensionsNumber->Size = System::Drawing::Size(56, 28);
 			this->comboSpecialDimensionsNumber->TabIndex = 17;
 			this->comboSpecialDimensionsNumber->Visible = false;
 			// 
 			// labelSpecialDimensionsNumber
 			// 
 			this->labelSpecialDimensionsNumber->AutoSize = true;
-			this->labelSpecialDimensionsNumber->Location = System::Drawing::Point(746, 9);
-			this->labelSpecialDimensionsNumber->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelSpecialDimensionsNumber->MaximumSize = System::Drawing::Size(133, 26);
+			this->labelSpecialDimensionsNumber->Location = System::Drawing::Point(1119, 14);
+			this->labelSpecialDimensionsNumber->MaximumSize = System::Drawing::Size(200, 40);
 			this->labelSpecialDimensionsNumber->Name = L"labelSpecialDimensionsNumber";
-			this->labelSpecialDimensionsNumber->Size = System::Drawing::Size(91, 13);
+			this->labelSpecialDimensionsNumber->Size = System::Drawing::Size(133, 20);
 			this->labelSpecialDimensionsNumber->TabIndex = 16;
 			this->labelSpecialDimensionsNumber->Text = L"N vp-effect buses";
 			this->labelSpecialDimensionsNumber->Visible = false;
 			// 
 			// textBox1D
 			// 
-			this->textBox1D->Location = System::Drawing::Point(763, 74);
-			this->textBox1D->Margin = System::Windows::Forms::Padding(2);
+			this->textBox1D->Location = System::Drawing::Point(1144, 114);
 			this->textBox1D->Name = L"textBox1D";
-			this->textBox1D->Size = System::Drawing::Size(28, 20);
+			this->textBox1D->Size = System::Drawing::Size(40, 26);
 			this->textBox1D->TabIndex = 18;
 			this->textBox1D->Visible = false;
 			// 
 			// labelCoeffs
 			// 
 			this->labelCoeffs->AutoSize = true;
-			this->labelCoeffs->Location = System::Drawing::Point(663, 46);
-			this->labelCoeffs->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelCoeffs->Location = System::Drawing::Point(994, 71);
 			this->labelCoeffs->Name = L"labelCoeffs";
-			this->labelCoeffs->Size = System::Drawing::Size(61, 13);
+			this->labelCoeffs->Size = System::Drawing::Size(90, 20);
 			this->labelCoeffs->TabIndex = 19;
 			this->labelCoeffs->Text = L"coefficients";
 			this->labelCoeffs->Visible = false;
@@ -774,67 +755,61 @@ namespace GSA {
 			// labelDimensions
 			// 
 			this->labelDimensions->AutoSize = true;
-			this->labelDimensions->Location = System::Drawing::Point(419, 46);
-			this->labelDimensions->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDimensions->Location = System::Drawing::Point(628, 71);
 			this->labelDimensions->Name = L"labelDimensions";
-			this->labelDimensions->Size = System::Drawing::Size(59, 13);
+			this->labelDimensions->Size = System::Drawing::Size(89, 20);
 			this->labelDimensions->TabIndex = 20;
 			this->labelDimensions->Text = L"dimensions";
 			this->labelDimensions->Visible = false;
 			// 
 			// textBox1Chosen
 			// 
-			this->textBox1Chosen->Location = System::Drawing::Point(633, 74);
-			this->textBox1Chosen->Margin = System::Windows::Forms::Padding(2);
+			this->textBox1Chosen->Location = System::Drawing::Point(950, 114);
 			this->textBox1Chosen->Name = L"textBox1Chosen";
 			this->textBox1Chosen->ReadOnly = true;
-			this->textBox1Chosen->Size = System::Drawing::Size(28, 20);
+			this->textBox1Chosen->Size = System::Drawing::Size(40, 26);
 			this->textBox1Chosen->TabIndex = 21;
 			this->textBox1Chosen->Visible = false;
+			this->textBox1Chosen->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox1Chosen_TextChanged);
 			// 
 			// textBox1E
 			// 
-			this->textBox1E->Location = System::Drawing::Point(793, 74);
-			this->textBox1E->Margin = System::Windows::Forms::Padding(2);
+			this->textBox1E->Location = System::Drawing::Point(1190, 114);
 			this->textBox1E->Name = L"textBox1E";
-			this->textBox1E->Size = System::Drawing::Size(28, 20);
+			this->textBox1E->Size = System::Drawing::Size(40, 26);
 			this->textBox1E->TabIndex = 22;
 			this->textBox1E->Visible = false;
 			// 
 			// textBox1C
 			// 
-			this->textBox1C->Location = System::Drawing::Point(732, 74);
-			this->textBox1C->Margin = System::Windows::Forms::Padding(2);
+			this->textBox1C->Location = System::Drawing::Point(1098, 114);
 			this->textBox1C->Name = L"textBox1C";
-			this->textBox1C->Size = System::Drawing::Size(28, 20);
+			this->textBox1C->Size = System::Drawing::Size(40, 26);
 			this->textBox1C->TabIndex = 24;
 			this->textBox1C->Visible = false;
 			// 
 			// textBox1B
 			// 
-			this->textBox1B->Location = System::Drawing::Point(702, 74);
-			this->textBox1B->Margin = System::Windows::Forms::Padding(2);
+			this->textBox1B->Location = System::Drawing::Point(1053, 114);
 			this->textBox1B->Name = L"textBox1B";
-			this->textBox1B->Size = System::Drawing::Size(28, 20);
+			this->textBox1B->Size = System::Drawing::Size(40, 26);
 			this->textBox1B->TabIndex = 23;
 			this->textBox1B->Visible = false;
 			// 
 			// textBox1A
 			// 
-			this->textBox1A->Location = System::Drawing::Point(673, 74);
-			this->textBox1A->Margin = System::Windows::Forms::Padding(2);
+			this->textBox1A->Location = System::Drawing::Point(1010, 114);
 			this->textBox1A->Name = L"textBox1A";
-			this->textBox1A->Size = System::Drawing::Size(28, 20);
+			this->textBox1A->Size = System::Drawing::Size(40, 26);
 			this->textBox1A->TabIndex = 25;
 			this->textBox1A->Visible = false;
 			// 
 			// labelA
 			// 
 			this->labelA->AutoSize = true;
-			this->labelA->Location = System::Drawing::Point(681, 58);
-			this->labelA->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelA->Location = System::Drawing::Point(1022, 89);
 			this->labelA->Name = L"labelA";
-			this->labelA->Size = System::Drawing::Size(13, 13);
+			this->labelA->Size = System::Drawing::Size(18, 20);
 			this->labelA->TabIndex = 26;
 			this->labelA->Text = L"a";
 			this->labelA->Visible = false;
@@ -842,10 +817,9 @@ namespace GSA {
 			// labelMin
 			// 
 			this->labelMin->AutoSize = true;
-			this->labelMin->Location = System::Drawing::Point(448, 58);
-			this->labelMin->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelMin->Location = System::Drawing::Point(672, 89);
 			this->labelMin->Name = L"labelMin";
-			this->labelMin->Size = System::Drawing::Size(23, 13);
+			this->labelMin->Size = System::Drawing::Size(34, 20);
 			this->labelMin->TabIndex = 27;
 			this->labelMin->Text = L"min";
 			this->labelMin->Visible = false;
@@ -853,10 +827,9 @@ namespace GSA {
 			// labelE
 			// 
 			this->labelE->AutoSize = true;
-			this->labelE->Location = System::Drawing::Point(801, 59);
-			this->labelE->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelE->Location = System::Drawing::Point(1202, 91);
 			this->labelE->Name = L"labelE";
-			this->labelE->Size = System::Drawing::Size(13, 13);
+			this->labelE->Size = System::Drawing::Size(18, 20);
 			this->labelE->TabIndex = 28;
 			this->labelE->Text = L"e";
 			this->labelE->Visible = false;
@@ -864,10 +837,9 @@ namespace GSA {
 			// labelD
 			// 
 			this->labelD->AutoSize = true;
-			this->labelD->Location = System::Drawing::Point(768, 59);
-			this->labelD->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelD->Location = System::Drawing::Point(1152, 91);
 			this->labelD->Name = L"labelD";
-			this->labelD->Size = System::Drawing::Size(13, 13);
+			this->labelD->Size = System::Drawing::Size(18, 20);
 			this->labelD->TabIndex = 29;
 			this->labelD->Text = L"d";
 			this->labelD->Visible = false;
@@ -875,10 +847,9 @@ namespace GSA {
 			// labelC
 			// 
 			this->labelC->AutoSize = true;
-			this->labelC->Location = System::Drawing::Point(737, 58);
-			this->labelC->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelC->Location = System::Drawing::Point(1106, 89);
 			this->labelC->Name = L"labelC";
-			this->labelC->Size = System::Drawing::Size(13, 13);
+			this->labelC->Size = System::Drawing::Size(17, 20);
 			this->labelC->TabIndex = 30;
 			this->labelC->Text = L"c";
 			this->labelC->Visible = false;
@@ -886,10 +857,9 @@ namespace GSA {
 			// labelB
 			// 
 			this->labelB->AutoSize = true;
-			this->labelB->Location = System::Drawing::Point(707, 58);
-			this->labelB->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelB->Location = System::Drawing::Point(1060, 89);
 			this->labelB->Name = L"labelB";
-			this->labelB->Size = System::Drawing::Size(13, 13);
+			this->labelB->Size = System::Drawing::Size(18, 20);
 			this->labelB->TabIndex = 31;
 			this->labelB->Text = L"b";
 			this->labelB->Visible = false;
@@ -897,10 +867,9 @@ namespace GSA {
 			// labelMax
 			// 
 			this->labelMax->AutoSize = true;
-			this->labelMax->Location = System::Drawing::Point(603, 58);
-			this->labelMax->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelMax->Location = System::Drawing::Point(904, 89);
 			this->labelMax->Name = L"labelMax";
-			this->labelMax->Size = System::Drawing::Size(26, 13);
+			this->labelMax->Size = System::Drawing::Size(38, 20);
 			this->labelMax->TabIndex = 32;
 			this->labelMax->Text = L"max";
 			this->labelMax->Visible = false;
@@ -908,85 +877,77 @@ namespace GSA {
 			// labelChosen
 			// 
 			this->labelChosen->AutoSize = true;
-			this->labelChosen->Location = System::Drawing::Point(633, 58);
-			this->labelChosen->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelChosen->Location = System::Drawing::Point(950, 89);
 			this->labelChosen->Name = L"labelChosen";
-			this->labelChosen->Size = System::Drawing::Size(42, 13);
+			this->labelChosen->Size = System::Drawing::Size(61, 20);
 			this->labelChosen->TabIndex = 33;
 			this->labelChosen->Text = L"chosen";
 			this->labelChosen->Visible = false;
 			// 
 			// textBox2A
 			// 
-			this->textBox2A->Location = System::Drawing::Point(673, 113);
-			this->textBox2A->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2A->Location = System::Drawing::Point(1010, 174);
 			this->textBox2A->Name = L"textBox2A";
-			this->textBox2A->Size = System::Drawing::Size(28, 20);
+			this->textBox2A->Size = System::Drawing::Size(40, 26);
 			this->textBox2A->TabIndex = 42;
 			this->textBox2A->Visible = false;
 			// 
 			// textBox2C
 			// 
-			this->textBox2C->Location = System::Drawing::Point(732, 113);
-			this->textBox2C->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2C->Location = System::Drawing::Point(1098, 174);
 			this->textBox2C->Name = L"textBox2C";
-			this->textBox2C->Size = System::Drawing::Size(28, 20);
+			this->textBox2C->Size = System::Drawing::Size(40, 26);
 			this->textBox2C->TabIndex = 41;
 			this->textBox2C->Visible = false;
 			// 
 			// textBox2B
 			// 
-			this->textBox2B->Location = System::Drawing::Point(702, 113);
-			this->textBox2B->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2B->Location = System::Drawing::Point(1053, 174);
 			this->textBox2B->Name = L"textBox2B";
-			this->textBox2B->Size = System::Drawing::Size(28, 20);
+			this->textBox2B->Size = System::Drawing::Size(40, 26);
 			this->textBox2B->TabIndex = 40;
 			this->textBox2B->Visible = false;
 			// 
 			// textBox2E
 			// 
-			this->textBox2E->Location = System::Drawing::Point(793, 113);
-			this->textBox2E->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2E->Location = System::Drawing::Point(1190, 174);
 			this->textBox2E->Name = L"textBox2E";
-			this->textBox2E->Size = System::Drawing::Size(28, 20);
+			this->textBox2E->Size = System::Drawing::Size(40, 26);
 			this->textBox2E->TabIndex = 39;
 			this->textBox2E->Visible = false;
 			// 
 			// textBox2Chosen
 			// 
-			this->textBox2Chosen->Location = System::Drawing::Point(633, 114);
-			this->textBox2Chosen->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2Chosen->Location = System::Drawing::Point(950, 175);
 			this->textBox2Chosen->Name = L"textBox2Chosen";
 			this->textBox2Chosen->ReadOnly = true;
-			this->textBox2Chosen->Size = System::Drawing::Size(28, 20);
+			this->textBox2Chosen->Size = System::Drawing::Size(40, 26);
 			this->textBox2Chosen->TabIndex = 38;
 			this->textBox2Chosen->Visible = false;
+			this->textBox2Chosen->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox2Chosen_TextChanged);
 			// 
 			// textBox2D
 			// 
-			this->textBox2D->Location = System::Drawing::Point(763, 113);
-			this->textBox2D->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2D->Location = System::Drawing::Point(1144, 174);
 			this->textBox2D->Name = L"textBox2D";
-			this->textBox2D->Size = System::Drawing::Size(28, 20);
+			this->textBox2D->Size = System::Drawing::Size(40, 26);
 			this->textBox2D->TabIndex = 37;
 			this->textBox2D->Visible = false;
 			// 
 			// textBox2Min
 			// 
-			this->textBox2Min->Location = System::Drawing::Point(451, 113);
-			this->textBox2Min->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2Min->Location = System::Drawing::Point(676, 174);
 			this->textBox2Min->Name = L"textBox2Min";
-			this->textBox2Min->Size = System::Drawing::Size(28, 20);
+			this->textBox2Min->Size = System::Drawing::Size(40, 26);
 			this->textBox2Min->TabIndex = 36;
 			this->textBox2Min->Visible = false;
 			this->textBox2Min->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox2Min_TextChanged);
 			// 
 			// textBox2Max
 			// 
-			this->textBox2Max->Location = System::Drawing::Point(603, 114);
-			this->textBox2Max->Margin = System::Windows::Forms::Padding(2);
+			this->textBox2Max->Location = System::Drawing::Point(904, 175);
 			this->textBox2Max->Name = L"textBox2Max";
-			this->textBox2Max->Size = System::Drawing::Size(28, 20);
+			this->textBox2Max->Size = System::Drawing::Size(40, 26);
 			this->textBox2Max->TabIndex = 35;
 			this->textBox2Max->Visible = false;
 			this->textBox2Max->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox2Max_TextChanged);
@@ -994,84 +955,77 @@ namespace GSA {
 			// trackBar2
 			// 
 			this->trackBar2->Enabled = false;
-			this->trackBar2->Location = System::Drawing::Point(476, 113);
-			this->trackBar2->Margin = System::Windows::Forms::Padding(2);
+			this->trackBar2->Location = System::Drawing::Point(714, 174);
 			this->trackBar2->Name = L"trackBar2";
-			this->trackBar2->Size = System::Drawing::Size(131, 45);
+			this->trackBar2->Size = System::Drawing::Size(196, 69);
 			this->trackBar2->TabIndex = 34;
 			this->trackBar2->Visible = false;
+			this->trackBar2->Scroll += gcnew System::EventHandler(this, &MainForm::trackBar2_Scroll);
 			// 
 			// textBox3A
 			// 
-			this->textBox3A->Location = System::Drawing::Point(673, 149);
-			this->textBox3A->Margin = System::Windows::Forms::Padding(2);
+			this->textBox3A->Location = System::Drawing::Point(1010, 229);
 			this->textBox3A->Name = L"textBox3A";
-			this->textBox3A->Size = System::Drawing::Size(28, 20);
+			this->textBox3A->Size = System::Drawing::Size(40, 26);
 			this->textBox3A->TabIndex = 51;
 			this->textBox3A->Visible = false;
 			// 
 			// textBox3C
 			// 
-			this->textBox3C->Location = System::Drawing::Point(732, 149);
-			this->textBox3C->Margin = System::Windows::Forms::Padding(2);
+			this->textBox3C->Location = System::Drawing::Point(1098, 229);
 			this->textBox3C->Name = L"textBox3C";
-			this->textBox3C->Size = System::Drawing::Size(28, 20);
+			this->textBox3C->Size = System::Drawing::Size(40, 26);
 			this->textBox3C->TabIndex = 50;
 			this->textBox3C->Visible = false;
 			// 
 			// textBox3B
 			// 
-			this->textBox3B->Location = System::Drawing::Point(702, 149);
-			this->textBox3B->Margin = System::Windows::Forms::Padding(2);
+			this->textBox3B->Location = System::Drawing::Point(1053, 229);
 			this->textBox3B->Name = L"textBox3B";
-			this->textBox3B->Size = System::Drawing::Size(28, 20);
+			this->textBox3B->Size = System::Drawing::Size(40, 26);
 			this->textBox3B->TabIndex = 49;
 			this->textBox3B->Visible = false;
 			// 
 			// textBox3E
 			// 
-			this->textBox3E->Location = System::Drawing::Point(793, 149);
-			this->textBox3E->Margin = System::Windows::Forms::Padding(2);
+			this->textBox3E->Location = System::Drawing::Point(1190, 229);
 			this->textBox3E->Name = L"textBox3E";
-			this->textBox3E->Size = System::Drawing::Size(28, 20);
+			this->textBox3E->Size = System::Drawing::Size(40, 26);
 			this->textBox3E->TabIndex = 48;
 			this->textBox3E->Visible = false;
 			// 
 			// textBox3Chosen
 			// 
-			this->textBox3Chosen->Location = System::Drawing::Point(633, 150);
-			this->textBox3Chosen->Margin = System::Windows::Forms::Padding(2);
+			this->textBox3Chosen->Location = System::Drawing::Point(950, 231);
 			this->textBox3Chosen->Name = L"textBox3Chosen";
 			this->textBox3Chosen->ReadOnly = true;
-			this->textBox3Chosen->Size = System::Drawing::Size(28, 20);
+			this->textBox3Chosen->Size = System::Drawing::Size(40, 26);
 			this->textBox3Chosen->TabIndex = 47;
 			this->textBox3Chosen->Visible = false;
+			this->textBox3Chosen->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox3Chosen_TextChanged);
 			// 
 			// textBox3D
 			// 
-			this->textBox3D->Location = System::Drawing::Point(763, 149);
-			this->textBox3D->Margin = System::Windows::Forms::Padding(2);
+			this->textBox3D->Location = System::Drawing::Point(1144, 229);
 			this->textBox3D->Name = L"textBox3D";
-			this->textBox3D->Size = System::Drawing::Size(28, 20);
+			this->textBox3D->Size = System::Drawing::Size(40, 26);
 			this->textBox3D->TabIndex = 46;
 			this->textBox3D->Visible = false;
 			// 
 			// textBox3Min
 			// 
-			this->textBox3Min->Location = System::Drawing::Point(451, 150);
-			this->textBox3Min->Margin = System::Windows::Forms::Padding(2);
+			this->textBox3Min->Location = System::Drawing::Point(676, 231);
 			this->textBox3Min->Name = L"textBox3Min";
-			this->textBox3Min->Size = System::Drawing::Size(28, 20);
+			this->textBox3Min->Size = System::Drawing::Size(40, 26);
 			this->textBox3Min->TabIndex = 45;
 			this->textBox3Min->Visible = false;
 			this->textBox3Min->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox3Min_TextChanged);
 			// 
 			// textBox3Max
 			// 
-			this->textBox3Max->Location = System::Drawing::Point(603, 150);
-			this->textBox3Max->Margin = System::Windows::Forms::Padding(2);
+			this->textBox3Max->Location = System::Drawing::Point(904, 231);
 			this->textBox3Max->Name = L"textBox3Max";
-			this->textBox3Max->Size = System::Drawing::Size(28, 20);
+			this->textBox3Max->Size = System::Drawing::Size(40, 26);
 			this->textBox3Max->TabIndex = 44;
 			this->textBox3Max->Visible = false;
 			this->textBox3Max->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox3Max_TextChanged);
@@ -1079,84 +1033,77 @@ namespace GSA {
 			// trackBar3
 			// 
 			this->trackBar3->Enabled = false;
-			this->trackBar3->Location = System::Drawing::Point(476, 150);
-			this->trackBar3->Margin = System::Windows::Forms::Padding(2);
+			this->trackBar3->Location = System::Drawing::Point(714, 231);
 			this->trackBar3->Name = L"trackBar3";
-			this->trackBar3->Size = System::Drawing::Size(131, 45);
+			this->trackBar3->Size = System::Drawing::Size(196, 69);
 			this->trackBar3->TabIndex = 43;
 			this->trackBar3->Visible = false;
+			this->trackBar3->Scroll += gcnew System::EventHandler(this, &MainForm::trackBar3_Scroll);
 			// 
 			// textBox4A
 			// 
-			this->textBox4A->Location = System::Drawing::Point(673, 187);
-			this->textBox4A->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4A->Location = System::Drawing::Point(1010, 288);
 			this->textBox4A->Name = L"textBox4A";
-			this->textBox4A->Size = System::Drawing::Size(28, 20);
+			this->textBox4A->Size = System::Drawing::Size(40, 26);
 			this->textBox4A->TabIndex = 60;
 			this->textBox4A->Visible = false;
 			// 
 			// textBox4C
 			// 
-			this->textBox4C->Location = System::Drawing::Point(732, 187);
-			this->textBox4C->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4C->Location = System::Drawing::Point(1098, 288);
 			this->textBox4C->Name = L"textBox4C";
-			this->textBox4C->Size = System::Drawing::Size(28, 20);
+			this->textBox4C->Size = System::Drawing::Size(40, 26);
 			this->textBox4C->TabIndex = 59;
 			this->textBox4C->Visible = false;
 			// 
 			// textBox4B
 			// 
-			this->textBox4B->Location = System::Drawing::Point(702, 187);
-			this->textBox4B->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4B->Location = System::Drawing::Point(1053, 288);
 			this->textBox4B->Name = L"textBox4B";
-			this->textBox4B->Size = System::Drawing::Size(28, 20);
+			this->textBox4B->Size = System::Drawing::Size(40, 26);
 			this->textBox4B->TabIndex = 58;
 			this->textBox4B->Visible = false;
 			// 
 			// textBox4E
 			// 
-			this->textBox4E->Location = System::Drawing::Point(793, 187);
-			this->textBox4E->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4E->Location = System::Drawing::Point(1190, 288);
 			this->textBox4E->Name = L"textBox4E";
-			this->textBox4E->Size = System::Drawing::Size(28, 20);
+			this->textBox4E->Size = System::Drawing::Size(40, 26);
 			this->textBox4E->TabIndex = 57;
 			this->textBox4E->Visible = false;
 			// 
 			// textBox4Chosen
 			// 
-			this->textBox4Chosen->Location = System::Drawing::Point(633, 187);
-			this->textBox4Chosen->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4Chosen->Location = System::Drawing::Point(950, 288);
 			this->textBox4Chosen->Name = L"textBox4Chosen";
 			this->textBox4Chosen->ReadOnly = true;
-			this->textBox4Chosen->Size = System::Drawing::Size(28, 20);
+			this->textBox4Chosen->Size = System::Drawing::Size(40, 26);
 			this->textBox4Chosen->TabIndex = 56;
 			this->textBox4Chosen->Visible = false;
+			this->textBox4Chosen->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox4Chosen_TextChanged);
 			// 
 			// textBox4D
 			// 
-			this->textBox4D->Location = System::Drawing::Point(763, 187);
-			this->textBox4D->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4D->Location = System::Drawing::Point(1144, 288);
 			this->textBox4D->Name = L"textBox4D";
-			this->textBox4D->Size = System::Drawing::Size(28, 20);
+			this->textBox4D->Size = System::Drawing::Size(40, 26);
 			this->textBox4D->TabIndex = 55;
 			this->textBox4D->Visible = false;
 			// 
 			// textBox4Min
 			// 
-			this->textBox4Min->Location = System::Drawing::Point(451, 187);
-			this->textBox4Min->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4Min->Location = System::Drawing::Point(676, 288);
 			this->textBox4Min->Name = L"textBox4Min";
-			this->textBox4Min->Size = System::Drawing::Size(28, 20);
+			this->textBox4Min->Size = System::Drawing::Size(40, 26);
 			this->textBox4Min->TabIndex = 54;
 			this->textBox4Min->Visible = false;
 			this->textBox4Min->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox4Min_TextChanged);
 			// 
 			// textBox4Max
 			// 
-			this->textBox4Max->Location = System::Drawing::Point(603, 187);
-			this->textBox4Max->Margin = System::Windows::Forms::Padding(2);
+			this->textBox4Max->Location = System::Drawing::Point(904, 288);
 			this->textBox4Max->Name = L"textBox4Max";
-			this->textBox4Max->Size = System::Drawing::Size(28, 20);
+			this->textBox4Max->Size = System::Drawing::Size(40, 26);
 			this->textBox4Max->TabIndex = 53;
 			this->textBox4Max->Visible = false;
 			this->textBox4Max->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox4Max_TextChanged);
@@ -1164,84 +1111,77 @@ namespace GSA {
 			// trackBar4
 			// 
 			this->trackBar4->Enabled = false;
-			this->trackBar4->Location = System::Drawing::Point(476, 187);
-			this->trackBar4->Margin = System::Windows::Forms::Padding(2);
+			this->trackBar4->Location = System::Drawing::Point(714, 288);
 			this->trackBar4->Name = L"trackBar4";
-			this->trackBar4->Size = System::Drawing::Size(131, 45);
+			this->trackBar4->Size = System::Drawing::Size(196, 69);
 			this->trackBar4->TabIndex = 52;
 			this->trackBar4->Visible = false;
+			this->trackBar4->Scroll += gcnew System::EventHandler(this, &MainForm::trackBar4_Scroll);
 			// 
 			// textBox5A
 			// 
-			this->textBox5A->Location = System::Drawing::Point(673, 224);
-			this->textBox5A->Margin = System::Windows::Forms::Padding(2);
+			this->textBox5A->Location = System::Drawing::Point(1010, 345);
 			this->textBox5A->Name = L"textBox5A";
-			this->textBox5A->Size = System::Drawing::Size(28, 20);
+			this->textBox5A->Size = System::Drawing::Size(40, 26);
 			this->textBox5A->TabIndex = 69;
 			this->textBox5A->Visible = false;
 			// 
 			// textBox5C
 			// 
-			this->textBox5C->Location = System::Drawing::Point(732, 224);
-			this->textBox5C->Margin = System::Windows::Forms::Padding(2);
+			this->textBox5C->Location = System::Drawing::Point(1098, 345);
 			this->textBox5C->Name = L"textBox5C";
-			this->textBox5C->Size = System::Drawing::Size(28, 20);
+			this->textBox5C->Size = System::Drawing::Size(40, 26);
 			this->textBox5C->TabIndex = 68;
 			this->textBox5C->Visible = false;
 			// 
 			// textBox5B
 			// 
-			this->textBox5B->Location = System::Drawing::Point(702, 224);
-			this->textBox5B->Margin = System::Windows::Forms::Padding(2);
+			this->textBox5B->Location = System::Drawing::Point(1053, 345);
 			this->textBox5B->Name = L"textBox5B";
-			this->textBox5B->Size = System::Drawing::Size(28, 20);
+			this->textBox5B->Size = System::Drawing::Size(40, 26);
 			this->textBox5B->TabIndex = 67;
 			this->textBox5B->Visible = false;
 			// 
 			// textBox5E
 			// 
-			this->textBox5E->Location = System::Drawing::Point(793, 224);
-			this->textBox5E->Margin = System::Windows::Forms::Padding(2);
+			this->textBox5E->Location = System::Drawing::Point(1190, 345);
 			this->textBox5E->Name = L"textBox5E";
-			this->textBox5E->Size = System::Drawing::Size(28, 20);
+			this->textBox5E->Size = System::Drawing::Size(40, 26);
 			this->textBox5E->TabIndex = 66;
 			this->textBox5E->Visible = false;
 			// 
 			// textBox5Chosen
 			// 
-			this->textBox5Chosen->Location = System::Drawing::Point(633, 224);
-			this->textBox5Chosen->Margin = System::Windows::Forms::Padding(2);
+			this->textBox5Chosen->Location = System::Drawing::Point(950, 345);
 			this->textBox5Chosen->Name = L"textBox5Chosen";
 			this->textBox5Chosen->ReadOnly = true;
-			this->textBox5Chosen->Size = System::Drawing::Size(28, 20);
+			this->textBox5Chosen->Size = System::Drawing::Size(40, 26);
 			this->textBox5Chosen->TabIndex = 65;
 			this->textBox5Chosen->Visible = false;
+			this->textBox5Chosen->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox5Chosen_TextChanged);
 			// 
 			// textBox5D
 			// 
-			this->textBox5D->Location = System::Drawing::Point(763, 224);
-			this->textBox5D->Margin = System::Windows::Forms::Padding(2);
+			this->textBox5D->Location = System::Drawing::Point(1144, 345);
 			this->textBox5D->Name = L"textBox5D";
-			this->textBox5D->Size = System::Drawing::Size(28, 20);
+			this->textBox5D->Size = System::Drawing::Size(40, 26);
 			this->textBox5D->TabIndex = 64;
 			this->textBox5D->Visible = false;
 			// 
 			// textBox5Min
 			// 
-			this->textBox5Min->Location = System::Drawing::Point(451, 224);
-			this->textBox5Min->Margin = System::Windows::Forms::Padding(2);
+			this->textBox5Min->Location = System::Drawing::Point(676, 345);
 			this->textBox5Min->Name = L"textBox5Min";
-			this->textBox5Min->Size = System::Drawing::Size(28, 20);
+			this->textBox5Min->Size = System::Drawing::Size(40, 26);
 			this->textBox5Min->TabIndex = 63;
 			this->textBox5Min->Visible = false;
 			this->textBox5Min->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox5Min_TextChanged);
 			// 
 			// textBox5Max
 			// 
-			this->textBox5Max->Location = System::Drawing::Point(603, 224);
-			this->textBox5Max->Margin = System::Windows::Forms::Padding(2);
+			this->textBox5Max->Location = System::Drawing::Point(904, 345);
 			this->textBox5Max->Name = L"textBox5Max";
-			this->textBox5Max->Size = System::Drawing::Size(28, 20);
+			this->textBox5Max->Size = System::Drawing::Size(40, 26);
 			this->textBox5Max->TabIndex = 62;
 			this->textBox5Max->Visible = false;
 			this->textBox5Max->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox5Max_TextChanged);
@@ -1249,84 +1189,77 @@ namespace GSA {
 			// trackBar5
 			// 
 			this->trackBar5->Enabled = false;
-			this->trackBar5->Location = System::Drawing::Point(476, 224);
-			this->trackBar5->Margin = System::Windows::Forms::Padding(2);
+			this->trackBar5->Location = System::Drawing::Point(714, 345);
 			this->trackBar5->Name = L"trackBar5";
-			this->trackBar5->Size = System::Drawing::Size(131, 45);
+			this->trackBar5->Size = System::Drawing::Size(196, 69);
 			this->trackBar5->TabIndex = 61;
 			this->trackBar5->Visible = false;
+			this->trackBar5->Scroll += gcnew System::EventHandler(this, &MainForm::trackBar5_Scroll);
 			// 
 			// textBox10A
 			// 
-			this->textBox10A->Location = System::Drawing::Point(673, 410);
-			this->textBox10A->Margin = System::Windows::Forms::Padding(2);
+			this->textBox10A->Location = System::Drawing::Point(1010, 631);
 			this->textBox10A->Name = L"textBox10A";
-			this->textBox10A->Size = System::Drawing::Size(28, 20);
+			this->textBox10A->Size = System::Drawing::Size(40, 26);
 			this->textBox10A->TabIndex = 114;
 			this->textBox10A->Visible = false;
 			// 
 			// textBox10C
 			// 
-			this->textBox10C->Location = System::Drawing::Point(732, 410);
-			this->textBox10C->Margin = System::Windows::Forms::Padding(2);
+			this->textBox10C->Location = System::Drawing::Point(1098, 631);
 			this->textBox10C->Name = L"textBox10C";
-			this->textBox10C->Size = System::Drawing::Size(28, 20);
+			this->textBox10C->Size = System::Drawing::Size(40, 26);
 			this->textBox10C->TabIndex = 113;
 			this->textBox10C->Visible = false;
 			// 
 			// textBox10B
 			// 
-			this->textBox10B->Location = System::Drawing::Point(702, 410);
-			this->textBox10B->Margin = System::Windows::Forms::Padding(2);
+			this->textBox10B->Location = System::Drawing::Point(1053, 631);
 			this->textBox10B->Name = L"textBox10B";
-			this->textBox10B->Size = System::Drawing::Size(28, 20);
+			this->textBox10B->Size = System::Drawing::Size(40, 26);
 			this->textBox10B->TabIndex = 112;
 			this->textBox10B->Visible = false;
 			// 
 			// textBox10E
 			// 
-			this->textBox10E->Location = System::Drawing::Point(793, 410);
-			this->textBox10E->Margin = System::Windows::Forms::Padding(2);
+			this->textBox10E->Location = System::Drawing::Point(1190, 631);
 			this->textBox10E->Name = L"textBox10E";
-			this->textBox10E->Size = System::Drawing::Size(28, 20);
+			this->textBox10E->Size = System::Drawing::Size(40, 26);
 			this->textBox10E->TabIndex = 111;
 			this->textBox10E->Visible = false;
 			// 
 			// textBox10Chosen
 			// 
-			this->textBox10Chosen->Location = System::Drawing::Point(633, 410);
-			this->textBox10Chosen->Margin = System::Windows::Forms::Padding(2);
+			this->textBox10Chosen->Location = System::Drawing::Point(950, 631);
 			this->textBox10Chosen->Name = L"textBox10Chosen";
 			this->textBox10Chosen->ReadOnly = true;
-			this->textBox10Chosen->Size = System::Drawing::Size(28, 20);
+			this->textBox10Chosen->Size = System::Drawing::Size(40, 26);
 			this->textBox10Chosen->TabIndex = 110;
 			this->textBox10Chosen->Visible = false;
+			this->textBox10Chosen->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox10Chosen_TextChanged);
 			// 
 			// textBox10D
 			// 
-			this->textBox10D->Location = System::Drawing::Point(763, 410);
-			this->textBox10D->Margin = System::Windows::Forms::Padding(2);
+			this->textBox10D->Location = System::Drawing::Point(1144, 631);
 			this->textBox10D->Name = L"textBox10D";
-			this->textBox10D->Size = System::Drawing::Size(28, 20);
+			this->textBox10D->Size = System::Drawing::Size(40, 26);
 			this->textBox10D->TabIndex = 109;
 			this->textBox10D->Visible = false;
 			// 
 			// textBox10Min
 			// 
-			this->textBox10Min->Location = System::Drawing::Point(451, 410);
-			this->textBox10Min->Margin = System::Windows::Forms::Padding(2);
+			this->textBox10Min->Location = System::Drawing::Point(676, 631);
 			this->textBox10Min->Name = L"textBox10Min";
-			this->textBox10Min->Size = System::Drawing::Size(28, 20);
+			this->textBox10Min->Size = System::Drawing::Size(40, 26);
 			this->textBox10Min->TabIndex = 108;
 			this->textBox10Min->Visible = false;
 			this->textBox10Min->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox10Min_TextChanged);
 			// 
 			// textBox10Max
 			// 
-			this->textBox10Max->Location = System::Drawing::Point(603, 410);
-			this->textBox10Max->Margin = System::Windows::Forms::Padding(2);
+			this->textBox10Max->Location = System::Drawing::Point(904, 631);
 			this->textBox10Max->Name = L"textBox10Max";
-			this->textBox10Max->Size = System::Drawing::Size(28, 20);
+			this->textBox10Max->Size = System::Drawing::Size(40, 26);
 			this->textBox10Max->TabIndex = 107;
 			this->textBox10Max->Visible = false;
 			this->textBox10Max->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox10Max_TextChanged);
@@ -1334,84 +1267,77 @@ namespace GSA {
 			// trackBar10
 			// 
 			this->trackBar10->Enabled = false;
-			this->trackBar10->Location = System::Drawing::Point(476, 410);
-			this->trackBar10->Margin = System::Windows::Forms::Padding(2);
+			this->trackBar10->Location = System::Drawing::Point(714, 631);
 			this->trackBar10->Name = L"trackBar10";
-			this->trackBar10->Size = System::Drawing::Size(131, 45);
+			this->trackBar10->Size = System::Drawing::Size(196, 69);
 			this->trackBar10->TabIndex = 106;
 			this->trackBar10->Visible = false;
+			this->trackBar10->Scroll += gcnew System::EventHandler(this, &MainForm::trackBar10_Scroll);
 			// 
 			// textBox9A
 			// 
-			this->textBox9A->Location = System::Drawing::Point(673, 372);
-			this->textBox9A->Margin = System::Windows::Forms::Padding(2);
+			this->textBox9A->Location = System::Drawing::Point(1010, 572);
 			this->textBox9A->Name = L"textBox9A";
-			this->textBox9A->Size = System::Drawing::Size(28, 20);
+			this->textBox9A->Size = System::Drawing::Size(40, 26);
 			this->textBox9A->TabIndex = 105;
 			this->textBox9A->Visible = false;
 			// 
 			// textBox9C
 			// 
-			this->textBox9C->Location = System::Drawing::Point(732, 372);
-			this->textBox9C->Margin = System::Windows::Forms::Padding(2);
+			this->textBox9C->Location = System::Drawing::Point(1098, 572);
 			this->textBox9C->Name = L"textBox9C";
-			this->textBox9C->Size = System::Drawing::Size(28, 20);
+			this->textBox9C->Size = System::Drawing::Size(40, 26);
 			this->textBox9C->TabIndex = 104;
 			this->textBox9C->Visible = false;
 			// 
 			// textBox9B
 			// 
-			this->textBox9B->Location = System::Drawing::Point(702, 372);
-			this->textBox9B->Margin = System::Windows::Forms::Padding(2);
+			this->textBox9B->Location = System::Drawing::Point(1053, 572);
 			this->textBox9B->Name = L"textBox9B";
-			this->textBox9B->Size = System::Drawing::Size(28, 20);
+			this->textBox9B->Size = System::Drawing::Size(40, 26);
 			this->textBox9B->TabIndex = 103;
 			this->textBox9B->Visible = false;
 			// 
 			// textBox9E
 			// 
-			this->textBox9E->Location = System::Drawing::Point(793, 372);
-			this->textBox9E->Margin = System::Windows::Forms::Padding(2);
+			this->textBox9E->Location = System::Drawing::Point(1190, 572);
 			this->textBox9E->Name = L"textBox9E";
-			this->textBox9E->Size = System::Drawing::Size(28, 20);
+			this->textBox9E->Size = System::Drawing::Size(40, 26);
 			this->textBox9E->TabIndex = 102;
 			this->textBox9E->Visible = false;
 			// 
 			// textBox9Chosen
 			// 
-			this->textBox9Chosen->Location = System::Drawing::Point(633, 373);
-			this->textBox9Chosen->Margin = System::Windows::Forms::Padding(2);
+			this->textBox9Chosen->Location = System::Drawing::Point(950, 574);
 			this->textBox9Chosen->Name = L"textBox9Chosen";
 			this->textBox9Chosen->ReadOnly = true;
-			this->textBox9Chosen->Size = System::Drawing::Size(28, 20);
+			this->textBox9Chosen->Size = System::Drawing::Size(40, 26);
 			this->textBox9Chosen->TabIndex = 101;
 			this->textBox9Chosen->Visible = false;
+			this->textBox9Chosen->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox9Chosen_TextChanged);
 			// 
 			// textBox9D
 			// 
-			this->textBox9D->Location = System::Drawing::Point(763, 372);
-			this->textBox9D->Margin = System::Windows::Forms::Padding(2);
+			this->textBox9D->Location = System::Drawing::Point(1144, 572);
 			this->textBox9D->Name = L"textBox9D";
-			this->textBox9D->Size = System::Drawing::Size(28, 20);
+			this->textBox9D->Size = System::Drawing::Size(40, 26);
 			this->textBox9D->TabIndex = 100;
 			this->textBox9D->Visible = false;
 			// 
 			// textBox9Min
 			// 
-			this->textBox9Min->Location = System::Drawing::Point(451, 372);
-			this->textBox9Min->Margin = System::Windows::Forms::Padding(2);
+			this->textBox9Min->Location = System::Drawing::Point(676, 572);
 			this->textBox9Min->Name = L"textBox9Min";
-			this->textBox9Min->Size = System::Drawing::Size(28, 20);
+			this->textBox9Min->Size = System::Drawing::Size(40, 26);
 			this->textBox9Min->TabIndex = 99;
 			this->textBox9Min->Visible = false;
 			this->textBox9Min->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox9Min_TextChanged);
 			// 
 			// textBox9Max
 			// 
-			this->textBox9Max->Location = System::Drawing::Point(603, 373);
-			this->textBox9Max->Margin = System::Windows::Forms::Padding(2);
+			this->textBox9Max->Location = System::Drawing::Point(904, 574);
 			this->textBox9Max->Name = L"textBox9Max";
-			this->textBox9Max->Size = System::Drawing::Size(28, 20);
+			this->textBox9Max->Size = System::Drawing::Size(40, 26);
 			this->textBox9Max->TabIndex = 98;
 			this->textBox9Max->Visible = false;
 			this->textBox9Max->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox9Max_TextChanged);
@@ -1419,84 +1345,77 @@ namespace GSA {
 			// trackBar9
 			// 
 			this->trackBar9->Enabled = false;
-			this->trackBar9->Location = System::Drawing::Point(476, 372);
-			this->trackBar9->Margin = System::Windows::Forms::Padding(2);
+			this->trackBar9->Location = System::Drawing::Point(714, 572);
 			this->trackBar9->Name = L"trackBar9";
-			this->trackBar9->Size = System::Drawing::Size(131, 45);
+			this->trackBar9->Size = System::Drawing::Size(196, 69);
 			this->trackBar9->TabIndex = 97;
 			this->trackBar9->Visible = false;
+			this->trackBar9->Scroll += gcnew System::EventHandler(this, &MainForm::trackBar9_Scroll);
 			// 
 			// textBox8A
 			// 
-			this->textBox8A->Location = System::Drawing::Point(673, 335);
-			this->textBox8A->Margin = System::Windows::Forms::Padding(2);
+			this->textBox8A->Location = System::Drawing::Point(1010, 515);
 			this->textBox8A->Name = L"textBox8A";
-			this->textBox8A->Size = System::Drawing::Size(28, 20);
+			this->textBox8A->Size = System::Drawing::Size(40, 26);
 			this->textBox8A->TabIndex = 96;
 			this->textBox8A->Visible = false;
 			// 
 			// textBox8C
 			// 
-			this->textBox8C->Location = System::Drawing::Point(732, 335);
-			this->textBox8C->Margin = System::Windows::Forms::Padding(2);
+			this->textBox8C->Location = System::Drawing::Point(1098, 515);
 			this->textBox8C->Name = L"textBox8C";
-			this->textBox8C->Size = System::Drawing::Size(28, 20);
+			this->textBox8C->Size = System::Drawing::Size(40, 26);
 			this->textBox8C->TabIndex = 95;
 			this->textBox8C->Visible = false;
 			// 
 			// textBox8B
 			// 
-			this->textBox8B->Location = System::Drawing::Point(702, 335);
-			this->textBox8B->Margin = System::Windows::Forms::Padding(2);
+			this->textBox8B->Location = System::Drawing::Point(1053, 515);
 			this->textBox8B->Name = L"textBox8B";
-			this->textBox8B->Size = System::Drawing::Size(28, 20);
+			this->textBox8B->Size = System::Drawing::Size(40, 26);
 			this->textBox8B->TabIndex = 94;
 			this->textBox8B->Visible = false;
 			// 
 			// textBox8E
 			// 
-			this->textBox8E->Location = System::Drawing::Point(793, 335);
-			this->textBox8E->Margin = System::Windows::Forms::Padding(2);
+			this->textBox8E->Location = System::Drawing::Point(1190, 515);
 			this->textBox8E->Name = L"textBox8E";
-			this->textBox8E->Size = System::Drawing::Size(28, 20);
+			this->textBox8E->Size = System::Drawing::Size(40, 26);
 			this->textBox8E->TabIndex = 93;
 			this->textBox8E->Visible = false;
 			// 
 			// textBox8Chosen
 			// 
-			this->textBox8Chosen->Location = System::Drawing::Point(633, 336);
-			this->textBox8Chosen->Margin = System::Windows::Forms::Padding(2);
+			this->textBox8Chosen->Location = System::Drawing::Point(950, 517);
 			this->textBox8Chosen->Name = L"textBox8Chosen";
 			this->textBox8Chosen->ReadOnly = true;
-			this->textBox8Chosen->Size = System::Drawing::Size(28, 20);
+			this->textBox8Chosen->Size = System::Drawing::Size(40, 26);
 			this->textBox8Chosen->TabIndex = 92;
 			this->textBox8Chosen->Visible = false;
+			this->textBox8Chosen->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox8Chosen_TextChanged);
 			// 
 			// textBox8D
 			// 
-			this->textBox8D->Location = System::Drawing::Point(763, 335);
-			this->textBox8D->Margin = System::Windows::Forms::Padding(2);
+			this->textBox8D->Location = System::Drawing::Point(1144, 515);
 			this->textBox8D->Name = L"textBox8D";
-			this->textBox8D->Size = System::Drawing::Size(28, 20);
+			this->textBox8D->Size = System::Drawing::Size(40, 26);
 			this->textBox8D->TabIndex = 91;
 			this->textBox8D->Visible = false;
 			// 
 			// textBox8Min
 			// 
-			this->textBox8Min->Location = System::Drawing::Point(451, 335);
-			this->textBox8Min->Margin = System::Windows::Forms::Padding(2);
+			this->textBox8Min->Location = System::Drawing::Point(676, 515);
 			this->textBox8Min->Name = L"textBox8Min";
-			this->textBox8Min->Size = System::Drawing::Size(28, 20);
+			this->textBox8Min->Size = System::Drawing::Size(40, 26);
 			this->textBox8Min->TabIndex = 90;
 			this->textBox8Min->Visible = false;
 			this->textBox8Min->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox8Min_TextChanged);
 			// 
 			// textBox8Max
 			// 
-			this->textBox8Max->Location = System::Drawing::Point(603, 336);
-			this->textBox8Max->Margin = System::Windows::Forms::Padding(2);
+			this->textBox8Max->Location = System::Drawing::Point(904, 517);
 			this->textBox8Max->Name = L"textBox8Max";
-			this->textBox8Max->Size = System::Drawing::Size(28, 20);
+			this->textBox8Max->Size = System::Drawing::Size(40, 26);
 			this->textBox8Max->TabIndex = 89;
 			this->textBox8Max->Visible = false;
 			this->textBox8Max->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox8Max_TextChanged);
@@ -1504,84 +1423,77 @@ namespace GSA {
 			// trackBar8
 			// 
 			this->trackBar8->Enabled = false;
-			this->trackBar8->Location = System::Drawing::Point(476, 335);
-			this->trackBar8->Margin = System::Windows::Forms::Padding(2);
+			this->trackBar8->Location = System::Drawing::Point(714, 515);
 			this->trackBar8->Name = L"trackBar8";
-			this->trackBar8->Size = System::Drawing::Size(131, 45);
+			this->trackBar8->Size = System::Drawing::Size(196, 69);
 			this->trackBar8->TabIndex = 88;
 			this->trackBar8->Visible = false;
+			this->trackBar8->Scroll += gcnew System::EventHandler(this, &MainForm::trackBar8_Scroll);
 			// 
 			// textBox7A
 			// 
-			this->textBox7A->Location = System::Drawing::Point(673, 299);
-			this->textBox7A->Margin = System::Windows::Forms::Padding(2);
+			this->textBox7A->Location = System::Drawing::Point(1010, 460);
 			this->textBox7A->Name = L"textBox7A";
-			this->textBox7A->Size = System::Drawing::Size(28, 20);
+			this->textBox7A->Size = System::Drawing::Size(40, 26);
 			this->textBox7A->TabIndex = 87;
 			this->textBox7A->Visible = false;
 			// 
 			// textBox7C
 			// 
-			this->textBox7C->Location = System::Drawing::Point(732, 299);
-			this->textBox7C->Margin = System::Windows::Forms::Padding(2);
+			this->textBox7C->Location = System::Drawing::Point(1098, 460);
 			this->textBox7C->Name = L"textBox7C";
-			this->textBox7C->Size = System::Drawing::Size(28, 20);
+			this->textBox7C->Size = System::Drawing::Size(40, 26);
 			this->textBox7C->TabIndex = 86;
 			this->textBox7C->Visible = false;
 			// 
 			// textBox7B
 			// 
-			this->textBox7B->Location = System::Drawing::Point(702, 299);
-			this->textBox7B->Margin = System::Windows::Forms::Padding(2);
+			this->textBox7B->Location = System::Drawing::Point(1053, 460);
 			this->textBox7B->Name = L"textBox7B";
-			this->textBox7B->Size = System::Drawing::Size(28, 20);
+			this->textBox7B->Size = System::Drawing::Size(40, 26);
 			this->textBox7B->TabIndex = 85;
 			this->textBox7B->Visible = false;
 			// 
 			// textBox7E
 			// 
-			this->textBox7E->Location = System::Drawing::Point(793, 299);
-			this->textBox7E->Margin = System::Windows::Forms::Padding(2);
+			this->textBox7E->Location = System::Drawing::Point(1190, 460);
 			this->textBox7E->Name = L"textBox7E";
-			this->textBox7E->Size = System::Drawing::Size(28, 20);
+			this->textBox7E->Size = System::Drawing::Size(40, 26);
 			this->textBox7E->TabIndex = 84;
 			this->textBox7E->Visible = false;
 			// 
 			// textBox7Chosen
 			// 
-			this->textBox7Chosen->Location = System::Drawing::Point(633, 300);
-			this->textBox7Chosen->Margin = System::Windows::Forms::Padding(2);
+			this->textBox7Chosen->Location = System::Drawing::Point(950, 462);
 			this->textBox7Chosen->Name = L"textBox7Chosen";
 			this->textBox7Chosen->ReadOnly = true;
-			this->textBox7Chosen->Size = System::Drawing::Size(28, 20);
+			this->textBox7Chosen->Size = System::Drawing::Size(40, 26);
 			this->textBox7Chosen->TabIndex = 83;
 			this->textBox7Chosen->Visible = false;
+			this->textBox7Chosen->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox7Chosen_TextChanged);
 			// 
 			// textBox7D
 			// 
-			this->textBox7D->Location = System::Drawing::Point(763, 299);
-			this->textBox7D->Margin = System::Windows::Forms::Padding(2);
+			this->textBox7D->Location = System::Drawing::Point(1144, 460);
 			this->textBox7D->Name = L"textBox7D";
-			this->textBox7D->Size = System::Drawing::Size(28, 20);
+			this->textBox7D->Size = System::Drawing::Size(40, 26);
 			this->textBox7D->TabIndex = 82;
 			this->textBox7D->Visible = false;
 			// 
 			// textBox7Min
 			// 
-			this->textBox7Min->Location = System::Drawing::Point(451, 299);
-			this->textBox7Min->Margin = System::Windows::Forms::Padding(2);
+			this->textBox7Min->Location = System::Drawing::Point(676, 460);
 			this->textBox7Min->Name = L"textBox7Min";
-			this->textBox7Min->Size = System::Drawing::Size(28, 20);
+			this->textBox7Min->Size = System::Drawing::Size(40, 26);
 			this->textBox7Min->TabIndex = 81;
 			this->textBox7Min->Visible = false;
 			this->textBox7Min->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox7Min_TextChanged);
 			// 
 			// textBox7Max
 			// 
-			this->textBox7Max->Location = System::Drawing::Point(603, 300);
-			this->textBox7Max->Margin = System::Windows::Forms::Padding(2);
+			this->textBox7Max->Location = System::Drawing::Point(904, 462);
 			this->textBox7Max->Name = L"textBox7Max";
-			this->textBox7Max->Size = System::Drawing::Size(28, 20);
+			this->textBox7Max->Size = System::Drawing::Size(40, 26);
 			this->textBox7Max->TabIndex = 80;
 			this->textBox7Max->Visible = false;
 			this->textBox7Max->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox7Max_TextChanged);
@@ -1589,84 +1501,77 @@ namespace GSA {
 			// trackBar7
 			// 
 			this->trackBar7->Enabled = false;
-			this->trackBar7->Location = System::Drawing::Point(476, 299);
-			this->trackBar7->Margin = System::Windows::Forms::Padding(2);
+			this->trackBar7->Location = System::Drawing::Point(714, 460);
 			this->trackBar7->Name = L"trackBar7";
-			this->trackBar7->Size = System::Drawing::Size(131, 45);
+			this->trackBar7->Size = System::Drawing::Size(196, 69);
 			this->trackBar7->TabIndex = 79;
 			this->trackBar7->Visible = false;
+			this->trackBar7->Scroll += gcnew System::EventHandler(this, &MainForm::trackBar7_Scroll);
 			// 
 			// textBox6A
 			// 
-			this->textBox6A->Location = System::Drawing::Point(673, 260);
-			this->textBox6A->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6A->Location = System::Drawing::Point(1010, 400);
 			this->textBox6A->Name = L"textBox6A";
-			this->textBox6A->Size = System::Drawing::Size(28, 20);
+			this->textBox6A->Size = System::Drawing::Size(40, 26);
 			this->textBox6A->TabIndex = 78;
 			this->textBox6A->Visible = false;
 			// 
 			// textBox6C
 			// 
-			this->textBox6C->Location = System::Drawing::Point(732, 260);
-			this->textBox6C->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6C->Location = System::Drawing::Point(1098, 400);
 			this->textBox6C->Name = L"textBox6C";
-			this->textBox6C->Size = System::Drawing::Size(28, 20);
+			this->textBox6C->Size = System::Drawing::Size(40, 26);
 			this->textBox6C->TabIndex = 77;
 			this->textBox6C->Visible = false;
 			// 
 			// textBox6B
 			// 
-			this->textBox6B->Location = System::Drawing::Point(702, 260);
-			this->textBox6B->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6B->Location = System::Drawing::Point(1053, 400);
 			this->textBox6B->Name = L"textBox6B";
-			this->textBox6B->Size = System::Drawing::Size(28, 20);
+			this->textBox6B->Size = System::Drawing::Size(40, 26);
 			this->textBox6B->TabIndex = 76;
 			this->textBox6B->Visible = false;
 			// 
 			// textBox6E
 			// 
-			this->textBox6E->Location = System::Drawing::Point(793, 260);
-			this->textBox6E->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6E->Location = System::Drawing::Point(1190, 400);
 			this->textBox6E->Name = L"textBox6E";
-			this->textBox6E->Size = System::Drawing::Size(28, 20);
+			this->textBox6E->Size = System::Drawing::Size(40, 26);
 			this->textBox6E->TabIndex = 75;
 			this->textBox6E->Visible = false;
 			// 
 			// textBox6Chosen
 			// 
-			this->textBox6Chosen->Location = System::Drawing::Point(633, 261);
-			this->textBox6Chosen->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6Chosen->Location = System::Drawing::Point(950, 402);
 			this->textBox6Chosen->Name = L"textBox6Chosen";
 			this->textBox6Chosen->ReadOnly = true;
-			this->textBox6Chosen->Size = System::Drawing::Size(28, 20);
+			this->textBox6Chosen->Size = System::Drawing::Size(40, 26);
 			this->textBox6Chosen->TabIndex = 74;
 			this->textBox6Chosen->Visible = false;
+			this->textBox6Chosen->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox6Chosen_TextChanged);
 			// 
 			// textBox6D
 			// 
-			this->textBox6D->Location = System::Drawing::Point(763, 260);
-			this->textBox6D->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6D->Location = System::Drawing::Point(1144, 400);
 			this->textBox6D->Name = L"textBox6D";
-			this->textBox6D->Size = System::Drawing::Size(28, 20);
+			this->textBox6D->Size = System::Drawing::Size(40, 26);
 			this->textBox6D->TabIndex = 73;
 			this->textBox6D->Visible = false;
 			// 
 			// textBox6Min
 			// 
-			this->textBox6Min->Location = System::Drawing::Point(451, 260);
-			this->textBox6Min->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6Min->Location = System::Drawing::Point(676, 400);
 			this->textBox6Min->Name = L"textBox6Min";
-			this->textBox6Min->Size = System::Drawing::Size(28, 20);
+			this->textBox6Min->Size = System::Drawing::Size(40, 26);
 			this->textBox6Min->TabIndex = 72;
 			this->textBox6Min->Visible = false;
 			this->textBox6Min->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox6Min_TextChanged);
 			// 
 			// textBox6Max
 			// 
-			this->textBox6Max->Location = System::Drawing::Point(603, 261);
-			this->textBox6Max->Margin = System::Windows::Forms::Padding(2);
+			this->textBox6Max->Location = System::Drawing::Point(904, 402);
 			this->textBox6Max->Name = L"textBox6Max";
-			this->textBox6Max->Size = System::Drawing::Size(28, 20);
+			this->textBox6Max->Size = System::Drawing::Size(40, 26);
 			this->textBox6Max->TabIndex = 71;
 			this->textBox6Max->Visible = false;
 			this->textBox6Max->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox6Max_TextChanged);
@@ -1674,20 +1579,19 @@ namespace GSA {
 			// trackBar6
 			// 
 			this->trackBar6->Enabled = false;
-			this->trackBar6->Location = System::Drawing::Point(476, 260);
-			this->trackBar6->Margin = System::Windows::Forms::Padding(2);
+			this->trackBar6->Location = System::Drawing::Point(714, 400);
 			this->trackBar6->Name = L"trackBar6";
-			this->trackBar6->Size = System::Drawing::Size(131, 45);
+			this->trackBar6->Size = System::Drawing::Size(196, 69);
 			this->trackBar6->TabIndex = 70;
 			this->trackBar6->Visible = false;
+			this->trackBar6->Scroll += gcnew System::EventHandler(this, &MainForm::trackBar6_Scroll);
 			// 
 			// labelDim1
 			// 
 			this->labelDim1->AutoSize = true;
-			this->labelDim1->Location = System::Drawing::Point(419, 78);
-			this->labelDim1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDim1->Location = System::Drawing::Point(628, 120);
 			this->labelDim1->Name = L"labelDim1";
-			this->labelDim1->Size = System::Drawing::Size(13, 13);
+			this->labelDim1->Size = System::Drawing::Size(18, 20);
 			this->labelDim1->TabIndex = 115;
 			this->labelDim1->Text = L"1";
 			this->labelDim1->Visible = false;
@@ -1695,10 +1599,9 @@ namespace GSA {
 			// labelDim10
 			// 
 			this->labelDim10->AutoSize = true;
-			this->labelDim10->Location = System::Drawing::Point(413, 413);
-			this->labelDim10->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDim10->Location = System::Drawing::Point(620, 635);
 			this->labelDim10->Name = L"labelDim10";
-			this->labelDim10->Size = System::Drawing::Size(19, 13);
+			this->labelDim10->Size = System::Drawing::Size(27, 20);
 			this->labelDim10->TabIndex = 116;
 			this->labelDim10->Text = L"10";
 			this->labelDim10->Visible = false;
@@ -1706,10 +1609,9 @@ namespace GSA {
 			// labelDim6
 			// 
 			this->labelDim6->AutoSize = true;
-			this->labelDim6->Location = System::Drawing::Point(419, 264);
-			this->labelDim6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDim6->Location = System::Drawing::Point(628, 406);
 			this->labelDim6->Name = L"labelDim6";
-			this->labelDim6->Size = System::Drawing::Size(13, 13);
+			this->labelDim6->Size = System::Drawing::Size(18, 20);
 			this->labelDim6->TabIndex = 117;
 			this->labelDim6->Text = L"6";
 			this->labelDim6->Visible = false;
@@ -1717,10 +1619,9 @@ namespace GSA {
 			// labelDim3
 			// 
 			this->labelDim3->AutoSize = true;
-			this->labelDim3->Location = System::Drawing::Point(419, 153);
-			this->labelDim3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDim3->Location = System::Drawing::Point(628, 235);
 			this->labelDim3->Name = L"labelDim3";
-			this->labelDim3->Size = System::Drawing::Size(13, 13);
+			this->labelDim3->Size = System::Drawing::Size(18, 20);
 			this->labelDim3->TabIndex = 118;
 			this->labelDim3->Text = L"3";
 			this->labelDim3->Visible = false;
@@ -1728,10 +1629,9 @@ namespace GSA {
 			// labelDim4
 			// 
 			this->labelDim4->AutoSize = true;
-			this->labelDim4->Location = System::Drawing::Point(419, 190);
-			this->labelDim4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDim4->Location = System::Drawing::Point(628, 292);
 			this->labelDim4->Name = L"labelDim4";
-			this->labelDim4->Size = System::Drawing::Size(13, 13);
+			this->labelDim4->Size = System::Drawing::Size(18, 20);
 			this->labelDim4->TabIndex = 119;
 			this->labelDim4->Text = L"4";
 			this->labelDim4->Visible = false;
@@ -1739,10 +1639,9 @@ namespace GSA {
 			// labelDim2
 			// 
 			this->labelDim2->AutoSize = true;
-			this->labelDim2->Location = System::Drawing::Point(419, 117);
-			this->labelDim2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDim2->Location = System::Drawing::Point(628, 180);
 			this->labelDim2->Name = L"labelDim2";
-			this->labelDim2->Size = System::Drawing::Size(13, 13);
+			this->labelDim2->Size = System::Drawing::Size(18, 20);
 			this->labelDim2->TabIndex = 120;
 			this->labelDim2->Text = L"2";
 			this->labelDim2->Visible = false;
@@ -1750,10 +1649,9 @@ namespace GSA {
 			// labelDim5
 			// 
 			this->labelDim5->AutoSize = true;
-			this->labelDim5->Location = System::Drawing::Point(419, 227);
-			this->labelDim5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDim5->Location = System::Drawing::Point(628, 349);
 			this->labelDim5->Name = L"labelDim5";
-			this->labelDim5->Size = System::Drawing::Size(13, 13);
+			this->labelDim5->Size = System::Drawing::Size(18, 20);
 			this->labelDim5->TabIndex = 121;
 			this->labelDim5->Text = L"5";
 			this->labelDim5->Visible = false;
@@ -1761,10 +1659,9 @@ namespace GSA {
 			// labelDim7
 			// 
 			this->labelDim7->AutoSize = true;
-			this->labelDim7->Location = System::Drawing::Point(419, 303);
-			this->labelDim7->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDim7->Location = System::Drawing::Point(628, 466);
 			this->labelDim7->Name = L"labelDim7";
-			this->labelDim7->Size = System::Drawing::Size(13, 13);
+			this->labelDim7->Size = System::Drawing::Size(18, 20);
 			this->labelDim7->TabIndex = 122;
 			this->labelDim7->Text = L"7";
 			this->labelDim7->Visible = false;
@@ -1772,10 +1669,9 @@ namespace GSA {
 			// labelDim9
 			// 
 			this->labelDim9->AutoSize = true;
-			this->labelDim9->Location = System::Drawing::Point(419, 376);
-			this->labelDim9->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDim9->Location = System::Drawing::Point(628, 578);
 			this->labelDim9->Name = L"labelDim9";
-			this->labelDim9->Size = System::Drawing::Size(13, 13);
+			this->labelDim9->Size = System::Drawing::Size(18, 20);
 			this->labelDim9->TabIndex = 123;
 			this->labelDim9->Text = L"9";
 			this->labelDim9->Visible = false;
@@ -1783,10 +1679,9 @@ namespace GSA {
 			// labelDim8
 			// 
 			this->labelDim8->AutoSize = true;
-			this->labelDim8->Location = System::Drawing::Point(419, 339);
-			this->labelDim8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelDim8->Location = System::Drawing::Point(628, 522);
 			this->labelDim8->Name = L"labelDim8";
-			this->labelDim8->Size = System::Drawing::Size(13, 13);
+			this->labelDim8->Size = System::Drawing::Size(18, 20);
 			this->labelDim8->TabIndex = 124;
 			this->labelDim8->Text = L"8";
 			this->labelDim8->Visible = false;
@@ -1794,20 +1689,18 @@ namespace GSA {
 			// pictureBox1
 			// 
 			this->pictureBox1->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->pictureBox1->Location = System::Drawing::Point(5, 46);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2);
+			this->pictureBox1->Location = System::Drawing::Point(8, 71);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(400, 390);
+			this->pictureBox1->Size = System::Drawing::Size(600, 600);
 			this->pictureBox1->TabIndex = 125;
 			this->pictureBox1->TabStop = false;
 			// 
 			// buttonStart
 			// 
 			this->buttonStart->Enabled = false;
-			this->buttonStart->Location = System::Drawing::Point(63, 21);
-			this->buttonStart->Margin = System::Windows::Forms::Padding(2);
+			this->buttonStart->Location = System::Drawing::Point(94, 32);
 			this->buttonStart->Name = L"buttonStart";
-			this->buttonStart->Size = System::Drawing::Size(37, 21);
+			this->buttonStart->Size = System::Drawing::Size(56, 32);
 			this->buttonStart->TabIndex = 126;
 			this->buttonStart->Text = L"start";
 			this->buttonStart->UseVisualStyleBackColor = true;
@@ -1816,10 +1709,9 @@ namespace GSA {
 			// buttonStep
 			// 
 			this->buttonStep->Enabled = false;
-			this->buttonStep->Location = System::Drawing::Point(104, 21);
-			this->buttonStep->Margin = System::Windows::Forms::Padding(2);
+			this->buttonStep->Location = System::Drawing::Point(156, 32);
 			this->buttonStep->Name = L"buttonStep";
-			this->buttonStep->Size = System::Drawing::Size(37, 21);
+			this->buttonStep->Size = System::Drawing::Size(56, 32);
 			this->buttonStep->TabIndex = 127;
 			this->buttonStep->Text = L"step";
 			this->buttonStep->UseVisualStyleBackColor = true;
@@ -1828,10 +1720,9 @@ namespace GSA {
 			// buttonStop
 			// 
 			this->buttonStop->Enabled = false;
-			this->buttonStop->Location = System::Drawing::Point(143, 21);
-			this->buttonStop->Margin = System::Windows::Forms::Padding(2);
+			this->buttonStop->Location = System::Drawing::Point(214, 32);
 			this->buttonStop->Name = L"buttonStop";
-			this->buttonStop->Size = System::Drawing::Size(37, 21);
+			this->buttonStop->Size = System::Drawing::Size(56, 32);
 			this->buttonStop->TabIndex = 128;
 			this->buttonStop->Text = L"stop";
 			this->buttonStop->UseVisualStyleBackColor = true;
@@ -1839,10 +1730,9 @@ namespace GSA {
 			// 
 			// buttonApply
 			// 
-			this->buttonApply->Location = System::Drawing::Point(8, 21);
-			this->buttonApply->Margin = System::Windows::Forms::Padding(2);
+			this->buttonApply->Location = System::Drawing::Point(12, 32);
 			this->buttonApply->Name = L"buttonApply";
-			this->buttonApply->Size = System::Drawing::Size(51, 21);
+			this->buttonApply->Size = System::Drawing::Size(76, 32);
 			this->buttonApply->TabIndex = 129;
 			this->buttonApply->Text = L"apply";
 			this->buttonApply->UseVisualStyleBackColor = true;
@@ -1852,9 +1742,10 @@ namespace GSA {
 			// 
 			this->checkBoxDim1->AutoSize = true;
 			this->checkBoxDim1->Enabled = false;
-			this->checkBoxDim1->Location = System::Drawing::Point(433, 78);
+			this->checkBoxDim1->Location = System::Drawing::Point(650, 120);
+			this->checkBoxDim1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkBoxDim1->Name = L"checkBoxDim1";
-			this->checkBoxDim1->Size = System::Drawing::Size(15, 14);
+			this->checkBoxDim1->Size = System::Drawing::Size(22, 21);
 			this->checkBoxDim1->TabIndex = 130;
 			this->checkBoxDim1->UseVisualStyleBackColor = true;
 			this->checkBoxDim1->Visible = false;
@@ -1864,9 +1755,10 @@ namespace GSA {
 			// 
 			this->checkBoxDim2->AutoSize = true;
 			this->checkBoxDim2->Enabled = false;
-			this->checkBoxDim2->Location = System::Drawing::Point(433, 117);
+			this->checkBoxDim2->Location = System::Drawing::Point(650, 180);
+			this->checkBoxDim2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkBoxDim2->Name = L"checkBoxDim2";
-			this->checkBoxDim2->Size = System::Drawing::Size(15, 14);
+			this->checkBoxDim2->Size = System::Drawing::Size(22, 21);
 			this->checkBoxDim2->TabIndex = 131;
 			this->checkBoxDim2->UseVisualStyleBackColor = true;
 			this->checkBoxDim2->Visible = false;
@@ -1876,9 +1768,10 @@ namespace GSA {
 			// 
 			this->checkBoxDim3->AutoSize = true;
 			this->checkBoxDim3->Enabled = false;
-			this->checkBoxDim3->Location = System::Drawing::Point(433, 153);
+			this->checkBoxDim3->Location = System::Drawing::Point(650, 235);
+			this->checkBoxDim3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkBoxDim3->Name = L"checkBoxDim3";
-			this->checkBoxDim3->Size = System::Drawing::Size(15, 14);
+			this->checkBoxDim3->Size = System::Drawing::Size(22, 21);
 			this->checkBoxDim3->TabIndex = 132;
 			this->checkBoxDim3->UseVisualStyleBackColor = true;
 			this->checkBoxDim3->Visible = false;
@@ -1888,9 +1781,10 @@ namespace GSA {
 			// 
 			this->checkBoxDim4->AutoSize = true;
 			this->checkBoxDim4->Enabled = false;
-			this->checkBoxDim4->Location = System::Drawing::Point(433, 190);
+			this->checkBoxDim4->Location = System::Drawing::Point(650, 292);
+			this->checkBoxDim4->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkBoxDim4->Name = L"checkBoxDim4";
-			this->checkBoxDim4->Size = System::Drawing::Size(15, 14);
+			this->checkBoxDim4->Size = System::Drawing::Size(22, 21);
 			this->checkBoxDim4->TabIndex = 133;
 			this->checkBoxDim4->UseVisualStyleBackColor = true;
 			this->checkBoxDim4->Visible = false;
@@ -1900,9 +1794,10 @@ namespace GSA {
 			// 
 			this->checkBoxDim5->AutoSize = true;
 			this->checkBoxDim5->Enabled = false;
-			this->checkBoxDim5->Location = System::Drawing::Point(433, 227);
+			this->checkBoxDim5->Location = System::Drawing::Point(650, 349);
+			this->checkBoxDim5->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkBoxDim5->Name = L"checkBoxDim5";
-			this->checkBoxDim5->Size = System::Drawing::Size(15, 14);
+			this->checkBoxDim5->Size = System::Drawing::Size(22, 21);
 			this->checkBoxDim5->TabIndex = 134;
 			this->checkBoxDim5->UseVisualStyleBackColor = true;
 			this->checkBoxDim5->Visible = false;
@@ -1912,9 +1807,10 @@ namespace GSA {
 			// 
 			this->checkBoxDim6->AutoSize = true;
 			this->checkBoxDim6->Enabled = false;
-			this->checkBoxDim6->Location = System::Drawing::Point(433, 264);
+			this->checkBoxDim6->Location = System::Drawing::Point(650, 406);
+			this->checkBoxDim6->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkBoxDim6->Name = L"checkBoxDim6";
-			this->checkBoxDim6->Size = System::Drawing::Size(15, 14);
+			this->checkBoxDim6->Size = System::Drawing::Size(22, 21);
 			this->checkBoxDim6->TabIndex = 135;
 			this->checkBoxDim6->UseVisualStyleBackColor = true;
 			this->checkBoxDim6->Visible = false;
@@ -1924,9 +1820,10 @@ namespace GSA {
 			// 
 			this->checkBoxDim7->AutoSize = true;
 			this->checkBoxDim7->Enabled = false;
-			this->checkBoxDim7->Location = System::Drawing::Point(433, 303);
+			this->checkBoxDim7->Location = System::Drawing::Point(650, 466);
+			this->checkBoxDim7->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkBoxDim7->Name = L"checkBoxDim7";
-			this->checkBoxDim7->Size = System::Drawing::Size(15, 14);
+			this->checkBoxDim7->Size = System::Drawing::Size(22, 21);
 			this->checkBoxDim7->TabIndex = 136;
 			this->checkBoxDim7->UseVisualStyleBackColor = true;
 			this->checkBoxDim7->Visible = false;
@@ -1936,9 +1833,10 @@ namespace GSA {
 			// 
 			this->checkBoxDim8->AutoSize = true;
 			this->checkBoxDim8->Enabled = false;
-			this->checkBoxDim8->Location = System::Drawing::Point(433, 339);
+			this->checkBoxDim8->Location = System::Drawing::Point(650, 522);
+			this->checkBoxDim8->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkBoxDim8->Name = L"checkBoxDim8";
-			this->checkBoxDim8->Size = System::Drawing::Size(15, 14);
+			this->checkBoxDim8->Size = System::Drawing::Size(22, 21);
 			this->checkBoxDim8->TabIndex = 137;
 			this->checkBoxDim8->UseVisualStyleBackColor = true;
 			this->checkBoxDim8->Visible = false;
@@ -1948,9 +1846,10 @@ namespace GSA {
 			// 
 			this->checkBoxDim9->AutoSize = true;
 			this->checkBoxDim9->Enabled = false;
-			this->checkBoxDim9->Location = System::Drawing::Point(433, 376);
+			this->checkBoxDim9->Location = System::Drawing::Point(650, 578);
+			this->checkBoxDim9->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkBoxDim9->Name = L"checkBoxDim9";
-			this->checkBoxDim9->Size = System::Drawing::Size(15, 14);
+			this->checkBoxDim9->Size = System::Drawing::Size(22, 21);
 			this->checkBoxDim9->TabIndex = 138;
 			this->checkBoxDim9->UseVisualStyleBackColor = true;
 			this->checkBoxDim9->Visible = false;
@@ -1960,9 +1859,10 @@ namespace GSA {
 			// 
 			this->checkBoxDim10->AutoSize = true;
 			this->checkBoxDim10->Enabled = false;
-			this->checkBoxDim10->Location = System::Drawing::Point(433, 412);
+			this->checkBoxDim10->Location = System::Drawing::Point(650, 634);
+			this->checkBoxDim10->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->checkBoxDim10->Name = L"checkBoxDim10";
-			this->checkBoxDim10->Size = System::Drawing::Size(15, 14);
+			this->checkBoxDim10->Size = System::Drawing::Size(22, 21);
 			this->checkBoxDim10->TabIndex = 139;
 			this->checkBoxDim10->UseVisualStyleBackColor = true;
 			this->checkBoxDim10->Visible = false;
@@ -1970,27 +1870,26 @@ namespace GSA {
 			// 
 			// chart
 			// 
-			chartArea1->Name = L"ChartArea1";
-			this->chart->ChartAreas->Add(chartArea1);
-			this->chart->Location = System::Drawing::Point(-1, 46);
-			this->chart->Margin = System::Windows::Forms::Padding(2);
+			chartArea9->Name = L"ChartArea1";
+			this->chart->ChartAreas->Add(chartArea9);
+			this->chart->Location = System::Drawing::Point(-2, 71);
 			this->chart->Name = L"chart";
-			series1->ChartArea = L"ChartArea1";
-			series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Point;
-			series1->Name = L"Series1";
-			dataPoint1->IsValueShownAsLabel = false;
-			dataPoint1->Label = L"a1";
-			series1->Points->Add(dataPoint1);
-			this->chart->Series->Add(series1);
-			this->chart->Size = System::Drawing::Size(406, 387);
+			series9->ChartArea = L"ChartArea1";
+			series9->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Point;
+			series9->Name = L"Series1";
+			dataPoint9->IsValueShownAsLabel = false;
+			dataPoint9->Label = L"a1";
+			series9->Points->Add(dataPoint9);
+			this->chart->Series->Add(series9);
+			this->chart->Size = System::Drawing::Size(609, 600);
 			this->chart->TabIndex = 140;
 			this->chart->Text = L"chart1";
 			// 
 			// MainForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(841, 441);
+			this->ClientSize = System::Drawing::Size(1262, 678);
 			this->Controls->Add(this->chart);
 			this->Controls->Add(this->checkBoxDim10);
 			this->Controls->Add(this->checkBoxDim9);
@@ -2131,7 +2030,8 @@ namespace GSA {
 			this->Controls->Add(this->labelFunction);
 			this->Controls->Add(this->comboExtremum);
 			this->Controls->Add(this->comboFunctions);
-			this->MinimumSize = System::Drawing::Size(855, 474);
+			this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->MinimumSize = System::Drawing::Size(1272, 699);
 			this->Name = L"MainForm";
 			this->Text = L"GSA Simulation";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->EndInit();
@@ -2634,20 +2534,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermin = Convert::ToInt32(textBox1Min->Text);
+			numbermin = Convert::ToDouble(textBox1Min->Text);
 			if (!max1Set) {
 				min1Set = true;
 				trackBar1->Enabled = false;
+				textBox1Chosen->ReadOnly = true;
 				checkBoxDim1->Enabled = false;
 				check1Enabled = false;
 				return;
 			}
 			else {
-				numbermax = Convert::ToInt32(textBox1Max->Text);
+				numbermax = Convert::ToDouble(textBox1Max->Text);
 				min1Set = (numbermin < numbermax);
 				trackBar1->Minimum = numbermin;
 				trackBar1->Maximum = numbermax;
 				trackBar1->Enabled = min1Set;
+				textBox1Chosen->Text = trackBar1->Value.ToString();
+				textBox1Chosen->ReadOnly = !min1Set;
 				checkBoxDim1->Enabled = number_checked < 2 && min1Set;
 				check1Enabled = min1Set;
 			}
@@ -2656,6 +2559,7 @@ namespace GSA {
 		{
 			min1Set = false;
 			trackBar1->Enabled = false;
+			textBox1Chosen->ReadOnly = true;
 			checkBoxDim1->Enabled = false;
 			check1Enabled = false;
 		}
@@ -2667,20 +2571,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermax = Convert::ToInt32(textBox1Max->Text);
+			numbermax = Convert::ToDouble(textBox1Max->Text);
 			if (!min1Set) {
 				max1Set = true;
 				trackBar1->Enabled = false;
+				textBox1Chosen->ReadOnly = true;
 				checkBoxDim1->Enabled = false;
 				check1Enabled = false;
 				return;
 			}
 			else {
-				numbermin = Convert::ToInt32(textBox1Min->Text);
+				numbermin = Convert::ToDouble(textBox1Min->Text);
 				max1Set = (numbermin < numbermax);
 				trackBar1->Minimum = numbermin;
 				trackBar1->Maximum = numbermax;
 				trackBar1->Enabled = max1Set;
+				textBox1Chosen->ReadOnly = !max1Set;
+				textBox1Chosen->Text = trackBar1->Value.ToString();
 				checkBoxDim1->Enabled = number_checked < 2 && max1Set;
 				check1Enabled = max1Set;
 			}
@@ -2689,6 +2596,7 @@ namespace GSA {
 		{
 			max1Set = false;
 			trackBar1->Enabled = false;
+			textBox1Chosen->ReadOnly = true;
 			checkBoxDim1->Enabled = false;
 			check1Enabled = false;
 		}
@@ -2700,20 +2608,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermin = Convert::ToInt32(textBox2Min->Text);
+			numbermin = Convert::ToDouble(textBox2Min->Text);
 			if (!max2Set) {
 				min2Set = true;
 				trackBar2->Enabled = false;
+				textBox2Chosen->ReadOnly = true;
 				checkBoxDim2->Enabled = false;
 				check2Enabled = false;
 				return;
 			}
 			else {
-				numbermax = Convert::ToInt32(textBox2Max->Text);
+				numbermax = Convert::ToDouble(textBox2Max->Text);
 				min2Set = (numbermin < numbermax);
 				trackBar2->Minimum = numbermin;
 				trackBar2->Maximum = numbermax;
 				trackBar2->Enabled = min2Set;
+				textBox2Chosen->ReadOnly = !min2Set;
+				textBox2Chosen->Text = trackBar2->Value.ToString();
 				checkBoxDim2->Enabled = number_checked < 2 && min2Set;
 				check2Enabled = min2Set;
 			}
@@ -2723,6 +2634,7 @@ namespace GSA {
 			min2Set = false;
 			trackBar2->Enabled = false;
 			checkBoxDim2->Enabled = false;
+			textBox2Chosen->ReadOnly = true;
 			check2Enabled = false;
 		}
 	}
@@ -2733,20 +2645,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermax = Convert::ToInt32(textBox2Max->Text);
+			numbermax = Convert::ToDouble(textBox2Max->Text);
 			if (!min2Set) {
 				max2Set = true;
 				trackBar2->Enabled = false;
+				textBox2Chosen->ReadOnly = true;
 				checkBoxDim2->Enabled = false;
 				check2Enabled = false;
 				return;
 			}
 			else {
-				numbermin = Convert::ToInt32(textBox2Min->Text);
+				numbermin = Convert::ToDouble(textBox2Min->Text);
 				max2Set = (numbermin < numbermax);
 				trackBar2->Minimum = numbermin;
 				trackBar2->Maximum = numbermax;
 				trackBar2->Enabled = max2Set;
+				textBox2Chosen->ReadOnly = !max2Set;
+				textBox2Chosen->Text = trackBar2->Value.ToString();
 				checkBoxDim2->Enabled = number_checked < 2 && max2Set;
 				check2Enabled = max2Set;
 			}
@@ -2755,6 +2670,7 @@ namespace GSA {
 		{
 			max2Set = false;
 			trackBar2->Enabled = false;
+			textBox2Chosen->ReadOnly = true;
 			checkBoxDim2->Enabled = false;
 			check2Enabled = false;
 		}
@@ -2766,20 +2682,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermin = Convert::ToInt32(textBox3Min->Text);
+			numbermin = Convert::ToDouble(textBox3Min->Text);
 			if (!max3Set) {
 				min3Set = true;
 				trackBar3->Enabled = false;
+				textBox3Chosen->ReadOnly = true;
 				checkBoxDim3->Enabled = false;
 				check3Enabled = false;
 				return;
 			}
 			else {
-				numbermax = Convert::ToInt32(textBox3Max->Text);
+				numbermax = Convert::ToDouble(textBox3Max->Text);
 				min3Set = (numbermin < numbermax);
 				trackBar3->Minimum = numbermin;
 				trackBar3->Maximum = numbermax;
 				trackBar3->Enabled = min3Set;
+				textBox3Chosen->ReadOnly = !min3Set;
+				textBox3Chosen->Text = trackBar3->Value.ToString();
 				checkBoxDim3->Enabled = number_checked < 2 && min3Set;
 				check3Enabled = min3Set;
 			}
@@ -2788,6 +2707,7 @@ namespace GSA {
 		{
 			min3Set = false;
 			trackBar3->Enabled = false;
+			textBox3Chosen->ReadOnly = true;
 			checkBoxDim3->Enabled = false;
 			check3Enabled = false;
 		}
@@ -2799,20 +2719,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermax = Convert::ToInt32(textBox3Max->Text);
+			numbermax = Convert::ToDouble(textBox3Max->Text);
 			if (!min3Set) {
 				max3Set = true;
 				trackBar3->Enabled = false;
+				textBox3Chosen->ReadOnly = true;
 				checkBoxDim3->Enabled = false;
 				check3Enabled = false;
 				return;
 			}
 			else {
-				numbermin = Convert::ToInt32(textBox3Min->Text);
+				numbermin = Convert::ToDouble(textBox3Min->Text);
 				max3Set = (numbermin < numbermax);
 				trackBar3->Minimum = numbermin;
 				trackBar3->Maximum = numbermax;
 				trackBar3->Enabled = max3Set;
+				textBox3Chosen->ReadOnly = !max3Set;
+				textBox3Chosen->Text = trackBar3->Value.ToString();
 				checkBoxDim3->Enabled = number_checked < 2 && max3Set;
 				check3Enabled = max3Set;
 			}
@@ -2821,6 +2744,7 @@ namespace GSA {
 		{
 			max3Set = false;
 			trackBar3->Enabled = false;
+			textBox3Chosen->ReadOnly = true;
 			checkBoxDim3->Enabled = false;
 			check3Enabled = false;
 		}
@@ -2832,20 +2756,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermin = Convert::ToInt32(textBox4Min->Text);
+			numbermin = Convert::ToDouble(textBox4Min->Text);
 			if (!max4Set) {
 				min4Set = true;
 				trackBar4->Enabled = false;
+				textBox4Chosen->ReadOnly = true;
 				checkBoxDim4->Enabled = false;
 				check4Enabled = false;
 				return;
 			}
 			else {
-				numbermax = Convert::ToInt32(textBox4Max->Text);
+				numbermax = Convert::ToDouble(textBox4Max->Text);
 				min4Set = (numbermin < numbermax);
 				trackBar4->Minimum = numbermin;
 				trackBar4->Maximum = numbermax;
 				trackBar4->Enabled = min4Set;
+				textBox4Chosen->ReadOnly = !min4Set;
+				textBox4Chosen->Text = trackBar4->Value.ToString();
 				checkBoxDim4->Enabled = number_checked < 2 && min4Set;
 				check4Enabled = min4Set;
 			}
@@ -2854,6 +2781,7 @@ namespace GSA {
 		{
 			min4Set = false;
 			trackBar4->Enabled = false;
+			textBox4Chosen->ReadOnly = true;
 			checkBoxDim4->Enabled = false;
 			check4Enabled = false;
 		}
@@ -2865,20 +2793,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermax = Convert::ToInt32(textBox4Max->Text);
+			numbermax = Convert::ToDouble(textBox4Max->Text);
 			if (!min4Set) {
 				max4Set = true;
 				trackBar4->Enabled = false;
+				textBox4Chosen->ReadOnly = true;
 				checkBoxDim4->Enabled = false;
 				check4Enabled = false;
 				return;
 			}
 			else {
-				numbermin = Convert::ToInt32(textBox4Min->Text);
+				numbermin = Convert::ToDouble(textBox4Min->Text);
 				max4Set = (numbermin < numbermax);
 				trackBar4->Minimum = numbermin;
 				trackBar4->Maximum = numbermax;
 				trackBar4->Enabled = max4Set;
+				textBox4Chosen->ReadOnly = !min4Set;
+				textBox4Chosen->Text = trackBar4->Value.ToString();
 				checkBoxDim4->Enabled = number_checked < 2 && max4Set;
 				check4Enabled = max4Set;
 			}
@@ -2887,6 +2818,7 @@ namespace GSA {
 		{
 			max4Set = false;
 			trackBar4->Enabled = false;
+			textBox4Chosen->ReadOnly = true;
 			checkBoxDim4->Enabled = false;
 			check4Enabled = false;
 		}
@@ -2898,20 +2830,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermin = Convert::ToInt32(textBox5Min->Text);
+			numbermin = Convert::ToDouble(textBox5Min->Text);
 			if (!max5Set) {
 				min5Set = true;
 				trackBar5->Enabled = false;
+				textBox5Chosen->ReadOnly = true;
 				checkBoxDim5->Enabled = false;
 				check5Enabled = false;
 				return;
 			}
 			else {
-				numbermax = Convert::ToInt32(textBox5Max->Text);
+				numbermax = Convert::ToDouble(textBox5Max->Text);
 				min5Set = (numbermin < numbermax);
 				trackBar5->Minimum = numbermin;
 				trackBar5->Maximum = numbermax;
 				trackBar5->Enabled = min5Set;
+				textBox5Chosen->ReadOnly = !min5Set;
+				textBox5Chosen->Text = trackBar5->Value.ToString();
 				checkBoxDim5->Enabled = number_checked < 2 && min5Set;
 				check5Enabled = min5Set;
 			}
@@ -2920,6 +2855,7 @@ namespace GSA {
 		{
 			min5Set = false;
 			trackBar5->Enabled = false;
+			textBox5Chosen->ReadOnly = true;
 			checkBoxDim5->Enabled = false;
 			check5Enabled = false;
 		}
@@ -2931,28 +2867,32 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermax = Convert::ToInt32(textBox5Max->Text);
+			numbermax = Convert::ToDouble(textBox5Max->Text);
 			if (!min5Set) {
 				max5Set = true;
 				trackBar5->Enabled = false;
+				textBox5Chosen->ReadOnly = true;
 				checkBoxDim5->Enabled = false;
 				check5Enabled = false;
 				return;
 			}
 			else {
-				numbermin = Convert::ToInt32(textBox5Min->Text);
+				numbermin = Convert::ToDouble(textBox5Min->Text);
 				max5Set = (numbermin < numbermax);
 				trackBar5->Minimum = numbermin;
 				trackBar5->Maximum = numbermax;
 				trackBar5->Enabled = max5Set;
+				textBox5Chosen->ReadOnly = !max5Set;
+				textBox5Chosen->Text = trackBar5->Value.ToString();
 				checkBoxDim5->Enabled = number_checked < 2 && max5Set;
-				check1Enabled = max5Set;
+				check5Enabled = max5Set;
 			}
 		}
 		catch (Exception^ e)
 		{
 			max5Set = false;
 			trackBar5->Enabled = false;
+			textBox5Chosen->ReadOnly = true;
 			checkBoxDim5->Enabled = false;
 			check5Enabled = false;
 		}
@@ -2964,20 +2904,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermin = Convert::ToInt32(textBox6Min->Text);
+			numbermin = Convert::ToDouble(textBox6Min->Text);
 			if (!max6Set) {
 				min6Set = true;
 				trackBar6->Enabled = false;
+				textBox6Chosen->ReadOnly = true;
 				checkBoxDim6->Enabled = false;
 				check6Enabled = false;
 				return;
 			}
 			else {
-				numbermax = Convert::ToInt32(textBox6Max->Text);
+				numbermax = Convert::ToDouble(textBox6Max->Text);
 				min6Set = (numbermin < numbermax);
 				trackBar6->Minimum = numbermin;
 				trackBar6->Maximum = numbermax;
 				trackBar6->Enabled = min6Set;
+				textBox6Chosen->ReadOnly = !min6Set;
+				textBox6Chosen->Text = trackBar6->Value.ToString();
 				checkBoxDim6->Enabled = number_checked < 2 && min6Set;
 				check6Enabled = min6Set;
 			}
@@ -2986,6 +2929,7 @@ namespace GSA {
 		{
 			min6Set = false;
 			trackBar6->Enabled = false;
+			textBox6Chosen->ReadOnly = true;
 			checkBoxDim6->Enabled = false;
 			check6Enabled = false;
 		}
@@ -2997,20 +2941,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermax = Convert::ToInt32(textBox6Max->Text);
+			numbermax = Convert::ToDouble(textBox6Max->Text);
 			if (!min6Set) {
 				max6Set = true;
 				trackBar6->Enabled = false;
+				textBox6Chosen->ReadOnly = true;
 				checkBoxDim6->Enabled = false;
 				check6Enabled = false;
 				return;
 			}
 			else {
-				numbermin = Convert::ToInt32(textBox6Min->Text);
+				numbermin = Convert::ToDouble(textBox6Min->Text);
 				max6Set = (numbermin < numbermax);
 				trackBar6->Minimum = numbermin;
 				trackBar6->Maximum = numbermax;
 				trackBar6->Enabled = max6Set;
+				textBox6Chosen->ReadOnly = !max6Set;
+				textBox6Chosen->Text = trackBar6->Value.ToString();
 				checkBoxDim6->Enabled = number_checked < 2 && max6Set;
 				check6Enabled = max6Set;
 			}
@@ -3019,6 +2966,7 @@ namespace GSA {
 		{
 			max6Set = false;
 			trackBar6->Enabled = false;
+			textBox6Chosen->ReadOnly = true;
 			checkBoxDim6->Enabled = false;
 			check6Enabled = false;
 		}
@@ -3030,20 +2978,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermin = Convert::ToInt32(textBox7Min->Text);
+			numbermin = Convert::ToDouble(textBox7Min->Text);
 			if (!max7Set) {
 				min7Set = true;
 				trackBar7->Enabled = false;
+				textBox7Chosen->ReadOnly = true;
 				checkBoxDim7->Enabled = false;
 				check7Enabled = false;
 				return;
 			}
 			else {
-				numbermax = Convert::ToInt32(textBox7Max->Text);
+				numbermax = Convert::ToDouble(textBox7Max->Text);
 				min7Set = (numbermin < numbermax);
 				trackBar7->Minimum = numbermin;
 				trackBar7->Maximum = numbermax;
 				trackBar7->Enabled = min7Set;
+				textBox7Chosen->ReadOnly = !min7Set;
+				textBox7Chosen->Text = trackBar7->Value.ToString();
 				checkBoxDim7->Enabled = number_checked < 2 && min7Set;
 				check7Enabled = min7Set;
 			}
@@ -3052,6 +3003,7 @@ namespace GSA {
 		{
 			min7Set = false;
 			trackBar7->Enabled = false;
+			textBox7Chosen->ReadOnly = true;
 			checkBoxDim7->Enabled = false;
 			check7Enabled = false;
 		}
@@ -3063,20 +3015,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermax = Convert::ToInt32(textBox7Max->Text);
+			numbermax = Convert::ToDouble(textBox7Max->Text);
 			if (!min7Set) {
 				max7Set = true;
 				trackBar7->Enabled = false;
+				textBox7Chosen->ReadOnly = true;
 				checkBoxDim7->Enabled = false;
 				check7Enabled = false;
 				return;
 			}
 			else {
-				numbermin = Convert::ToInt32(textBox7Min->Text);
+				numbermin = Convert::ToDouble(textBox7Min->Text);
 				max7Set = (numbermin < numbermax);
 				trackBar7->Minimum = numbermin;
 				trackBar7->Maximum = numbermax;
 				trackBar7->Enabled = max7Set;
+				textBox7Chosen->ReadOnly = !max7Set;
+				textBox7Chosen->Text = trackBar7->Value.ToString();
 				checkBoxDim7->Enabled = number_checked < 2 && max7Set;
 				check7Enabled = max7Set;
 			}
@@ -3085,6 +3040,7 @@ namespace GSA {
 		{
 			max7Set = false;
 			trackBar7->Enabled = false;
+			textBox7Chosen->ReadOnly = true;
 			checkBoxDim7->Enabled = false;
 			check7Enabled = false;
 		}
@@ -3096,20 +3052,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermin = Convert::ToInt32(textBox8Min->Text);
+			numbermin = Convert::ToDouble(textBox8Min->Text);
 			if (!max8Set) {
 				min8Set = true;
 				trackBar8->Enabled = false;
+				textBox8Chosen->ReadOnly = true;
 				checkBoxDim8->Enabled = false;
 				check8Enabled = false;
 				return;
 			}
 			else {
-				numbermax = Convert::ToInt32(textBox8Max->Text);
+				numbermax = Convert::ToDouble(textBox8Max->Text);
 				min8Set = (numbermin < numbermax);
 				trackBar8->Minimum = numbermin;
 				trackBar8->Maximum = numbermax;
 				trackBar8->Enabled = min8Set;
+				textBox8Chosen->ReadOnly = !min8Set;
+				textBox8Chosen->Text = trackBar8->Value.ToString();
 				checkBoxDim8->Enabled = number_checked < 2 && min8Set;
 				check8Enabled = min8Set;
 			}
@@ -3118,6 +3077,7 @@ namespace GSA {
 		{
 			min8Set = false;
 			trackBar8->Enabled = false;
+			textBox8Chosen->ReadOnly = true;
 			checkBoxDim8->Enabled = false;
 			check8Enabled = false;
 		}
@@ -3129,20 +3089,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermax = Convert::ToInt32(textBox8Max->Text);
+			numbermax = Convert::ToDouble(textBox8Max->Text);
 			if (!min8Set) {
 				max8Set = true;
 				trackBar8->Enabled = false;
+				textBox8Chosen->ReadOnly = true;
 				checkBoxDim8->Enabled = false;
 				check8Enabled = false;
 				return;
 			}
 			else {
-				numbermin = Convert::ToInt32(textBox8Min->Text);
+				numbermin = Convert::ToDouble(textBox8Min->Text);
 				max8Set = (numbermin < numbermax);
 				trackBar8->Minimum = numbermin;
 				trackBar8->Maximum = numbermax;
 				trackBar8->Enabled = max8Set;
+				textBox8Chosen->ReadOnly = !max8Set;
+				textBox8Chosen->Text = trackBar8->Value.ToString();
 				checkBoxDim8->Enabled = number_checked < 2 && max8Set;
 				check8Enabled = max8Set;
 			}
@@ -3151,6 +3114,7 @@ namespace GSA {
 		{
 			max8Set = false;
 			trackBar8->Enabled = false;
+			textBox8Chosen->ReadOnly = true;
 			checkBoxDim8->Enabled = false;
 			check8Enabled = false;
 		}
@@ -3162,20 +3126,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermin = Convert::ToInt32(textBox9Min->Text);
+			numbermin = Convert::ToDouble(textBox9Min->Text);
 			if (!max9Set) {
 				min9Set = true;
 				trackBar9->Enabled = false;
+				textBox9Chosen->ReadOnly = true;
 				checkBoxDim9->Enabled = false;
 				check9Enabled = false;
 				return;
 			}
 			else {
-				numbermax = Convert::ToInt32(textBox9Max->Text);
+				numbermax = Convert::ToDouble(textBox9Max->Text);
 				min9Set = (numbermin < numbermax);
 				trackBar9->Minimum = numbermin;
 				trackBar9->Maximum = numbermax;
 				trackBar9->Enabled = min9Set;
+				textBox9Chosen->ReadOnly = !min9Set;
+				textBox9Chosen->Text = trackBar9->Value.ToString();
 				checkBoxDim9->Enabled = number_checked < 2 && min9Set;
 				check9Enabled = min9Set;
 			}
@@ -3184,6 +3151,7 @@ namespace GSA {
 		{
 			min9Set = false;
 			trackBar9->Enabled = false;
+			textBox9Chosen->ReadOnly = true;
 			checkBoxDim9->Enabled = false;
 			check9Enabled = false;
 		}
@@ -3195,20 +3163,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermax = Convert::ToInt32(textBox9Max->Text);
+			numbermax = Convert::ToDouble(textBox9Max->Text);
 			if (!min9Set) {
 				max9Set = true;
 				trackBar9->Enabled = false;
+				textBox9Chosen->ReadOnly = true;
 				checkBoxDim9->Enabled = false;
 				check9Enabled = false;
 				return;
 			}
 			else {
-				numbermin = Convert::ToInt32(textBox9Min->Text);
+				numbermin = Convert::ToDouble(textBox9Min->Text);
 				max9Set = (numbermin < numbermax);
 				trackBar9->Minimum = numbermin;
 				trackBar9->Maximum = numbermax;
 				trackBar9->Enabled = max9Set;
+				textBox9Chosen->ReadOnly = !max9Set;
+				textBox9Chosen->Text = trackBar9->Value.ToString();
 				checkBoxDim9->Enabled = number_checked < 2 && max9Set;
 				check9Enabled = max9Set;
 			}
@@ -3217,6 +3188,7 @@ namespace GSA {
 		{
 			max9Set = false;
 			trackBar9->Enabled = false;
+			textBox9Chosen->ReadOnly = true;
 			checkBoxDim9->Enabled = false;
 			check9Enabled = false;
 		}
@@ -3228,20 +3200,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermin = Convert::ToInt32(textBox10Min->Text);
+			numbermin = Convert::ToDouble(textBox10Min->Text);
 			if (!max10Set) {
 				min10Set = true;
 				trackBar10->Enabled = false;
+				textBox10Chosen->ReadOnly = true;
 				checkBoxDim10->Enabled = false;
 				check10Enabled = false;
 				return;
 			}
 			else {
-				numbermax = Convert::ToInt32(textBox10Max->Text);
+				numbermax = Convert::ToDouble(textBox10Max->Text);
 				min10Set = (numbermin < numbermax);
 				trackBar10->Minimum = numbermin;
 				trackBar10->Maximum = numbermax;
 				trackBar10->Enabled = min10Set;
+				textBox10Chosen->ReadOnly = !min10Set;
+				textBox10Chosen->Text = trackBar10->Value.ToString();
 				checkBoxDim10->Enabled = number_checked < 2 && min10Set;
 				check10Enabled = min10Set;
 			}
@@ -3250,6 +3225,7 @@ namespace GSA {
 		{
 			min10Set = false;
 			trackBar10->Enabled = false;
+			textBox10Chosen->ReadOnly = true;
 			checkBoxDim10->Enabled = false;
 			check10Enabled = false;
 		}
@@ -3261,20 +3237,23 @@ namespace GSA {
 			int numbermin;
 			int numbermax;
 
-			numbermax = Convert::ToInt32(textBox10Max->Text);
+			numbermax = Convert::ToDouble(textBox10Max->Text);
 			if (!min10Set) {
 				max10Set = true;
 				trackBar10->Enabled = false;
+				textBox10Chosen->ReadOnly = true;
 				checkBoxDim10->Enabled = false;
 				check10Enabled = false;
 				return;
 			}
 			else {
-				numbermin = Convert::ToInt32(textBox10Min->Text);
+				numbermin = Convert::ToDouble(textBox10Min->Text);
 				max10Set = (numbermin < numbermax);
 				trackBar10->Minimum = numbermin;
 				trackBar10->Maximum = numbermax;
 				trackBar10->Enabled = max10Set;
+				textBox10Chosen->ReadOnly = !max10Set;
+				textBox10Chosen->Text = trackBar10->Value.ToString();
 				checkBoxDim10->Enabled = number_checked < 2 && max10Set;
 				check10Enabled = max10Set;
 			}
@@ -3283,6 +3262,7 @@ namespace GSA {
 		{
 			max10Set = false;
 			trackBar10->Enabled = false;
+			textBox10Chosen->ReadOnly = true;
 			checkBoxDim10->Enabled = false;
 			check10Enabled = false;
 		}
@@ -3292,29 +3272,348 @@ namespace GSA {
 	private: System::Void comboConversionType_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 		if (this->comboConversionType->SelectedIndex == 0) {/// number_of_iters
 			this->comboConversion->Items->Clear();
-			 this->comboConversion->Items->AddRange(gcnew cli::array< System::Object^  >(100) {
-			  L"1", L"2", L"3", L"4", L"5", L"6", L"7",
-			   L"8", L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24", L"25", L"26",
-			   L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42", L"43", L"44",
-			   L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59", L"60", L"61", L"62",
-			   L"63", L"64", L"65", L"66", L"67", L"68", L"69", L"70", L"71", L"72", L"73", L"74", L"75", L"76", L"77", L"78", L"79", L"80",
-			   L"81", L"82", L"83", L"84", L"85", L"86", L"87", L"88", L"89", L"90", L"91", L"92", L"93", L"94", L"95", L"96", L"97", L"98",
-			   L"99", L"100"
-			 });
-			
+			this->comboConversion->Items->AddRange(gcnew cli::array< System::Object^  >(100) {
+				L"1", L"2", L"3", L"4", L"5", L"6", L"7",
+					L"8", L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24", L"25", L"26",
+					L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42", L"43", L"44",
+					L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59", L"60", L"61", L"62",
+					L"63", L"64", L"65", L"66", L"67", L"68", L"69", L"70", L"71", L"72", L"73", L"74", L"75", L"76", L"77", L"78", L"79", L"80",
+					L"81", L"82", L"83", L"84", L"85", L"86", L"87", L"88", L"89", L"90", L"91", L"92", L"93", L"94", L"95", L"96", L"97", L"98",
+					L"99", L"100"
+			});
+
 			labelConversion->Visible = true;
 			comboConversion->Visible = true;
 			labelConversion->Text = "number of iterations";
 		}
 		else if (this->comboConversionType->SelectedIndex == 1) {
 			this->comboConversion->Items->Clear();
-			  this->comboConversion->Items->AddRange(gcnew cli::array< System::Object^  >(7) {
-			   L"0.00001",  L"0.0001",  L"0.001",    L"0.01", L"0.1", L"1", L"10"
-			  });
+			this->comboConversion->Items->AddRange(gcnew cli::array< System::Object^  >(7) {
+				L"0.00001", L"0.0001", L"0.001", L"0.01", L"0.1", L"1", L"10"
+			});
 			labelConversion->Visible = true;
 			comboConversion->Visible = true;
 			labelConversion->Text = "difference between iterations";
 		}
 	}
+
+	private: System::Void textBox1Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox1Chosen->Text == "")
+		{
+			textBox1Chosen->BackColor = Color::Red;
+			return;
+		}
+		try
+		{
+			int numbermin;
+			int numbermax;
+			int numberchosen;
+
+			numbermax = Convert::ToDouble(textBox1Max->Text);
+			numbermin = Convert::ToDouble(textBox1Min->Text);
+			numberchosen = Convert::ToDouble(textBox1Chosen->Text);
+			if (numbermin <= numberchosen && numberchosen <= numbermax) {
+				textBox1Chosen->BackColor = Color::White;
+				trackBar1->Value = numberchosen;
+				trackBar1->Refresh();
+			}
+			else {
+				textBox1Chosen->BackColor = Color::Red;
+			}
+		}
+		catch (Exception^ e)
+		{
+			textBox1Chosen->BackColor = Color::Red;
+		}
+	}
+	private: System::Void textBox2Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox2Chosen->Text == "")
+		{
+			textBox2Chosen->BackColor = Color::Red;
+			return;
+		}
+		try
+		{
+			int numbermin;
+			int numbermax;
+			int numberchosen;
+
+			numbermax = Convert::ToDouble(textBox2Max->Text);
+			numbermin = Convert::ToDouble(textBox2Min->Text);
+			numberchosen = Convert::ToDouble(textBox2Chosen->Text);
+			if (numbermin <= numberchosen && numberchosen <= numbermax) {
+				textBox2Chosen->BackColor = Color::White;
+				trackBar2->Value = numberchosen;
+				trackBar2->Refresh();
+			}
+			else {
+				textBox2Chosen->BackColor = Color::Red;
+			}
+		}
+		catch (Exception^ e)
+		{
+			textBox2Chosen->BackColor = Color::Red;
+		}
+	}
+private: System::Void textBox3Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (textBox3Chosen->Text == "")
+	{
+		textBox3Chosen->BackColor = Color::Red;
+		return;
+	}
+	try
+	{
+		int numbermin;
+		int numbermax;
+		int numberchosen;
+
+		numbermax = Convert::ToDouble(textBox3Max->Text);
+		numbermin = Convert::ToDouble(textBox3Min->Text);
+		numberchosen = Convert::ToDouble(textBox3Chosen->Text);
+		if (numbermin <= numberchosen && numberchosen <= numbermax) {
+			textBox3Chosen->BackColor = Color::White;
+			trackBar3->Value = numberchosen;
+			trackBar3->Refresh();
+		}
+		else {
+			textBox3Chosen->BackColor = Color::Red;
+		}
+	}
+	catch (Exception^ e)
+	{
+		textBox3Chosen->BackColor = Color::Red;
+	}
+}
+private: System::Void textBox4Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (textBox4Chosen->Text == "")
+	{
+		textBox4Chosen->BackColor = Color::Red;
+		return;
+	}
+	try
+	{
+		int numbermin;
+		int numbermax;
+		int numberchosen;
+
+		numbermax = Convert::ToDouble(textBox4Max->Text);
+		numbermin = Convert::ToDouble(textBox4Min->Text);
+		numberchosen = Convert::ToDouble(textBox4Chosen->Text);
+		if (numbermin <= numberchosen && numberchosen <= numbermax) {
+			textBox4Chosen->BackColor = Color::White;
+			trackBar4->Value = numberchosen;
+			trackBar4->Refresh();
+		}
+		else {
+			textBox4Chosen->BackColor = Color::Red;
+		}
+	}
+	catch (Exception^ e)
+	{
+		textBox4Chosen->BackColor = Color::Red;
+	}
+}
+private: System::Void textBox5Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (textBox5Chosen->Text == "")
+	{
+		textBox5Chosen->BackColor = Color::Red;
+		return;
+	}
+	try
+	{
+		int numbermin;
+		int numbermax;
+		int numberchosen;
+
+		numbermax = Convert::ToDouble(textBox5Max->Text);
+		numbermin = Convert::ToDouble(textBox5Min->Text);
+		numberchosen = Convert::ToDouble(textBox5Chosen->Text);
+		if (numbermin <= numberchosen && numberchosen <= numbermax) {
+			textBox5Chosen->BackColor = Color::White;
+			trackBar5->Value = numberchosen;
+			trackBar5->Refresh();
+		}
+		else {
+			textBox5Chosen->BackColor = Color::Red;
+		}
+	}
+	catch (Exception^ e)
+	{
+		textBox5Chosen->BackColor = Color::Red;
+	}
+}
+private: System::Void textBox6Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (textBox6Chosen->Text == "")
+	{
+		textBox6Chosen->BackColor = Color::Red;
+		return;
+	}
+	try
+	{
+		int numbermin;
+		int numbermax;
+		int numberchosen;
+
+		numbermax = Convert::ToDouble(textBox6Max->Text);
+		numbermin = Convert::ToDouble(textBox6Min->Text);
+		numberchosen = Convert::ToDouble(textBox6Chosen->Text);
+		if (numbermin <= numberchosen && numberchosen <= numbermax) {
+			textBox6Chosen->BackColor = Color::White;
+			trackBar6->Value = numberchosen;
+			trackBar6->Refresh();
+		}
+		else {
+			textBox6Chosen->BackColor = Color::Red;
+		}
+	}
+	catch (Exception^ e)
+	{
+		textBox6Chosen->BackColor = Color::Red;
+	}
+}
+
+private: System::Void textBox7Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (textBox7Chosen->Text == "")
+	{
+		textBox7Chosen->BackColor = Color::Red;
+		return;
+	}
+	try
+	{
+		int numbermin;
+		int numbermax;
+		int numberchosen;
+
+		numbermax = Convert::ToDouble(textBox7Max->Text);
+		numbermin = Convert::ToDouble(textBox7Min->Text);
+		numberchosen = Convert::ToDouble(textBox7Chosen->Text);
+		if (numbermin <= numberchosen && numberchosen <= numbermax) {
+			textBox7Chosen->BackColor = Color::White;
+			trackBar7->Value = numberchosen;
+			trackBar7->Refresh();
+		}
+		else {
+			textBox7Chosen->BackColor = Color::Red;
+		}
+	}
+	catch (Exception^ e)
+	{
+		textBox7Chosen->BackColor = Color::Red;
+	}
+}
+private: System::Void textBox8Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (textBox8Chosen->Text == "")
+	{
+		textBox8Chosen->BackColor = Color::Red;
+		return;
+	}
+	try
+	{
+		int numbermin;
+		int numbermax;
+		int numberchosen;
+
+		numbermax = Convert::ToDouble(textBox8Max->Text);
+		numbermin = Convert::ToDouble(textBox8Min->Text);
+		numberchosen = Convert::ToDouble(textBox8Chosen->Text);
+		if (numbermin <= numberchosen && numberchosen <= numbermax) {
+			textBox8Chosen->BackColor = Color::White;
+			trackBar8->Value = numberchosen;
+			trackBar8->Refresh();
+		}
+		else {
+			textBox8Chosen->BackColor = Color::Red;
+		}
+	}
+	catch (Exception^ e)
+	{
+		textBox8Chosen->BackColor = Color::Red;
+	}
+}
+private: System::Void textBox9Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (textBox9Chosen->Text == "")
+	{
+		textBox9Chosen->BackColor = Color::Red;
+		return;
+	}
+	try
+	{
+		int numbermin;
+		int numbermax;
+		int numberchosen;
+
+		numbermax = Convert::ToDouble(textBox9Max->Text);
+		numbermin = Convert::ToDouble(textBox9Min->Text);
+		numberchosen = Convert::ToDouble(textBox9Chosen->Text);
+		if (numbermin <= numberchosen && numberchosen <= numbermax) {
+			textBox9Chosen->BackColor = Color::White;
+			trackBar9->Value = numberchosen;
+			trackBar9->Refresh();
+		}
+		else {
+			textBox9Chosen->BackColor = Color::Red;
+		}
+	}
+	catch (Exception^ e)
+	{
+		textBox9Chosen->BackColor = Color::Red;
+	}
+}
+private: System::Void textBox10Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	if (textBox10Chosen->Text == "")
+	{
+		textBox10Chosen->BackColor = Color::Red;
+		return;
+	}
+	try
+	{
+		int numbermin;
+		int numbermax;
+		int numberchosen;
+
+		numbermax = Convert::ToDouble(textBox10Max->Text);
+		numbermin = Convert::ToDouble(textBox10Min->Text);
+		numberchosen = Convert::ToDouble(textBox10Chosen->Text);
+		if (numbermin <= numberchosen && numberchosen <= numbermax) {
+			textBox10Chosen->BackColor = Color::White;
+			trackBar10->Value = numberchosen;
+			trackBar10->Refresh();
+		}
+		else {
+			textBox10Chosen->BackColor = Color::Red;
+		}
+	}
+	catch (Exception^ e)
+	{
+		textBox10Chosen->BackColor = Color::Red;
+	}
+}
+private: System::Void trackBar2_Scroll(System::Object^ sender, System::EventArgs^ e) {
+	textBox2Chosen->Text = trackBar2->Value.ToString();
+}
+private: System::Void trackBar3_Scroll(System::Object^ sender, System::EventArgs^ e) {
+	textBox3Chosen->Text = trackBar3->Value.ToString();
+}
+private: System::Void trackBar4_Scroll(System::Object^ sender, System::EventArgs^ e) {
+	textBox4Chosen->Text = trackBar4->Value.ToString();
+}
+private: System::Void trackBar5_Scroll(System::Object^ sender, System::EventArgs^ e) {
+	textBox5Chosen->Text = trackBar5->Value.ToString();
+}
+private: System::Void trackBar6_Scroll(System::Object^ sender, System::EventArgs^ e) {
+	textBox6Chosen->Text = trackBar6->Value.ToString();
+}
+private: System::Void trackBar7_Scroll(System::Object^ sender, System::EventArgs^ e) {
+	textBox7Chosen->Text = trackBar7->Value.ToString();
+}
+private: System::Void trackBar8_Scroll(System::Object^ sender, System::EventArgs^ e) {
+	textBox8Chosen->Text = trackBar8->Value.ToString();
+}
+private: System::Void trackBar9_Scroll(System::Object^ sender, System::EventArgs^ e) {
+	textBox9Chosen->Text = trackBar9->Value.ToString();
+}
+private: System::Void trackBar10_Scroll(System::Object^ sender, System::EventArgs^ e) {
+	textBox10Chosen->Text = trackBar10->Value.ToString();
+}
 };
 }
