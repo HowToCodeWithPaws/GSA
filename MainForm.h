@@ -4,7 +4,9 @@
 #include <random>
 #include <float.h>
 #include <fstream>
-//#include "GSA.cpp"
+#include "GSA.cpp"
+
+using namespace Algorithm;
 
 namespace GSA {
 
@@ -310,6 +312,7 @@ namespace GSA {
 		bool max9Set = false;
 		bool max10Set = false;
 	private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart;
+private: System::Windows::Forms::Label^ labelStatus;
 
 	protected:
 
@@ -326,10 +329,16 @@ namespace GSA {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea9 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series9 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint9 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(1,
-				5));
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint1 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(1,
+				L"5,10"));
+			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint2 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
+				L"0,0"));
+			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint3 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
+				L"3,3"));
+			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint4 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
+				L"0,2"));
 			this->comboFunctions = (gcnew System::Windows::Forms::ComboBox());
 			this->comboExtremum = (gcnew System::Windows::Forms::ComboBox());
 			this->labelFunction = (gcnew System::Windows::Forms::Label());
@@ -470,6 +479,7 @@ namespace GSA {
 			this->checkBoxDim9 = (gcnew System::Windows::Forms::CheckBox());
 			this->checkBoxDim10 = (gcnew System::Windows::Forms::CheckBox());
 			this->chart = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
+			this->labelStatus = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar3))->BeginInit();
@@ -1870,26 +1880,41 @@ namespace GSA {
 			// 
 			// chart
 			// 
-			chartArea9->Name = L"ChartArea1";
-			this->chart->ChartAreas->Add(chartArea9);
+			chartArea1->Name = L"ChartArea1";
+			this->chart->ChartAreas->Add(chartArea1);
 			this->chart->Location = System::Drawing::Point(-2, 71);
 			this->chart->Name = L"chart";
-			series9->ChartArea = L"ChartArea1";
-			series9->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Point;
-			series9->Name = L"Series1";
-			dataPoint9->IsValueShownAsLabel = false;
-			dataPoint9->Label = L"a1";
-			series9->Points->Add(dataPoint9);
-			this->chart->Series->Add(series9);
+			series1->ChartArea = L"ChartArea1";
+			series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Bubble;
+			series1->Name = L"Series1";
+			dataPoint1->IsValueShownAsLabel = false;
+			dataPoint1->Label = L"a1";
+			dataPoint2->MarkerSize = 10;
+			series1->Points->Add(dataPoint1);
+			series1->Points->Add(dataPoint2);
+			series1->Points->Add(dataPoint3);
+			series1->Points->Add(dataPoint4);
+			series1->YValuesPerPoint = 2;
+			this->chart->Series->Add(series1);
 			this->chart->Size = System::Drawing::Size(609, 600);
 			this->chart->TabIndex = 140;
 			this->chart->Text = L"chart1";
+			// 
+			// labelStatus
+			// 
+			this->labelStatus->AutoSize = true;
+			this->labelStatus->Location = System::Drawing::Point(12, 6);
+			this->labelStatus->Name = L"labelStatus";
+			this->labelStatus->Size = System::Drawing::Size(194, 20);
+			this->labelStatus->TabIndex = 141;
+			this->labelStatus->Text = L"status: control preparation";
 			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1262, 678);
+			this->Controls->Add(this->labelStatus);
 			this->Controls->Add(this->chart);
 			this->Controls->Add(this->checkBoxDim10);
 			this->Controls->Add(this->checkBoxDim9);
@@ -2053,9 +2078,13 @@ namespace GSA {
 
 
 	private: System::Void buttonApply_Click(System::Object^ sender, System::EventArgs^ e) {
+		Algorithm::Hi hi = Algorithm::Hi();
+	int num = 	hi.sayHi();
+	buttonStart->Text = num.ToString();
 
 	}
 	private: System::Void buttonStart_Click(System::Object^ sender, System::EventArgs^ e) {
+
 	}
 	private: System::Void buttonStep_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
@@ -3615,5 +3644,6 @@ private: System::Void trackBar9_Scroll(System::Object^ sender, System::EventArgs
 private: System::Void trackBar10_Scroll(System::Object^ sender, System::EventArgs^ e) {
 	textBox10Chosen->Text = trackBar10->Value.ToString();
 }
+
 };
 }

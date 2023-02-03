@@ -1,10 +1,26 @@
-//#include <iostream>
-//#include <string>
-//#include <vector>
-//#include <random>
-//#include <float.h>
-//#include <fstream>
-//
+#include <iostream>
+#include <string>
+#include <vector>
+#include <random>
+#include <float.h>
+#include <fstream>
+#include <Windows.h>
+
+
+namespace Algorithm {
+	class Hi {
+	public:
+
+		int sayHi() {
+			std::cout << "hi";
+			return 133;
+		}
+	};
+}
+
+
+
+
 //namespace GSAlgorithm {
 //
 //	class Func
