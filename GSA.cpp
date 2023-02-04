@@ -11,9 +11,21 @@ namespace Algorithm {
 	class Hi {
 	public:
 
-		int sayHi() {
+		std::vector<std::vector<double>> sayHi(int number) {
+			std::vector<double> pos1 = std::vector<double>(3);
+			std::vector<double> pos2 = std::vector<double>(3);
+			pos1[0] = number;
+			pos1[1] = number*2;
+			pos1[2] = number*3;
+
+			pos2[0] = number - 1;
+			pos2[1] = number / 2;
+			pos2[2] = number * 2;
 			std::cout << "hi";
-			return 133;
+			std::vector<std::vector<double>> vecs = std::vector<std::vector<double>>(2);
+			vecs[0] = pos1;
+			vecs[1] = pos2;
+			return vecs;
 		}
 	};
 }

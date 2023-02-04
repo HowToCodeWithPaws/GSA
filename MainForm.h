@@ -313,6 +313,7 @@ namespace GSA {
 		bool max10Set = false;
 	private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart;
 private: System::Windows::Forms::Label^ labelStatus;
+	   System::Windows::Forms::DataVisualization::Charting::Series^ series1;
 
 	protected:
 
@@ -330,7 +331,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 		void InitializeComponent(void)
 		{
 			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+	 series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint1 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(1,
 				L"5,10"));
 			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint2 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
@@ -2079,8 +2080,32 @@ private: System::Windows::Forms::Label^ labelStatus;
 
 	private: System::Void buttonApply_Click(System::Object^ sender, System::EventArgs^ e) {
 		Algorithm::Hi hi = Algorithm::Hi();
-	int num = 	hi.sayHi();
-	buttonStart->Text = num.ToString();
+		std::vector<std::vector<double>> vecs = 	hi.sayHi(3);
+		//chart->Series->Clear();
+			//System::Windows::Forms::DataVisualization::Charting::Series^ series = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+		//series->YValuesPerPoint = 2;
+
+		for (int i = 0; i < vecs.size(); i++)
+		{
+			std::vector<double> point = vecs[i];
+		//		std::string yy = std::to_string(point[1]) +"," + std::to_string(point[2]);
+		//	std::vector<double> yy = { point[1], point[2] };
+			//	String  yvals = yy; //(point[1]).ToString() + "," + point[2].ToString();
+	//		List<Double>^ dd = gcnew List<Double>();// { point[1], point[2] };
+		//	dd->Add(point[1]);
+			//dd->Add(point[2]);
+
+			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(point[0], gcnew array<System::Double>{point[1], point[2]}));
+
+		//	dataPoint->SetValueY();
+
+			dataPoint->Label = L"hi";
+		     series1->Points->Add(dataPoint);
+
+		}
+
+		
+		//this->chart->Series->Add(series);
 
 	}
 	private: System::Void buttonStart_Click(System::Object^ sender, System::EventArgs^ e) {
