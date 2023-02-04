@@ -17,8 +17,6 @@ namespace GSA {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-	//using namespace GSAlgorithm;
-
 
 	/// <summary>
 	/// Summary for MainForm
@@ -30,55 +28,22 @@ namespace GSA {
 		{
 			InitializeComponent();
 			Load();
-			//		listCoeffs = new List<List<TextBox^>^>(10);
-				//			listCoeffs = gcnew List<List <TextBox^>^>(10);
-				//listCoeffs[0] = listTextBoxesCoeffs1;
-				//listCoeffs[1] = listTextBoxesCoeffs2;
-				//listCoeffs[2] = listTextBoxesCoeffs3;
-				//listCoeffs[3] = listTextBoxesCoeffs4;
-				//listCoeffs[4] = listTextBoxesCoeffs5;
-				//listCoeffs[5] = listTextBoxesCoeffs6;
-				//listCoeffs[6] = listTextBoxesCoeffs7;
-				//listCoeffs[7] = listTextBoxesCoeffs8;
-				//listCoeffs[8] = listTextBoxesCoeffs9;
-				//listCoeffs[9] = listTextBoxesCoeffs10;
-					//
-					//TODO: Add the constructor code here
-					//
 		}
 
 		void Load(void)
 		{
-			//		listMinSet = gcnew List<Boolean^>(gcnew array<Boolean^>{min1Set, min2Set, min3Set, min4Set, min5Set, min6Set, min7Set, min8Set, min9Set, min10Set});
-			listMaxSet = gcnew List<bool>(gcnew array<bool>{max1Set, max2Set, max3Set, max4Set, max5Set, max6Set, max7Set, max8Set, max9Set, max10Set});
 			listTextBoxesMin = gcnew List<TextBox^>(gcnew array<TextBox^>{ textBox1Min, textBox2Min, textBox3Min, textBox4Min, textBox5Min, textBox6Min, textBox7Min, textBox8Min, textBox9Min, textBox10Min });
 			listTextBoxesMax = gcnew List<TextBox^>(gcnew array<TextBox^>{ textBox1Max, textBox2Max, textBox3Max, textBox4Max, textBox5Max, textBox6Max, textBox7Max, textBox8Max, textBox9Max, textBox10Max });
 			listTextBoxesChosen = gcnew List<TextBox^>(gcnew array<TextBox^>{ textBox1Chosen, textBox2Chosen, textBox3Chosen, textBox4Chosen, textBox5Chosen, textBox6Chosen, textBox7Chosen, textBox8Chosen, textBox9Chosen, textBox10Chosen });
 			listTrack = gcnew List<TrackBar^>(gcnew array<TrackBar^>{ trackBar1, trackBar2, trackBar3, trackBar4, trackBar5, trackBar6, trackBar7, trackBar8, trackBar9, trackBar10 });
 			listLabelDimensions = gcnew List<Label^>(gcnew array<Label^>{ labelDim1, labelDim2, labelDim3, labelDim4, labelDim5, labelDim6, labelDim7, labelDim8, labelDim9, labelDim10 });
 			listCheckBoxes = gcnew List<CheckBox^>(gcnew array<CheckBox^>{ checkBoxDim1, checkBoxDim2, checkBoxDim3, checkBoxDim4, checkBoxDim5, checkBoxDim6, checkBoxDim7, checkBoxDim8, checkBoxDim9, checkBoxDim10 });
-			listTextBoxesCoeffs10 = gcnew  List<TextBox^>(gcnew array<TextBox^>{ textBox10A, textBox10B, textBox10C, textBox10D, textBox10E });
-			listTextBoxesCoeffs1 = gcnew  List<TextBox^>(gcnew array<TextBox^>{ textBox1A, textBox1B, textBox1C, textBox1D, textBox1E });
-			listTextBoxesCoeffs2 = gcnew  List<TextBox^>(gcnew array<TextBox^>{ textBox2A, textBox2B, textBox2C, textBox2D, textBox2E });
-			listTextBoxesCoeffs3 = gcnew  List<TextBox^>(gcnew array<TextBox^>{ textBox3A, textBox3B, textBox3C, textBox3D, textBox3E });
-			listTextBoxesCoeffs4 = gcnew  List<TextBox^>(gcnew array<TextBox^>{ textBox4A, textBox4B, textBox4C, textBox4D, textBox4E });
-			listTextBoxesCoeffs5 = gcnew  List<TextBox^>(gcnew array<TextBox^>{ textBox5A, textBox5B, textBox5C, textBox5D, textBox5E });
-			listTextBoxesCoeffs6 = gcnew  List<TextBox^>(gcnew array<TextBox^>{ textBox6A, textBox6B, textBox6C, textBox6D, textBox6E });
-			listTextBoxesCoeffs7 = gcnew  List<TextBox^>(gcnew array<TextBox^>{ textBox7A, textBox7B, textBox7C, textBox7D, textBox7E });
-			listTextBoxesCoeffs8 = gcnew  List<TextBox^>(gcnew array<TextBox^>{ textBox8A, textBox8B, textBox8C, textBox8D, textBox8E });
-			listTextBoxesCoeffs9 = gcnew  List<TextBox^>(gcnew array<TextBox^>{ textBox9A, textBox9B, textBox9C, textBox9D, textBox9E });
 
-			/*					listCoeffs = gcnew List<List <TextBox^>^>(10);
-								listCoeffs[0] = listTextBoxesCoeffs1;
-								listCoeffs[1] = listTextBoxesCoeffs2;
-								listCoeffs[2] = listTextBoxesCoeffs3;
-								listCoeffs[3] = listTextBoxesCoeffs4;
-								listCoeffs[4] = listTextBoxesCoeffs5;
-								listCoeffs[5] = listTextBoxesCoeffs6;
-								listCoeffs[6] = listTextBoxesCoeffs7;
-								listCoeffs[7] = listTextBoxesCoeffs8;
-								listCoeffs[8] = listTextBoxesCoeffs9;
-								listCoeffs[9] = listTextBoxesCoeffs10;*/
+			listTextBoxesCoeffsA = gcnew List<TextBox^>(gcnew array<TextBox^>{ textBox1A, textBox2A, textBox3A, textBox4A, textBox5A, textBox6A, textBox7A, textBox8A, textBox9A, textBox10A });
+			listTextBoxesCoeffsB = gcnew List<TextBox^>(gcnew array<TextBox^>{ textBox1B, textBox2B, textBox3B, textBox4B, textBox5B, textBox6B, textBox7B, textBox8B, textBox9B, textBox10B });
+			listTextBoxesCoeffsC = gcnew List<TextBox^>(gcnew array<TextBox^>{ textBox1C, textBox2C, textBox3C, textBox4C, textBox5C, textBox6C, textBox7C, textBox8C, textBox9C, textBox10C });
+			listTextBoxesCoeffsD = gcnew List<TextBox^>(gcnew array<TextBox^>{ textBox1D, textBox2D, textBox3D, textBox4D, textBox5D, textBox6D, textBox7D, textBox8D, textBox9D, textBox10D });
+			listTextBoxesCoeffsE = gcnew List<TextBox^>(gcnew array<TextBox^>{ textBox1E, textBox2E, textBox3E, textBox4E, textBox5E, textBox6E, textBox7E, textBox8E, textBox9E, textBox10E });
 		}
 
 	protected:
@@ -120,7 +85,6 @@ namespace GSA {
 	private: System::Windows::Forms::Label^ labelC;
 	private: System::Windows::Forms::Label^ labelB;
 
-
 		   List<TrackBar^>^ listTrack;
 	private: System::Windows::Forms::TrackBar^ trackBar1;
 	private: System::Windows::Forms::TrackBar^ trackBar10;
@@ -132,7 +96,6 @@ namespace GSA {
 	private: System::Windows::Forms::TrackBar^ trackBar6;
 	private: System::Windows::Forms::TrackBar^ trackBar2;
 	private: System::Windows::Forms::TrackBar^ trackBar8;
-
 
 		   List<TextBox^>^ listTextBoxesMin;
 	private: System::Windows::Forms::TextBox^ textBox1Min;
@@ -170,73 +133,66 @@ namespace GSA {
 	private: System::Windows::Forms::TextBox^ textBox9Chosen;
 	private: System::Windows::Forms::TextBox^ textBox2Chosen;
 
-		   List<	   List<TextBox^>^>^ listCoeffs;
+		   List<TextBox^>^ listTextBoxesCoeffsA;
+		   List<TextBox^>^ listTextBoxesCoeffsB;
+		   List<TextBox^>^ listTextBoxesCoeffsC;
+		   List<TextBox^>^ listTextBoxesCoeffsD;
+		   List<TextBox^>^ listTextBoxesCoeffsE;
 
-		   List<TextBox^>^ listTextBoxesCoeffs1;
 	private: System::Windows::Forms::TextBox^ textBox1A;
 	private: System::Windows::Forms::TextBox^ textBox1B;
 	private: System::Windows::Forms::TextBox^ textBox1C;
 	private: System::Windows::Forms::TextBox^ textBox1D;
 	private: System::Windows::Forms::TextBox^ textBox1E;
 
-		   List<TextBox^>^ listTextBoxesCoeffs2;
 	private: System::Windows::Forms::TextBox^ textBox2A;
 	private: System::Windows::Forms::TextBox^ textBox2C;
 	private: System::Windows::Forms::TextBox^ textBox2B;
 	private: System::Windows::Forms::TextBox^ textBox2D;
 	private: System::Windows::Forms::TextBox^ textBox2E;
 
-		   List<TextBox^>^ listTextBoxesCoeffs3;
 	private: System::Windows::Forms::TextBox^ textBox3A;
 	private: System::Windows::Forms::TextBox^ textBox3C;
 	private: System::Windows::Forms::TextBox^ textBox3B;
 	private: System::Windows::Forms::TextBox^ textBox3E;
 	private: System::Windows::Forms::TextBox^ textBox3D;
 
-		   List<TextBox^>^ listTextBoxesCoeffs4;
 	private: System::Windows::Forms::TextBox^ textBox4A;
 	private: System::Windows::Forms::TextBox^ textBox4C;
 	private: System::Windows::Forms::TextBox^ textBox4B;
 	private: System::Windows::Forms::TextBox^ textBox4E;
 	private: System::Windows::Forms::TextBox^ textBox4D;
 
-
-		   List<TextBox^>^ listTextBoxesCoeffs5;
 	private: System::Windows::Forms::TextBox^ textBox5A;
 	private: System::Windows::Forms::TextBox^ textBox5C;
 	private: System::Windows::Forms::TextBox^ textBox5B;
 	private: System::Windows::Forms::TextBox^ textBox5E;
 	private: System::Windows::Forms::TextBox^ textBox5D;
 
-		   List<TextBox^>^ listTextBoxesCoeffs10;
 	private: System::Windows::Forms::TextBox^ textBox10A;
 	private: System::Windows::Forms::TextBox^ textBox10C;
 	private: System::Windows::Forms::TextBox^ textBox10B;
 	private: System::Windows::Forms::TextBox^ textBox10E;
 	private: System::Windows::Forms::TextBox^ textBox10D;
 
-		   List<TextBox^>^ listTextBoxesCoeffs9;
 	private: System::Windows::Forms::TextBox^ textBox9A;
 	private: System::Windows::Forms::TextBox^ textBox9C;
 	private: System::Windows::Forms::TextBox^ textBox9B;
 	private: System::Windows::Forms::TextBox^ textBox9E;
 	private: System::Windows::Forms::TextBox^ textBox9D;
 
-		   List<TextBox^>^ listTextBoxesCoeffs8;
 	private: System::Windows::Forms::TextBox^ textBox8A;
 	private: System::Windows::Forms::TextBox^ textBox8C;
 	private: System::Windows::Forms::TextBox^ textBox8B;
 	private: System::Windows::Forms::TextBox^ textBox8E;
 	private: System::Windows::Forms::TextBox^ textBox8D;
 
-		   List<TextBox^>^ listTextBoxesCoeffs7;
 	private: System::Windows::Forms::TextBox^ textBox7A;
 	private: System::Windows::Forms::TextBox^ textBox7C;
 	private: System::Windows::Forms::TextBox^ textBox7B;
 	private: System::Windows::Forms::TextBox^ textBox7E;
 	private: System::Windows::Forms::TextBox^ textBox7D;
 
-		   List<TextBox^>^ listTextBoxesCoeffs6;
 	private: System::Windows::Forms::TextBox^ textBox6A;
 	private: System::Windows::Forms::TextBox^ textBox6C;
 	private: System::Windows::Forms::TextBox^ textBox6B;
@@ -255,7 +211,9 @@ namespace GSA {
 	private: System::Windows::Forms::Label^ labelDim9;
 	private: System::Windows::Forms::Label^ labelDim8;
 
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart;
+	private: System::Windows::Forms::Label^ labelStatus;
+	private: System::Windows::Forms::DataVisualization::Charting::Series^ series1;
 
 	private: System::Windows::Forms::Button^ buttonStart;
 	private: System::Windows::Forms::Button^ buttonStep;
@@ -274,46 +232,122 @@ namespace GSA {
 	private: System::Windows::Forms::CheckBox^ checkBoxDim9;
 	private: System::Windows::Forms::CheckBox^ checkBoxDim10;
 
-
 		   List<bool>^ listMinSet;
 		   List<bool>^ listMaxSet;
-	private: int number_checked = 0;
-	private: int number_dimensions = 0;
-	private: int number_special_dimensions = 0;
-	private:
-		bool check1Enabled = false;
-		bool check2Enabled = false;
-		bool check3Enabled = false;
-		bool check4Enabled = false;
-		bool check5Enabled = false;
-		bool check6Enabled = false;
-		bool check7Enabled = false;
-		bool check8Enabled = false;
-		bool check9Enabled = false;
-		bool check10Enabled = false;
-		bool min1Set = false;
-		bool min2Set = false;
-		bool min3Set = false;
-		bool min4Set = false;
-		bool min5Set = false;
-		bool min6Set = false;
-		bool min7Set = false;
-		bool min8Set = false;
-		bool min9Set = false;
-		bool min10Set = false;
-		bool max1Set = false;
-		bool max2Set = false;
-		bool max3Set = false;
-		bool max4Set = false;
-		bool max5Set = false;
-		bool max6Set = false;
-		bool max7Set = false;
-		bool max8Set = false;
-		bool max9Set = false;
-		bool max10Set = false;
-	private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart;
-private: System::Windows::Forms::Label^ labelStatus;
-	   System::Windows::Forms::DataVisualization::Charting::Series^ series1;
+		   List<bool>^ listChosenSet;
+		   List<bool>^ listASet;
+		   List<bool>^ listBSet;
+		   List<bool>^ listCSet;
+		   List<bool>^ listDSet;
+		   List<bool>^ listESet;
+		   List<bool>^ listCheckedSet;
+
+		   int function = -1;
+		   int optimum_type = -1;
+		   int conversion_type = -1;
+		   int conversion = -1;
+		   int number_agents = -1;
+		   int number_checked = 0;
+		   int number_dimensions = 0;
+		   int number_special_dimensions = -1;
+
+		   bool check1Enabled = false;
+		   bool check2Enabled = false;
+		   bool check3Enabled = false;
+		   bool check4Enabled = false;
+		   bool check5Enabled = false;
+		   bool check6Enabled = false;
+		   bool check7Enabled = false;
+		   bool check8Enabled = false;
+		   bool check9Enabled = false;
+		   bool check10Enabled = false;
+
+		   bool A1Set = false;
+		   bool A2Set = false;
+		   bool A3Set = false;
+		   bool A4Set = false;
+		   bool A5Set = false;
+		   bool A6Set = false;
+		   bool A7Set = false;
+		   bool A8Set = false;
+		   bool A9Set = false;
+		   bool A10Set = false;
+
+		   bool B1Set = false;
+		   bool B2Set = false;
+		   bool B3Set = false;
+		   bool B4Set = false;
+		   bool B5Set = false;
+		   bool B6Set = false;
+		   bool B7Set = false;
+		   bool B8Set = false;
+		   bool B9Set = false;
+		   bool B10Set = false;
+
+		   bool C1Set = false;
+		   bool C2Set = false;
+		   bool C3Set = false;
+		   bool C4Set = false;
+		   bool C5Set = false;
+		   bool C6Set = false;
+		   bool C7Set = false;
+		   bool C8Set = false;
+		   bool C9Set = false;
+		   bool C10Set = false;
+
+		   bool D1Set = false;
+		   bool D2Set = false;
+		   bool D3Set = false;
+		   bool D4Set = false;
+		   bool D5Set = false;
+		   bool D6Set = false;
+		   bool D7Set = false;
+		   bool D8Set = false;
+		   bool D9Set = false;
+		   bool D10Set = false;
+
+		   bool E1Set = false;
+		   bool E2Set = false;
+		   bool E3Set = false;
+		   bool E4Set = false;
+		   bool E5Set = false;
+		   bool E6Set = false;
+		   bool E7Set = false;
+		   bool E8Set = false;
+		   bool E9Set = false;
+		   bool E10Set = false;
+
+		   bool chosen1Set = false;
+		   bool chosen2Set = false;
+		   bool chosen3Set = false;
+		   bool chosen4Set = false;
+		   bool chosen5Set = false;
+		   bool chosen6Set = false;
+		   bool chosen7Set = false;
+		   bool chosen8Set = false;
+		   bool chosen9Set = false;
+		   bool chosen10Set = false;
+		   bool min1Set = false;
+		   bool min2Set = false;
+		   bool min3Set = false;
+		   bool min4Set = false;
+		   bool min5Set = false;
+		   bool min6Set = false;
+		   bool min7Set = false;
+		   bool min8Set = false;
+		   bool min9Set = false;
+		   bool min10Set = false;
+		   bool max1Set = false;
+		   bool max2Set = false;
+		   bool max3Set = false;
+		   bool max4Set = false;
+		   bool max5Set = false;
+		   bool max6Set = false;
+		   bool max7Set = false;
+		   bool max8Set = false;
+		   bool max9Set = false;
+		   bool max10Set = false;
+	private: System::Windows::Forms::Button^ buttonClear;
 
 	protected:
 
@@ -331,7 +365,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 		void InitializeComponent(void)
 		{
 			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-	 series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			this->series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint1 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(1,
 				L"5,10"));
 			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint2 = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(0,
@@ -464,7 +498,6 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->labelDim7 = (gcnew System::Windows::Forms::Label());
 			this->labelDim9 = (gcnew System::Windows::Forms::Label());
 			this->labelDim8 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->buttonStart = (gcnew System::Windows::Forms::Button());
 			this->buttonStep = (gcnew System::Windows::Forms::Button());
 			this->buttonStop = (gcnew System::Windows::Forms::Button());
@@ -481,6 +514,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->checkBoxDim10 = (gcnew System::Windows::Forms::CheckBox());
 			this->chart = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->labelStatus = (gcnew System::Windows::Forms::Label());
+			this->buttonClear = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar3))->BeginInit();
@@ -491,7 +525,6 @@ private: System::Windows::Forms::Label^ labelStatus;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar7))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar6))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -500,10 +533,10 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->comboFunctions->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboFunctions->Enabled = false;
 			this->comboFunctions->FormattingEnabled = true;
-			this->comboFunctions->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"linear y = x", L"square y = x**2", L"optimal power flow" });
-			this->comboFunctions->Location = System::Drawing::Point(470, 37);
+			this->comboFunctions->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"y = x", L"y = x**2", L"opf" });
+			this->comboFunctions->Location = System::Drawing::Point(519, 35);
 			this->comboFunctions->Name = L"comboFunctions";
-			this->comboFunctions->Size = System::Drawing::Size(168, 28);
+			this->comboFunctions->Size = System::Drawing::Size(90, 28);
 			this->comboFunctions->TabIndex = 1;
 			this->comboFunctions->SelectedIndexChanged += gcnew System::EventHandler(this, &MainForm::comboFunctions_SelectedIndexChanged);
 			// 
@@ -512,50 +545,51 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->comboExtremum->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboExtremum->FormattingEnabled = true;
 			this->comboExtremum->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"minimum", L"maximum" });
-			this->comboExtremum->Location = System::Drawing::Point(645, 37);
+			this->comboExtremum->Location = System::Drawing::Point(615, 35);
 			this->comboExtremum->Name = L"comboExtremum";
-			this->comboExtremum->Size = System::Drawing::Size(96, 28);
+			this->comboExtremum->Size = System::Drawing::Size(111, 28);
 			this->comboExtremum->TabIndex = 2;
+			this->comboExtremum->SelectedIndexChanged += gcnew System::EventHandler(this, &MainForm::comboExtremum_SelectedIndexChanged);
 			// 
 			// labelFunction
 			// 
 			this->labelFunction->AutoSize = true;
-			this->labelFunction->Location = System::Drawing::Point(465, 14);
+			this->labelFunction->Location = System::Drawing::Point(511, 13);
 			this->labelFunction->MaximumSize = System::Drawing::Size(150, 40);
 			this->labelFunction->Name = L"labelFunction";
-			this->labelFunction->Size = System::Drawing::Size(147, 20);
+			this->labelFunction->Size = System::Drawing::Size(66, 20);
 			this->labelFunction->TabIndex = 3;
-			this->labelFunction->Text = L"function to optimize";
+			this->labelFunction->Text = L"function";
 			// 
 			// labelExtremum
 			// 
 			this->labelExtremum->AutoSize = true;
-			this->labelExtremum->Location = System::Drawing::Point(640, 14);
+			this->labelExtremum->Location = System::Drawing::Point(607, 12);
 			this->labelExtremum->MaximumSize = System::Drawing::Size(150, 40);
 			this->labelExtremum->Name = L"labelExtremum";
-			this->labelExtremum->Size = System::Drawing::Size(131, 20);
+			this->labelExtremum->Size = System::Drawing::Size(104, 20);
 			this->labelExtremum->TabIndex = 4;
-			this->labelExtremum->Text = L"type of extremum";
+			this->labelExtremum->Text = L"optimum type";
 			// 
 			// labelDimensionsNumber
 			// 
 			this->labelDimensionsNumber->AutoSize = true;
-			this->labelDimensionsNumber->Location = System::Drawing::Point(273, 14);
+			this->labelDimensionsNumber->Location = System::Drawing::Point(373, 13);
 			this->labelDimensionsNumber->MaximumSize = System::Drawing::Size(170, 40);
 			this->labelDimensionsNumber->Name = L"labelDimensionsNumber";
-			this->labelDimensionsNumber->Size = System::Drawing::Size(104, 20);
+			this->labelDimensionsNumber->Size = System::Drawing::Size(57, 20);
 			this->labelDimensionsNumber->TabIndex = 5;
-			this->labelDimensionsNumber->Text = L"N dimensions";
+			this->labelDimensionsNumber->Text = L"N dims";
 			// 
 			// comboDimensionsNumber
 			// 
 			this->comboDimensionsNumber->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboDimensionsNumber->FormattingEnabled = true;
-			this->comboDimensionsNumber->Items->AddRange(gcnew cli::array< System::Object^  >(10) {
-				L"1", L"2", L"3", L"4", L"5", L"6",
-					L"7", L"8", L"9", L"10"
+			this->comboDimensionsNumber->Items->AddRange(gcnew cli::array< System::Object^  >(9) {
+				L"2", L"3", L"4", L"5", L"6", L"7",
+					L"8", L"9", L"10"
 			});
-			this->comboDimensionsNumber->Location = System::Drawing::Point(276, 37);
+			this->comboDimensionsNumber->Location = System::Drawing::Point(378, 35);
 			this->comboDimensionsNumber->Name = L"comboDimensionsNumber";
 			this->comboDimensionsNumber->Size = System::Drawing::Size(56, 28);
 			this->comboDimensionsNumber->TabIndex = 6;
@@ -602,15 +636,16 @@ private: System::Windows::Forms::Label^ labelStatus;
 					L"81", L"82", L"83", L"84", L"85", L"86", L"87", L"88", L"89", L"90", L"91", L"92", L"93", L"94", L"95", L"96", L"97", L"98",
 					L"99", L"100"
 			});
-			this->comboAgentsNumber->Location = System::Drawing::Point(388, 37);
+			this->comboAgentsNumber->Location = System::Drawing::Point(440, 35);
 			this->comboAgentsNumber->Name = L"comboAgentsNumber";
 			this->comboAgentsNumber->Size = System::Drawing::Size(73, 28);
 			this->comboAgentsNumber->TabIndex = 11;
+			this->comboAgentsNumber->SelectedIndexChanged += gcnew System::EventHandler(this, &MainForm::comboAgentsNumber_SelectedIndexChanged);
 			// 
 			// labelAgentsNumber
 			// 
 			this->labelAgentsNumber->AutoSize = true;
-			this->labelAgentsNumber->Location = System::Drawing::Point(384, 14);
+			this->labelAgentsNumber->Location = System::Drawing::Point(436, 13);
 			this->labelAgentsNumber->MaximumSize = System::Drawing::Size(150, 40);
 			this->labelAgentsNumber->Name = L"labelAgentsNumber";
 			this->labelAgentsNumber->Size = System::Drawing::Size(73, 20);
@@ -620,7 +655,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			// labelConversionType
 			// 
 			this->labelConversionType->AutoSize = true;
-			this->labelConversionType->Location = System::Drawing::Point(774, 14);
+			this->labelConversionType->Location = System::Drawing::Point(728, 12);
 			this->labelConversionType->MaximumSize = System::Drawing::Size(150, 40);
 			this->labelConversionType->Name = L"labelConversionType";
 			this->labelConversionType->Size = System::Drawing::Size(119, 20);
@@ -632,7 +667,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->comboConversionType->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboConversionType->FormattingEnabled = true;
 			this->comboConversionType->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"number of iterations", L"difference between iterations" });
-			this->comboConversionType->Location = System::Drawing::Point(778, 37);
+			this->comboConversionType->Location = System::Drawing::Point(732, 35);
 			this->comboConversionType->Name = L"comboConversionType";
 			this->comboConversionType->Size = System::Drawing::Size(246, 28);
 			this->comboConversionType->TabIndex = 12;
@@ -642,82 +677,18 @@ private: System::Windows::Forms::Label^ labelStatus;
 			// 
 			this->comboConversion->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboConversion->FormattingEnabled = true;
-			this->comboConversion->Items->AddRange(gcnew cli::array< System::Object^  >(1000) {
-				L"1", L"2", L"3", L"4", L"5", L"6", L"7",
-					L"8", L"9", L"10", L"11", L"12", L"13", L"14", L"15", L"16", L"17", L"18", L"19", L"20", L"21", L"22", L"23", L"24", L"25", L"26",
-					L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42", L"43", L"44",
-					L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52", L"53", L"54", L"55", L"56", L"57", L"58", L"59", L"60", L"61", L"62",
-					L"63", L"64", L"65", L"66", L"67", L"68", L"69", L"70", L"71", L"72", L"73", L"74", L"75", L"76", L"77", L"78", L"79", L"80",
-					L"81", L"82", L"83", L"84", L"85", L"86", L"87", L"88", L"89", L"90", L"91", L"92", L"93", L"94", L"95", L"96", L"97", L"98",
-					L"99", L"100", L"101", L"102", L"103", L"104", L"105", L"106", L"107", L"108", L"109", L"110", L"111", L"112", L"113", L"114",
-					L"115", L"116", L"117", L"118", L"119", L"120", L"121", L"122", L"123", L"124", L"125", L"126", L"127", L"128", L"129", L"130",
-					L"131", L"132", L"133", L"134", L"135", L"136", L"137", L"138", L"139", L"140", L"141", L"142", L"143", L"144", L"145", L"146",
-					L"147", L"148", L"149", L"150", L"151", L"152", L"153", L"154", L"155", L"156", L"157", L"158", L"159", L"160", L"161", L"162",
-					L"163", L"164", L"165", L"166", L"167", L"168", L"169", L"170", L"171", L"172", L"173", L"174", L"175", L"176", L"177", L"178",
-					L"179", L"180", L"181", L"182", L"183", L"184", L"185", L"186", L"187", L"188", L"189", L"190", L"191", L"192", L"193", L"194",
-					L"195", L"196", L"197", L"198", L"199", L"200", L"201", L"202", L"203", L"204", L"205", L"206", L"207", L"208", L"209", L"210",
-					L"211", L"212", L"213", L"214", L"215", L"216", L"217", L"218", L"219", L"220", L"221", L"222", L"223", L"224", L"225", L"226",
-					L"227", L"228", L"229", L"230", L"231", L"232", L"233", L"234", L"235", L"236", L"237", L"238", L"239", L"240", L"241", L"242",
-					L"243", L"244", L"245", L"246", L"247", L"248", L"249", L"250", L"251", L"252", L"253", L"254", L"255", L"256", L"257", L"258",
-					L"259", L"260", L"261", L"262", L"263", L"264", L"265", L"266", L"267", L"268", L"269", L"270", L"271", L"272", L"273", L"274",
-					L"275", L"276", L"277", L"278", L"279", L"280", L"281", L"282", L"283", L"284", L"285", L"286", L"287", L"288", L"289", L"290",
-					L"291", L"292", L"293", L"294", L"295", L"296", L"297", L"298", L"299", L"300", L"301", L"302", L"303", L"304", L"305", L"306",
-					L"307", L"308", L"309", L"310", L"311", L"312", L"313", L"314", L"315", L"316", L"317", L"318", L"319", L"320", L"321", L"322",
-					L"323", L"324", L"325", L"326", L"327", L"328", L"329", L"330", L"331", L"332", L"333", L"334", L"335", L"336", L"337", L"338",
-					L"339", L"340", L"341", L"342", L"343", L"344", L"345", L"346", L"347", L"348", L"349", L"350", L"351", L"352", L"353", L"354",
-					L"355", L"356", L"357", L"358", L"359", L"360", L"361", L"362", L"363", L"364", L"365", L"366", L"367", L"368", L"369", L"370",
-					L"371", L"372", L"373", L"374", L"375", L"376", L"377", L"378", L"379", L"380", L"381", L"382", L"383", L"384", L"385", L"386",
-					L"387", L"388", L"389", L"390", L"391", L"392", L"393", L"394", L"395", L"396", L"397", L"398", L"399", L"400", L"401", L"402",
-					L"403", L"404", L"405", L"406", L"407", L"408", L"409", L"410", L"411", L"412", L"413", L"414", L"415", L"416", L"417", L"418",
-					L"419", L"420", L"421", L"422", L"423", L"424", L"425", L"426", L"427", L"428", L"429", L"430", L"431", L"432", L"433", L"434",
-					L"435", L"436", L"437", L"438", L"439", L"440", L"441", L"442", L"443", L"444", L"445", L"446", L"447", L"448", L"449", L"450",
-					L"451", L"452", L"453", L"454", L"455", L"456", L"457", L"458", L"459", L"460", L"461", L"462", L"463", L"464", L"465", L"466",
-					L"467", L"468", L"469", L"470", L"471", L"472", L"473", L"474", L"475", L"476", L"477", L"478", L"479", L"480", L"481", L"482",
-					L"483", L"484", L"485", L"486", L"487", L"488", L"489", L"490", L"491", L"492", L"493", L"494", L"495", L"496", L"497", L"498",
-					L"499", L"500", L"501", L"502", L"503", L"504", L"505", L"506", L"507", L"508", L"509", L"510", L"511", L"512", L"513", L"514",
-					L"515", L"516", L"517", L"518", L"519", L"520", L"521", L"522", L"523", L"524", L"525", L"526", L"527", L"528", L"529", L"530",
-					L"531", L"532", L"533", L"534", L"535", L"536", L"537", L"538", L"539", L"540", L"541", L"542", L"543", L"544", L"545", L"546",
-					L"547", L"548", L"549", L"550", L"551", L"552", L"553", L"554", L"555", L"556", L"557", L"558", L"559", L"560", L"561", L"562",
-					L"563", L"564", L"565", L"566", L"567", L"568", L"569", L"570", L"571", L"572", L"573", L"574", L"575", L"576", L"577", L"578",
-					L"579", L"580", L"581", L"582", L"583", L"584", L"585", L"586", L"587", L"588", L"589", L"590", L"591", L"592", L"593", L"594",
-					L"595", L"596", L"597", L"598", L"599", L"600", L"601", L"602", L"603", L"604", L"605", L"606", L"607", L"608", L"609", L"610",
-					L"611", L"612", L"613", L"614", L"615", L"616", L"617", L"618", L"619", L"620", L"621", L"622", L"623", L"624", L"625", L"626",
-					L"627", L"628", L"629", L"630", L"631", L"632", L"633", L"634", L"635", L"636", L"637", L"638", L"639", L"640", L"641", L"642",
-					L"643", L"644", L"645", L"646", L"647", L"648", L"649", L"650", L"651", L"652", L"653", L"654", L"655", L"656", L"657", L"658",
-					L"659", L"660", L"661", L"662", L"663", L"664", L"665", L"666", L"667", L"668", L"669", L"670", L"671", L"672", L"673", L"674",
-					L"675", L"676", L"677", L"678", L"679", L"680", L"681", L"682", L"683", L"684", L"685", L"686", L"687", L"688", L"689", L"690",
-					L"691", L"692", L"693", L"694", L"695", L"696", L"697", L"698", L"699", L"700", L"701", L"702", L"703", L"704", L"705", L"706",
-					L"707", L"708", L"709", L"710", L"711", L"712", L"713", L"714", L"715", L"716", L"717", L"718", L"719", L"720", L"721", L"722",
-					L"723", L"724", L"725", L"726", L"727", L"728", L"729", L"730", L"731", L"732", L"733", L"734", L"735", L"736", L"737", L"738",
-					L"739", L"740", L"741", L"742", L"743", L"744", L"745", L"746", L"747", L"748", L"749", L"750", L"751", L"752", L"753", L"754",
-					L"755", L"756", L"757", L"758", L"759", L"760", L"761", L"762", L"763", L"764", L"765", L"766", L"767", L"768", L"769", L"770",
-					L"771", L"772", L"773", L"774", L"775", L"776", L"777", L"778", L"779", L"780", L"781", L"782", L"783", L"784", L"785", L"786",
-					L"787", L"788", L"789", L"790", L"791", L"792", L"793", L"794", L"795", L"796", L"797", L"798", L"799", L"800", L"801", L"802",
-					L"803", L"804", L"805", L"806", L"807", L"808", L"809", L"810", L"811", L"812", L"813", L"814", L"815", L"816", L"817", L"818",
-					L"819", L"820", L"821", L"822", L"823", L"824", L"825", L"826", L"827", L"828", L"829", L"830", L"831", L"832", L"833", L"834",
-					L"835", L"836", L"837", L"838", L"839", L"840", L"841", L"842", L"843", L"844", L"845", L"846", L"847", L"848", L"849", L"850",
-					L"851", L"852", L"853", L"854", L"855", L"856", L"857", L"858", L"859", L"860", L"861", L"862", L"863", L"864", L"865", L"866",
-					L"867", L"868", L"869", L"870", L"871", L"872", L"873", L"874", L"875", L"876", L"877", L"878", L"879", L"880", L"881", L"882",
-					L"883", L"884", L"885", L"886", L"887", L"888", L"889", L"890", L"891", L"892", L"893", L"894", L"895", L"896", L"897", L"898",
-					L"899", L"900", L"901", L"902", L"903", L"904", L"905", L"906", L"907", L"908", L"909", L"910", L"911", L"912", L"913", L"914",
-					L"915", L"916", L"917", L"918", L"919", L"920", L"921", L"922", L"923", L"924", L"925", L"926", L"927", L"928", L"929", L"930",
-					L"931", L"932", L"933", L"934", L"935", L"936", L"937", L"938", L"939", L"940", L"941", L"942", L"943", L"944", L"945", L"946",
-					L"947", L"948", L"949", L"950", L"951", L"952", L"953", L"954", L"955", L"956", L"957", L"958", L"959", L"960", L"961", L"962",
-					L"963", L"964", L"965", L"966", L"967", L"968", L"969", L"970", L"971", L"972", L"973", L"974", L"975", L"976", L"977", L"978",
-					L"979", L"980", L"981", L"982", L"983", L"984", L"985", L"986", L"987", L"988", L"989", L"990", L"991", L"992", L"993", L"994",
-					L"995", L"996", L"997", L"998", L"999", L"1000"
-			});
-			this->comboConversion->Location = System::Drawing::Point(1032, 37);
+			this->comboConversion->Location = System::Drawing::Point(984, 36);
 			this->comboConversion->Name = L"comboConversion";
-			this->comboConversion->Size = System::Drawing::Size(56, 28);
+			this->comboConversion->Size = System::Drawing::Size(94, 28);
 			this->comboConversion->TabIndex = 15;
 			this->comboConversion->Visible = false;
+			this->comboConversion->SelectedIndexChanged += gcnew System::EventHandler(this, &MainForm::comboConversion_SelectedIndexChanged);
 			// 
 			// labelConversion
 			// 
 			this->labelConversion->AutoSize = true;
-			this->labelConversion->Location = System::Drawing::Point(1028, 3);
-			this->labelConversion->MaximumSize = System::Drawing::Size(150, 40);
+			this->labelConversion->Location = System::Drawing::Point(980, 13);
+			this->labelConversion->MaximumSize = System::Drawing::Size(200, 40);
 			this->labelConversion->Name = L"labelConversion";
 			this->labelConversion->Size = System::Drawing::Size(85, 20);
 			this->labelConversion->TabIndex = 14;
@@ -728,21 +699,22 @@ private: System::Windows::Forms::Label^ labelStatus;
 			// 
 			this->comboSpecialDimensionsNumber->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->comboSpecialDimensionsNumber->FormattingEnabled = true;
-			this->comboSpecialDimensionsNumber->Location = System::Drawing::Point(1122, 37);
+			this->comboSpecialDimensionsNumber->Location = System::Drawing::Point(1174, 36);
 			this->comboSpecialDimensionsNumber->Name = L"comboSpecialDimensionsNumber";
 			this->comboSpecialDimensionsNumber->Size = System::Drawing::Size(56, 28);
 			this->comboSpecialDimensionsNumber->TabIndex = 17;
 			this->comboSpecialDimensionsNumber->Visible = false;
+			this->comboSpecialDimensionsNumber->SelectedIndexChanged += gcnew System::EventHandler(this, &MainForm::comboSpecialDimensionsNumber_SelectedIndexChanged);
 			// 
 			// labelSpecialDimensionsNumber
 			// 
 			this->labelSpecialDimensionsNumber->AutoSize = true;
-			this->labelSpecialDimensionsNumber->Location = System::Drawing::Point(1119, 14);
+			this->labelSpecialDimensionsNumber->Location = System::Drawing::Point(1170, 13);
 			this->labelSpecialDimensionsNumber->MaximumSize = System::Drawing::Size(200, 40);
 			this->labelSpecialDimensionsNumber->Name = L"labelSpecialDimensionsNumber";
-			this->labelSpecialDimensionsNumber->Size = System::Drawing::Size(133, 20);
+			this->labelSpecialDimensionsNumber->Size = System::Drawing::Size(87, 20);
 			this->labelSpecialDimensionsNumber->TabIndex = 16;
-			this->labelSpecialDimensionsNumber->Text = L"N vp-effect buses";
+			this->labelSpecialDimensionsNumber->Text = L"N vp buses";
 			this->labelSpecialDimensionsNumber->Visible = false;
 			// 
 			// textBox1D
@@ -752,6 +724,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox1D->Size = System::Drawing::Size(40, 26);
 			this->textBox1D->TabIndex = 18;
 			this->textBox1D->Visible = false;
+			this->textBox1D->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox1D_TextChanged);
 			// 
 			// labelCoeffs
 			// 
@@ -790,6 +763,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox1E->Size = System::Drawing::Size(40, 26);
 			this->textBox1E->TabIndex = 22;
 			this->textBox1E->Visible = false;
+			this->textBox1E->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox1E_TextChanged);
 			// 
 			// textBox1C
 			// 
@@ -798,6 +772,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox1C->Size = System::Drawing::Size(40, 26);
 			this->textBox1C->TabIndex = 24;
 			this->textBox1C->Visible = false;
+			this->textBox1C->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox1C_TextChanged);
 			// 
 			// textBox1B
 			// 
@@ -806,6 +781,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox1B->Size = System::Drawing::Size(40, 26);
 			this->textBox1B->TabIndex = 23;
 			this->textBox1B->Visible = false;
+			this->textBox1B->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox1B_TextChanged);
 			// 
 			// textBox1A
 			// 
@@ -814,6 +790,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox1A->Size = System::Drawing::Size(40, 26);
 			this->textBox1A->TabIndex = 25;
 			this->textBox1A->Visible = false;
+			this->textBox1A->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox1A_TextChanged);
 			// 
 			// labelA
 			// 
@@ -902,6 +879,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox2A->Size = System::Drawing::Size(40, 26);
 			this->textBox2A->TabIndex = 42;
 			this->textBox2A->Visible = false;
+			this->textBox2A->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox2A_TextChanged);
 			// 
 			// textBox2C
 			// 
@@ -910,6 +888,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox2C->Size = System::Drawing::Size(40, 26);
 			this->textBox2C->TabIndex = 41;
 			this->textBox2C->Visible = false;
+			this->textBox2C->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox2C_TextChanged);
 			// 
 			// textBox2B
 			// 
@@ -918,6 +897,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox2B->Size = System::Drawing::Size(40, 26);
 			this->textBox2B->TabIndex = 40;
 			this->textBox2B->Visible = false;
+			this->textBox2B->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox2B_TextChanged);
 			// 
 			// textBox2E
 			// 
@@ -926,6 +906,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox2E->Size = System::Drawing::Size(40, 26);
 			this->textBox2E->TabIndex = 39;
 			this->textBox2E->Visible = false;
+			this->textBox2E->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox2E_TextChanged);
 			// 
 			// textBox2Chosen
 			// 
@@ -944,6 +925,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox2D->Size = System::Drawing::Size(40, 26);
 			this->textBox2D->TabIndex = 37;
 			this->textBox2D->Visible = false;
+			this->textBox2D->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox2D_TextChanged);
 			// 
 			// textBox2Min
 			// 
@@ -980,6 +962,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox3A->Size = System::Drawing::Size(40, 26);
 			this->textBox3A->TabIndex = 51;
 			this->textBox3A->Visible = false;
+			this->textBox3A->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox3A_TextChanged);
 			// 
 			// textBox3C
 			// 
@@ -988,6 +971,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox3C->Size = System::Drawing::Size(40, 26);
 			this->textBox3C->TabIndex = 50;
 			this->textBox3C->Visible = false;
+			this->textBox3C->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox3C_TextChanged);
 			// 
 			// textBox3B
 			// 
@@ -996,6 +980,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox3B->Size = System::Drawing::Size(40, 26);
 			this->textBox3B->TabIndex = 49;
 			this->textBox3B->Visible = false;
+			this->textBox3B->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox3B_TextChanged);
 			// 
 			// textBox3E
 			// 
@@ -1004,6 +989,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox3E->Size = System::Drawing::Size(40, 26);
 			this->textBox3E->TabIndex = 48;
 			this->textBox3E->Visible = false;
+			this->textBox3E->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox3E_TextChanged);
 			// 
 			// textBox3Chosen
 			// 
@@ -1022,6 +1008,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox3D->Size = System::Drawing::Size(40, 26);
 			this->textBox3D->TabIndex = 46;
 			this->textBox3D->Visible = false;
+			this->textBox3D->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox3D_TextChanged);
 			// 
 			// textBox3Min
 			// 
@@ -1058,6 +1045,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox4A->Size = System::Drawing::Size(40, 26);
 			this->textBox4A->TabIndex = 60;
 			this->textBox4A->Visible = false;
+			this->textBox4A->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox4A_TextChanged);
 			// 
 			// textBox4C
 			// 
@@ -1066,6 +1054,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox4C->Size = System::Drawing::Size(40, 26);
 			this->textBox4C->TabIndex = 59;
 			this->textBox4C->Visible = false;
+			this->textBox4C->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox4C_TextChanged);
 			// 
 			// textBox4B
 			// 
@@ -1074,6 +1063,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox4B->Size = System::Drawing::Size(40, 26);
 			this->textBox4B->TabIndex = 58;
 			this->textBox4B->Visible = false;
+			this->textBox4B->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox4B_TextChanged);
 			// 
 			// textBox4E
 			// 
@@ -1082,6 +1072,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox4E->Size = System::Drawing::Size(40, 26);
 			this->textBox4E->TabIndex = 57;
 			this->textBox4E->Visible = false;
+			this->textBox4E->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox4E_TextChanged);
 			// 
 			// textBox4Chosen
 			// 
@@ -1100,6 +1091,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox4D->Size = System::Drawing::Size(40, 26);
 			this->textBox4D->TabIndex = 55;
 			this->textBox4D->Visible = false;
+			this->textBox4D->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox4D_TextChanged);
 			// 
 			// textBox4Min
 			// 
@@ -1136,6 +1128,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox5A->Size = System::Drawing::Size(40, 26);
 			this->textBox5A->TabIndex = 69;
 			this->textBox5A->Visible = false;
+			this->textBox5A->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox5A_TextChanged);
 			// 
 			// textBox5C
 			// 
@@ -1144,6 +1137,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox5C->Size = System::Drawing::Size(40, 26);
 			this->textBox5C->TabIndex = 68;
 			this->textBox5C->Visible = false;
+			this->textBox5C->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox5C_TextChanged);
 			// 
 			// textBox5B
 			// 
@@ -1152,6 +1146,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox5B->Size = System::Drawing::Size(40, 26);
 			this->textBox5B->TabIndex = 67;
 			this->textBox5B->Visible = false;
+			this->textBox5B->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox5B_TextChanged);
 			// 
 			// textBox5E
 			// 
@@ -1160,6 +1155,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox5E->Size = System::Drawing::Size(40, 26);
 			this->textBox5E->TabIndex = 66;
 			this->textBox5E->Visible = false;
+			this->textBox5E->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox5E_TextChanged);
 			// 
 			// textBox5Chosen
 			// 
@@ -1178,6 +1174,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox5D->Size = System::Drawing::Size(40, 26);
 			this->textBox5D->TabIndex = 64;
 			this->textBox5D->Visible = false;
+			this->textBox5D->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox5D_TextChanged);
 			// 
 			// textBox5Min
 			// 
@@ -1214,6 +1211,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox10A->Size = System::Drawing::Size(40, 26);
 			this->textBox10A->TabIndex = 114;
 			this->textBox10A->Visible = false;
+			this->textBox10A->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox10A_TextChanged);
 			// 
 			// textBox10C
 			// 
@@ -1222,6 +1220,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox10C->Size = System::Drawing::Size(40, 26);
 			this->textBox10C->TabIndex = 113;
 			this->textBox10C->Visible = false;
+			this->textBox10C->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox10C_TextChanged);
 			// 
 			// textBox10B
 			// 
@@ -1230,6 +1229,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox10B->Size = System::Drawing::Size(40, 26);
 			this->textBox10B->TabIndex = 112;
 			this->textBox10B->Visible = false;
+			this->textBox10B->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox10B_TextChanged);
 			// 
 			// textBox10E
 			// 
@@ -1238,6 +1238,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox10E->Size = System::Drawing::Size(40, 26);
 			this->textBox10E->TabIndex = 111;
 			this->textBox10E->Visible = false;
+			this->textBox10E->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox10E_TextChanged);
 			// 
 			// textBox10Chosen
 			// 
@@ -1256,6 +1257,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox10D->Size = System::Drawing::Size(40, 26);
 			this->textBox10D->TabIndex = 109;
 			this->textBox10D->Visible = false;
+			this->textBox10D->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox10D_TextChanged);
 			// 
 			// textBox10Min
 			// 
@@ -1292,6 +1294,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox9A->Size = System::Drawing::Size(40, 26);
 			this->textBox9A->TabIndex = 105;
 			this->textBox9A->Visible = false;
+			this->textBox9A->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox9A_TextChanged);
 			// 
 			// textBox9C
 			// 
@@ -1300,6 +1303,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox9C->Size = System::Drawing::Size(40, 26);
 			this->textBox9C->TabIndex = 104;
 			this->textBox9C->Visible = false;
+			this->textBox9C->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox9C_TextChanged);
 			// 
 			// textBox9B
 			// 
@@ -1308,6 +1312,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox9B->Size = System::Drawing::Size(40, 26);
 			this->textBox9B->TabIndex = 103;
 			this->textBox9B->Visible = false;
+			this->textBox9B->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox9B_TextChanged);
 			// 
 			// textBox9E
 			// 
@@ -1316,6 +1321,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox9E->Size = System::Drawing::Size(40, 26);
 			this->textBox9E->TabIndex = 102;
 			this->textBox9E->Visible = false;
+			this->textBox9E->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox9E_TextChanged);
 			// 
 			// textBox9Chosen
 			// 
@@ -1334,6 +1340,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox9D->Size = System::Drawing::Size(40, 26);
 			this->textBox9D->TabIndex = 100;
 			this->textBox9D->Visible = false;
+			this->textBox9D->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox9D_TextChanged);
 			// 
 			// textBox9Min
 			// 
@@ -1370,6 +1377,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox8A->Size = System::Drawing::Size(40, 26);
 			this->textBox8A->TabIndex = 96;
 			this->textBox8A->Visible = false;
+			this->textBox8A->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox8A_TextChanged);
 			// 
 			// textBox8C
 			// 
@@ -1378,6 +1386,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox8C->Size = System::Drawing::Size(40, 26);
 			this->textBox8C->TabIndex = 95;
 			this->textBox8C->Visible = false;
+			this->textBox8C->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox8C_TextChanged);
 			// 
 			// textBox8B
 			// 
@@ -1386,6 +1395,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox8B->Size = System::Drawing::Size(40, 26);
 			this->textBox8B->TabIndex = 94;
 			this->textBox8B->Visible = false;
+			this->textBox8B->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox8B_TextChanged);
 			// 
 			// textBox8E
 			// 
@@ -1394,6 +1404,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox8E->Size = System::Drawing::Size(40, 26);
 			this->textBox8E->TabIndex = 93;
 			this->textBox8E->Visible = false;
+			this->textBox8E->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox8E_TextChanged);
 			// 
 			// textBox8Chosen
 			// 
@@ -1412,6 +1423,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox8D->Size = System::Drawing::Size(40, 26);
 			this->textBox8D->TabIndex = 91;
 			this->textBox8D->Visible = false;
+			this->textBox8D->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox8D_TextChanged);
 			// 
 			// textBox8Min
 			// 
@@ -1448,6 +1460,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox7A->Size = System::Drawing::Size(40, 26);
 			this->textBox7A->TabIndex = 87;
 			this->textBox7A->Visible = false;
+			this->textBox7A->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox7A_TextChanged);
 			// 
 			// textBox7C
 			// 
@@ -1456,6 +1469,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox7C->Size = System::Drawing::Size(40, 26);
 			this->textBox7C->TabIndex = 86;
 			this->textBox7C->Visible = false;
+			this->textBox7C->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox7C_TextChanged);
 			// 
 			// textBox7B
 			// 
@@ -1464,6 +1478,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox7B->Size = System::Drawing::Size(40, 26);
 			this->textBox7B->TabIndex = 85;
 			this->textBox7B->Visible = false;
+			this->textBox7B->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox7B_TextChanged);
 			// 
 			// textBox7E
 			// 
@@ -1472,6 +1487,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox7E->Size = System::Drawing::Size(40, 26);
 			this->textBox7E->TabIndex = 84;
 			this->textBox7E->Visible = false;
+			this->textBox7E->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox7E_TextChanged);
 			// 
 			// textBox7Chosen
 			// 
@@ -1490,6 +1506,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox7D->Size = System::Drawing::Size(40, 26);
 			this->textBox7D->TabIndex = 82;
 			this->textBox7D->Visible = false;
+			this->textBox7D->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox7D_TextChanged);
 			// 
 			// textBox7Min
 			// 
@@ -1526,6 +1543,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox6A->Size = System::Drawing::Size(40, 26);
 			this->textBox6A->TabIndex = 78;
 			this->textBox6A->Visible = false;
+			this->textBox6A->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox6A_TextChanged);
 			// 
 			// textBox6C
 			// 
@@ -1534,6 +1552,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox6C->Size = System::Drawing::Size(40, 26);
 			this->textBox6C->TabIndex = 77;
 			this->textBox6C->Visible = false;
+			this->textBox6C->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox6C_TextChanged);
 			// 
 			// textBox6B
 			// 
@@ -1542,6 +1561,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox6B->Size = System::Drawing::Size(40, 26);
 			this->textBox6B->TabIndex = 76;
 			this->textBox6B->Visible = false;
+			this->textBox6B->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox6B_TextChanged);
 			// 
 			// textBox6E
 			// 
@@ -1550,6 +1570,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox6E->Size = System::Drawing::Size(40, 26);
 			this->textBox6E->TabIndex = 75;
 			this->textBox6E->Visible = false;
+			this->textBox6E->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox6E_TextChanged);
 			// 
 			// textBox6Chosen
 			// 
@@ -1568,6 +1589,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->textBox6D->Size = System::Drawing::Size(40, 26);
 			this->textBox6D->TabIndex = 73;
 			this->textBox6D->Visible = false;
+			this->textBox6D->TextChanged += gcnew System::EventHandler(this, &MainForm::textBox6D_TextChanged);
 			// 
 			// textBox6Min
 			// 
@@ -1697,19 +1719,10 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->labelDim8->Text = L"8";
 			this->labelDim8->Visible = false;
 			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->pictureBox1->Location = System::Drawing::Point(8, 71);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(600, 600);
-			this->pictureBox1->TabIndex = 125;
-			this->pictureBox1->TabStop = false;
-			// 
 			// buttonStart
 			// 
 			this->buttonStart->Enabled = false;
-			this->buttonStart->Location = System::Drawing::Point(94, 32);
+			this->buttonStart->Location = System::Drawing::Point(88, 36);
 			this->buttonStart->Name = L"buttonStart";
 			this->buttonStart->Size = System::Drawing::Size(56, 32);
 			this->buttonStart->TabIndex = 126;
@@ -1720,7 +1733,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			// buttonStep
 			// 
 			this->buttonStep->Enabled = false;
-			this->buttonStep->Location = System::Drawing::Point(156, 32);
+			this->buttonStep->Location = System::Drawing::Point(150, 36);
 			this->buttonStep->Name = L"buttonStep";
 			this->buttonStep->Size = System::Drawing::Size(56, 32);
 			this->buttonStep->TabIndex = 127;
@@ -1731,7 +1744,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			// buttonStop
 			// 
 			this->buttonStop->Enabled = false;
-			this->buttonStop->Location = System::Drawing::Point(214, 32);
+			this->buttonStop->Location = System::Drawing::Point(212, 36);
 			this->buttonStop->Name = L"buttonStop";
 			this->buttonStop->Size = System::Drawing::Size(56, 32);
 			this->buttonStop->TabIndex = 128;
@@ -1741,9 +1754,9 @@ private: System::Windows::Forms::Label^ labelStatus;
 			// 
 			// buttonApply
 			// 
-			this->buttonApply->Location = System::Drawing::Point(12, 32);
+			this->buttonApply->Location = System::Drawing::Point(16, 36);
 			this->buttonApply->Name = L"buttonApply";
-			this->buttonApply->Size = System::Drawing::Size(76, 32);
+			this->buttonApply->Size = System::Drawing::Size(60, 32);
 			this->buttonApply->TabIndex = 129;
 			this->buttonApply->Text = L"apply";
 			this->buttonApply->UseVisualStyleBackColor = true;
@@ -1883,7 +1896,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 			// 
 			chartArea1->Name = L"ChartArea1";
 			this->chart->ChartAreas->Add(chartArea1);
-			this->chart->Location = System::Drawing::Point(-2, 71);
+			this->chart->Location = System::Drawing::Point(-1, 76);
 			this->chart->Name = L"chart";
 			series1->ChartArea = L"ChartArea1";
 			series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Bubble;
@@ -1910,11 +1923,22 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->labelStatus->TabIndex = 141;
 			this->labelStatus->Text = L"status: control preparation";
 			// 
+			// buttonClear
+			// 
+			this->buttonClear->Location = System::Drawing::Point(274, 35);
+			this->buttonClear->Name = L"buttonClear";
+			this->buttonClear->Size = System::Drawing::Size(70, 32);
+			this->buttonClear->TabIndex = 142;
+			this->buttonClear->Text = L"clear all";
+			this->buttonClear->UseVisualStyleBackColor = true;
+			this->buttonClear->Click += gcnew System::EventHandler(this, &MainForm::buttonClear_Click);
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1262, 678);
+			this->Controls->Add(this->buttonClear);
 			this->Controls->Add(this->labelStatus);
 			this->Controls->Add(this->chart);
 			this->Controls->Add(this->checkBoxDim10);
@@ -1931,7 +1955,6 @@ private: System::Windows::Forms::Label^ labelStatus;
 			this->Controls->Add(this->buttonStop);
 			this->Controls->Add(this->buttonStep);
 			this->Controls->Add(this->buttonStart);
-			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->labelDim8);
 			this->Controls->Add(this->labelDim9);
 			this->Controls->Add(this->labelDim7);
@@ -2070,51 +2093,138 @@ private: System::Windows::Forms::Label^ labelStatus;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar8))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar7))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar6))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 
-
 	private: System::Void buttonApply_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		if (number_dimensions == 0) {
+			labelStatus->Text = "status: choose number of dimensions";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		if (number_agents == -1) {
+			labelStatus->Text = "status: choose number of agents";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		if (function == -1) {
+			labelStatus->Text = "status: choose function";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		if (optimum_type == -1) {
+			labelStatus->Text = "status: choose optimum type";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		if (conversion_type == -1) {
+			labelStatus->Text = "status: choose conversion type";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		if (conversion == -1) {
+			labelStatus->Text = "status: choose conversion";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		if (function == 2 && number_special_dimensions == -1) {
+			labelStatus->Text = "status: choose number of special dimensions";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		listMinSet = gcnew List<bool>(gcnew array<bool>{min1Set, min2Set, min3Set, min4Set, min5Set, min6Set, min7Set, min8Set, min9Set, min10Set});
+		listMaxSet = gcnew List<bool>(gcnew array<bool>{max1Set, max2Set, max3Set, max4Set, max5Set, max6Set, max7Set, max8Set, max9Set, max10Set});
+		listChosenSet = gcnew List<bool>(gcnew array<bool>{chosen1Set, chosen2Set, chosen3Set, chosen4Set, chosen5Set, chosen6Set, chosen7Set, chosen8Set, chosen9Set, chosen10Set});
+		listASet = gcnew List<bool>(gcnew array<bool>{A1Set, A2Set, A3Set, A4Set, A5Set, A6Set, A7Set, A8Set, A9Set, A10Set});
+		listBSet = gcnew List<bool>(gcnew array<bool>{B1Set, B2Set, B3Set, B4Set, B5Set, B6Set, B7Set, B8Set, B9Set, B10Set});
+		listCSet = gcnew List<bool>(gcnew array<bool>{C1Set, C2Set, C3Set, C4Set, C5Set, C6Set, C7Set, C8Set, C9Set, C10Set});
+		listDSet = gcnew List<bool>(gcnew array<bool>{D1Set, D2Set, D3Set, D4Set, D5Set, D6Set, D7Set, D8Set, D9Set, D10Set});
+		listESet = gcnew List<bool>(gcnew array<bool>{E1Set, E2Set, E3Set, E4Set, E5Set, E6Set, E7Set, E8Set, E9Set, E10Set});
+
+		bool minmaxSet = true;
+		bool chosenSet = true;
+		bool coeffsSet = true;
+		bool specialCoeffsSet = true;
+
+		for (int i = 0; i < number_dimensions; i++)
+		{
+			minmaxSet &= listMinSet[i] && listMaxSet[i];
+			coeffsSet &= listASet[i] && listBSet[i] && listCSet[i];
+			chosenSet &= listChosenSet[i] || listCheckBoxes[i]->Checked;
+		}
+
+		if (!minmaxSet)
+		{
+			labelStatus->Text = "status: fill min and max for each dimension";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		if (number_checked != 2) {
+			labelStatus->Text = "status: choose two dynamic dimensions";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		if (!chosenSet) {
+			labelStatus->Text = "status: choose value for each dimension not checked";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		if (function == 2 && !coeffsSet)
+		{
+			labelStatus->Text = "status: fill coeffs A, B and C for each dimension";
+			labelStatus->BackColor = Color::Red;
+			return;
+		}
+
+		if (function == 2 && number_special_dimensions > 0)
+		{
+			for (int i = 0; i < number_special_dimensions; i++)
+			{
+
+				specialCoeffsSet &= listDSet[i] && listESet[i];
+
+			}
+			if (!specialCoeffsSet)
+			{
+				labelStatus->Text = "status: fill coeffs D and E for each special dimension";
+				labelStatus->BackColor = Color::Red;
+				return;
+			}
+		}
+
+		labelStatus->BackColor = Color::White;
+		labelStatus->Text = "status: ready to start";
+		buttonStart->Enabled = true;
+		// TODO freeze all controls
+
 		Algorithm::Hi hi = Algorithm::Hi();
-		std::vector<std::vector<double>> vecs = 	hi.sayHi(3);
-		//chart->Series->Clear();
-			//System::Windows::Forms::DataVisualization::Charting::Series^ series = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-		//series->YValuesPerPoint = 2;
+		std::vector<std::vector<double>> vecs = hi.sayHi(3);
 
 		for (int i = 0; i < vecs.size(); i++)
 		{
 			std::vector<double> point = vecs[i];
-		//		std::string yy = std::to_string(point[1]) +"," + std::to_string(point[2]);
-		//	std::vector<double> yy = { point[1], point[2] };
-			//	String  yvals = yy; //(point[1]).ToString() + "," + point[2].ToString();
-	//		List<Double>^ dd = gcnew List<Double>();// { point[1], point[2] };
-		//	dd->Add(point[1]);
-			//dd->Add(point[2]);
-
 			System::Windows::Forms::DataVisualization::Charting::DataPoint^ dataPoint = (gcnew System::Windows::Forms::DataVisualization::Charting::DataPoint(point[0], gcnew array<System::Double>{point[1], point[2]}));
 
-		//	dataPoint->SetValueY();
-
 			dataPoint->Label = L"hi";
-		     series1->Points->Add(dataPoint);
+			this->series1->Points->Add(dataPoint);
 
 		}
+	}
 
-		
-		//this->chart->Series->Add(series);
-
-	}
-	private: System::Void buttonStart_Click(System::Object^ sender, System::EventArgs^ e) {
-
-	}
-	private: System::Void buttonStep_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void buttonStop_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
 	private: System::Void checkBoxDim1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 		if (checkBoxDim1->Checked)
 		{
@@ -2487,8 +2597,19 @@ private: System::Windows::Forms::Label^ labelStatus;
 			trackBar10->Enabled = true;
 		}
 	}
+	private: System::Void comboConversion_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+		conversion = this->comboConversion->SelectedIndex;
+	}
+	private: System::Void comboExtremum_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (this->comboExtremum->SelectedIndex == 0) {/// min
+			optimum_type = 0;
+		}
+		else if (this->comboExtremum->SelectedIndex == 1) {
+			optimum_type = 1;
+		}
+	}
 	private: System::Void comboDimensionsNumber_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
-		number_dimensions = this->comboDimensionsNumber->SelectedIndex + 1;
+		number_dimensions = this->comboDimensionsNumber->SelectedIndex + 2;
 		labelDimensions->Visible = true;
 		labelMax->Visible = true;
 		labelMin->Visible = true;
@@ -2517,63 +2638,80 @@ private: System::Windows::Forms::Label^ labelStatus;
 	}
 	private: System::Void comboSpecialDimensionsNumber_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 		number_special_dimensions = this->comboSpecialDimensionsNumber->SelectedIndex;
-		//	labelCoeffs->Visible = true;
-			//labelA->Visible = true;
-			//labelB->Visible = true;
-			//labelC->Visible = true;
+
 		if (number_special_dimensions > 0)
 		{
 			labelD->Visible = true;
 			labelE->Visible = true;
 		}
+		else {
+			labelD->Visible = false;
+			labelE->Visible = false;
+		}
 
 		for (int i = 0; i < number_special_dimensions; i++)
 		{
-			List<TextBox^>^ current = listCoeffs[i];
-			current[3]->Visible = true;
-			current[4]->Visible = true;
+			listTextBoxesCoeffsD[i]->Visible = true;
+			listTextBoxesCoeffsE[i]->Visible = true;
 		}
-		for (int i = number_dimensions; i < 10; i++)
+		for (int i = number_special_dimensions; i < 10; i++)
 		{
-			List<TextBox^>^ current = listCoeffs[i];
-			current[3]->Visible = false;
-			current[4]->Visible = false;
+			listTextBoxesCoeffsD[i]->Visible = false;
+			listTextBoxesCoeffsE[i]->Visible = false;
 		}
 	}
-
 	private: System::Void comboFunctions_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 		if (this->comboFunctions->SelectedIndex == 0) {/// y = x
-			///*	for (int i = 0; i < number_dimensions + 1; i++)
-			//	{
-			//		List<TextBox^>^ current = listCoeffs[i];
-			//		current[0]->Visible = false;
-			//		current[1]->Visible = false;
-			//		current[2]->Visible = false;
-			//	}*/
+			function = 0;
+			for (int i = 0; i < number_dimensions; i++)
+			{
+				listTextBoxesCoeffsA[i]->Visible = false;
+				listTextBoxesCoeffsB[i]->Visible = false;
+				listTextBoxesCoeffsC[i]->Visible = false;
+			}
+			labelCoeffs->Visible = false;
+			labelA->Visible = false;
+			labelB->Visible = false;
+			labelC->Visible = false;
+			labelD->Visible = false;
+			labelE->Visible = false;
+			labelSpecialDimensionsNumber->Visible = false;
 			this->comboSpecialDimensionsNumber->Visible = false;
 			this->comboSpecialDimensionsNumber->Items->Clear();
 		}
 		else  if (this->comboFunctions->SelectedIndex == 1) {/// y = x**2
-			///*	for (int i = 0; i < number_dimensions + 1; i++)
-			//	{
-			//		List<TextBox^>^ current = listCoeffs[i];
-			//		current[0]->Visible = false;
-			//		current[1]->Visible = false;
-			//		current[2]->Visible = false;
-			//	}*/
+			function = 1;
+			for (int i = 0; i < number_dimensions; i++)
+			{
+				listTextBoxesCoeffsA[i]->Visible = false;
+				listTextBoxesCoeffsB[i]->Visible = false;
+				listTextBoxesCoeffsC[i]->Visible = false;
+			}
+			labelCoeffs->Visible = false;
+			labelA->Visible = false;
+			labelB->Visible = false;
+			labelC->Visible = false;
+			labelD->Visible = false;
+			labelE->Visible = false;
+			labelSpecialDimensionsNumber->Visible = false;
 			this->comboSpecialDimensionsNumber->Visible = false;
 			this->comboSpecialDimensionsNumber->Items->Clear();
 		}
 		else if (this->comboFunctions->SelectedIndex == 2) {/// opf
-			number_dimensions;
-			///*	for (int i = 0; i < number_dimensions + 1; i++)
-			//	{
-			//		List<TextBox^>^ current = listCoeffs[i];
-			//		current[0]->Visible = true;
-			//		current[1]->Visible = true;
-			//		current[2]->Visible = true;
-			//		this->comboSpecialDimensionsNumber->Items->Add(i);
-			//	}*/
+			this->comboSpecialDimensionsNumber->Items->Clear();
+			function = 2;
+			labelCoeffs->Visible = true;
+			labelA->Visible = true;
+			labelB->Visible = true;
+			labelC->Visible = true;
+			for (int i = 0; i < number_dimensions; i++)
+			{
+				listTextBoxesCoeffsA[i]->Visible = true;
+				listTextBoxesCoeffsB[i]->Visible = true;
+				listTextBoxesCoeffsC[i]->Visible = true;
+				this->comboSpecialDimensionsNumber->Items->Add(i);
+			}
+			this->comboSpecialDimensionsNumber->Items->Add(number_dimensions);
 			labelSpecialDimensionsNumber->Visible = true;
 			comboSpecialDimensionsNumber->Visible = true;
 		}
@@ -3323,8 +3461,14 @@ private: System::Windows::Forms::Label^ labelStatus;
 
 	}
 
+	private: System::Void comboAgentsNumber_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+		number_agents = comboAgentsNumber->SelectedIndex + 1;
+	}
+
 	private: System::Void comboConversionType_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+		conversion = -1;
 		if (this->comboConversionType->SelectedIndex == 0) {/// number_of_iters
+			conversion_type = 0;
 			this->comboConversion->Items->Clear();
 			this->comboConversion->Items->AddRange(gcnew cli::array< System::Object^  >(100) {
 				L"1", L"2", L"3", L"4", L"5", L"6", L"7",
@@ -3341,13 +3485,14 @@ private: System::Windows::Forms::Label^ labelStatus;
 			labelConversion->Text = "number of iterations";
 		}
 		else if (this->comboConversionType->SelectedIndex == 1) {
+			conversion_type = 1;
 			this->comboConversion->Items->Clear();
 			this->comboConversion->Items->AddRange(gcnew cli::array< System::Object^  >(7) {
 				L"0.00001", L"0.0001", L"0.001", L"0.01", L"0.1", L"1", L"10"
 			});
 			labelConversion->Visible = true;
 			comboConversion->Visible = true;
-			labelConversion->Text = "difference between iterations";
+			labelConversion->Text = "diff between iterations";
 		}
 	}
 
@@ -3355,6 +3500,7 @@ private: System::Windows::Forms::Label^ labelStatus;
 		if (textBox1Chosen->Text == "")
 		{
 			textBox1Chosen->BackColor = Color::Red;
+			chosen1Set = false;
 			return;
 		}
 		try
@@ -3368,22 +3514,26 @@ private: System::Windows::Forms::Label^ labelStatus;
 			numberchosen = Convert::ToDouble(textBox1Chosen->Text);
 			if (numbermin <= numberchosen && numberchosen <= numbermax) {
 				textBox1Chosen->BackColor = Color::White;
+				chosen1Set = true;
 				trackBar1->Value = numberchosen;
 				trackBar1->Refresh();
 			}
 			else {
 				textBox1Chosen->BackColor = Color::Red;
+				chosen1Set = false;
 			}
 		}
 		catch (Exception^ e)
 		{
 			textBox1Chosen->BackColor = Color::Red;
+			chosen1Set = false;
 		}
 	}
 	private: System::Void textBox2Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 		if (textBox2Chosen->Text == "")
 		{
 			textBox2Chosen->BackColor = Color::Red;
+			chosen2Set = false;
 			return;
 		}
 		try
@@ -3397,278 +3547,1021 @@ private: System::Windows::Forms::Label^ labelStatus;
 			numberchosen = Convert::ToDouble(textBox2Chosen->Text);
 			if (numbermin <= numberchosen && numberchosen <= numbermax) {
 				textBox2Chosen->BackColor = Color::White;
+				chosen2Set = true;
 				trackBar2->Value = numberchosen;
 				trackBar2->Refresh();
 			}
 			else {
 				textBox2Chosen->BackColor = Color::Red;
+				chosen2Set = false;
 			}
 		}
 		catch (Exception^ e)
 		{
 			textBox2Chosen->BackColor = Color::Red;
+			chosen2Set = false;
 		}
 	}
-private: System::Void textBox3Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox3Chosen->Text == "")
-	{
-		textBox3Chosen->BackColor = Color::Red;
-		return;
-	}
-	try
-	{
-		int numbermin;
-		int numbermax;
-		int numberchosen;
-
-		numbermax = Convert::ToDouble(textBox3Max->Text);
-		numbermin = Convert::ToDouble(textBox3Min->Text);
-		numberchosen = Convert::ToDouble(textBox3Chosen->Text);
-		if (numbermin <= numberchosen && numberchosen <= numbermax) {
-			textBox3Chosen->BackColor = Color::White;
-			trackBar3->Value = numberchosen;
-			trackBar3->Refresh();
-		}
-		else {
+	private: System::Void textBox3Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox3Chosen->Text == "")
+		{
 			textBox3Chosen->BackColor = Color::Red;
+			chosen3Set = false;
+			return;
 		}
-	}
-	catch (Exception^ e)
-	{
-		textBox3Chosen->BackColor = Color::Red;
-	}
-}
-private: System::Void textBox4Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox4Chosen->Text == "")
-	{
-		textBox4Chosen->BackColor = Color::Red;
-		return;
-	}
-	try
-	{
-		int numbermin;
-		int numbermax;
-		int numberchosen;
+		try
+		{
+			int numbermin;
+			int numbermax;
+			int numberchosen;
 
-		numbermax = Convert::ToDouble(textBox4Max->Text);
-		numbermin = Convert::ToDouble(textBox4Min->Text);
-		numberchosen = Convert::ToDouble(textBox4Chosen->Text);
-		if (numbermin <= numberchosen && numberchosen <= numbermax) {
-			textBox4Chosen->BackColor = Color::White;
-			trackBar4->Value = numberchosen;
-			trackBar4->Refresh();
+			numbermax = Convert::ToDouble(textBox3Max->Text);
+			numbermin = Convert::ToDouble(textBox3Min->Text);
+			numberchosen = Convert::ToDouble(textBox3Chosen->Text);
+			if (numbermin <= numberchosen && numberchosen <= numbermax) {
+				textBox3Chosen->BackColor = Color::White;
+				chosen3Set = true;
+				trackBar3->Value = numberchosen;
+				trackBar3->Refresh();
+			}
+			else {
+				textBox3Chosen->BackColor = Color::Red;
+				chosen3Set = false;
+			}
 		}
-		else {
+		catch (Exception^ e)
+		{
+			textBox3Chosen->BackColor = Color::Red;
+			chosen3Set = false;
+		}
+	}
+	private: System::Void textBox4Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox4Chosen->Text == "")
+		{
 			textBox4Chosen->BackColor = Color::Red;
+			chosen4Set = false;
+			return;
 		}
-	}
-	catch (Exception^ e)
-	{
-		textBox4Chosen->BackColor = Color::Red;
-	}
-}
-private: System::Void textBox5Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox5Chosen->Text == "")
-	{
-		textBox5Chosen->BackColor = Color::Red;
-		return;
-	}
-	try
-	{
-		int numbermin;
-		int numbermax;
-		int numberchosen;
+		try
+		{
+			int numbermin;
+			int numbermax;
+			int numberchosen;
 
-		numbermax = Convert::ToDouble(textBox5Max->Text);
-		numbermin = Convert::ToDouble(textBox5Min->Text);
-		numberchosen = Convert::ToDouble(textBox5Chosen->Text);
-		if (numbermin <= numberchosen && numberchosen <= numbermax) {
-			textBox5Chosen->BackColor = Color::White;
-			trackBar5->Value = numberchosen;
-			trackBar5->Refresh();
+			numbermax = Convert::ToDouble(textBox4Max->Text);
+			numbermin = Convert::ToDouble(textBox4Min->Text);
+			numberchosen = Convert::ToDouble(textBox4Chosen->Text);
+			if (numbermin <= numberchosen && numberchosen <= numbermax) {
+				textBox4Chosen->BackColor = Color::White;
+				chosen4Set = true;
+				trackBar4->Value = numberchosen;
+				trackBar4->Refresh();
+			}
+			else {
+				textBox4Chosen->BackColor = Color::Red;
+				chosen4Set = false;
+			}
 		}
-		else {
+		catch (Exception^ e)
+		{
+			textBox4Chosen->BackColor = Color::Red;
+			chosen4Set = false;
+		}
+	}
+	private: System::Void textBox5Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox5Chosen->Text == "")
+		{
 			textBox5Chosen->BackColor = Color::Red;
+			chosen5Set = false;
+			return;
 		}
-	}
-	catch (Exception^ e)
-	{
-		textBox5Chosen->BackColor = Color::Red;
-	}
-}
-private: System::Void textBox6Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox6Chosen->Text == "")
-	{
-		textBox6Chosen->BackColor = Color::Red;
-		return;
-	}
-	try
-	{
-		int numbermin;
-		int numbermax;
-		int numberchosen;
+		try
+		{
+			int numbermin;
+			int numbermax;
+			int numberchosen;
 
-		numbermax = Convert::ToDouble(textBox6Max->Text);
-		numbermin = Convert::ToDouble(textBox6Min->Text);
-		numberchosen = Convert::ToDouble(textBox6Chosen->Text);
-		if (numbermin <= numberchosen && numberchosen <= numbermax) {
-			textBox6Chosen->BackColor = Color::White;
-			trackBar6->Value = numberchosen;
-			trackBar6->Refresh();
+			numbermax = Convert::ToDouble(textBox5Max->Text);
+			numbermin = Convert::ToDouble(textBox5Min->Text);
+			numberchosen = Convert::ToDouble(textBox5Chosen->Text);
+			if (numbermin <= numberchosen && numberchosen <= numbermax) {
+				textBox5Chosen->BackColor = Color::White;
+				chosen5Set = true;
+				trackBar5->Value = numberchosen;
+				trackBar5->Refresh();
+			}
+			else {
+				textBox5Chosen->BackColor = Color::Red;
+				chosen5Set = false;
+			}
 		}
-		else {
+		catch (Exception^ e)
+		{
+			textBox5Chosen->BackColor = Color::Red;
+			chosen5Set = false;
+		}
+	}
+	private: System::Void textBox6Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox6Chosen->Text == "")
+		{
 			textBox6Chosen->BackColor = Color::Red;
+			chosen6Set = false;
+			return;
+		}
+		try
+		{
+			int numbermin;
+			int numbermax;
+			int numberchosen;
+
+			numbermax = Convert::ToDouble(textBox6Max->Text);
+			numbermin = Convert::ToDouble(textBox6Min->Text);
+			numberchosen = Convert::ToDouble(textBox6Chosen->Text);
+			if (numbermin <= numberchosen && numberchosen <= numbermax) {
+				textBox6Chosen->BackColor = Color::White;
+				chosen6Set = true;
+				trackBar6->Value = numberchosen;
+				trackBar6->Refresh();
+			}
+			else {
+				textBox6Chosen->BackColor = Color::Red;
+				chosen6Set = false;
+			}
+		}
+		catch (Exception^ e)
+		{
+			textBox6Chosen->BackColor = Color::Red;
+			chosen6Set = false;
 		}
 	}
-	catch (Exception^ e)
-	{
-		textBox6Chosen->BackColor = Color::Red;
-	}
-}
 
-private: System::Void textBox7Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox7Chosen->Text == "")
-	{
-		textBox7Chosen->BackColor = Color::Red;
-		return;
-	}
-	try
-	{
-		int numbermin;
-		int numbermax;
-		int numberchosen;
-
-		numbermax = Convert::ToDouble(textBox7Max->Text);
-		numbermin = Convert::ToDouble(textBox7Min->Text);
-		numberchosen = Convert::ToDouble(textBox7Chosen->Text);
-		if (numbermin <= numberchosen && numberchosen <= numbermax) {
-			textBox7Chosen->BackColor = Color::White;
-			trackBar7->Value = numberchosen;
-			trackBar7->Refresh();
-		}
-		else {
+	private: System::Void textBox7Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox7Chosen->Text == "")
+		{
 			textBox7Chosen->BackColor = Color::Red;
+			chosen7Set = false;
+			return;
 		}
-	}
-	catch (Exception^ e)
-	{
-		textBox7Chosen->BackColor = Color::Red;
-	}
-}
-private: System::Void textBox8Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox8Chosen->Text == "")
-	{
-		textBox8Chosen->BackColor = Color::Red;
-		return;
-	}
-	try
-	{
-		int numbermin;
-		int numbermax;
-		int numberchosen;
+		try
+		{
+			int numbermin;
+			int numbermax;
+			int numberchosen;
 
-		numbermax = Convert::ToDouble(textBox8Max->Text);
-		numbermin = Convert::ToDouble(textBox8Min->Text);
-		numberchosen = Convert::ToDouble(textBox8Chosen->Text);
-		if (numbermin <= numberchosen && numberchosen <= numbermax) {
-			textBox8Chosen->BackColor = Color::White;
-			trackBar8->Value = numberchosen;
-			trackBar8->Refresh();
+			numbermax = Convert::ToDouble(textBox7Max->Text);
+			numbermin = Convert::ToDouble(textBox7Min->Text);
+			numberchosen = Convert::ToDouble(textBox7Chosen->Text);
+			if (numbermin <= numberchosen && numberchosen <= numbermax) {
+				textBox7Chosen->BackColor = Color::White;
+				chosen7Set = true;
+				trackBar7->Value = numberchosen;
+				trackBar7->Refresh();
+			}
+			else {
+				textBox7Chosen->BackColor = Color::Red;
+				chosen7Set = false;
+			}
 		}
-		else {
+		catch (Exception^ e)
+		{
+			textBox7Chosen->BackColor = Color::Red;
+			chosen7Set = false;
+		}
+	}
+	private: System::Void textBox8Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox8Chosen->Text == "")
+		{
 			textBox8Chosen->BackColor = Color::Red;
+			chosen8Set = false;
+			return;
 		}
-	}
-	catch (Exception^ e)
-	{
-		textBox8Chosen->BackColor = Color::Red;
-	}
-}
-private: System::Void textBox9Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox9Chosen->Text == "")
-	{
-		textBox9Chosen->BackColor = Color::Red;
-		return;
-	}
-	try
-	{
-		int numbermin;
-		int numbermax;
-		int numberchosen;
+		try
+		{
+			int numbermin;
+			int numbermax;
+			int numberchosen;
 
-		numbermax = Convert::ToDouble(textBox9Max->Text);
-		numbermin = Convert::ToDouble(textBox9Min->Text);
-		numberchosen = Convert::ToDouble(textBox9Chosen->Text);
-		if (numbermin <= numberchosen && numberchosen <= numbermax) {
-			textBox9Chosen->BackColor = Color::White;
-			trackBar9->Value = numberchosen;
-			trackBar9->Refresh();
+			numbermax = Convert::ToDouble(textBox8Max->Text);
+			numbermin = Convert::ToDouble(textBox8Min->Text);
+			numberchosen = Convert::ToDouble(textBox8Chosen->Text);
+			if (numbermin <= numberchosen && numberchosen <= numbermax) {
+				textBox8Chosen->BackColor = Color::White;
+				chosen8Set = true;
+				trackBar8->Value = numberchosen;
+				trackBar8->Refresh();
+			}
+			else {
+				textBox8Chosen->BackColor = Color::Red;
+				chosen8Set = false;
+			}
 		}
-		else {
+		catch (Exception^ e)
+		{
+			textBox8Chosen->BackColor = Color::Red;
+			chosen8Set = false;
+		}
+	}
+	private: System::Void textBox9Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox9Chosen->Text == "")
+		{
 			textBox9Chosen->BackColor = Color::Red;
+			chosen9Set = false;
+			return;
 		}
-	}
-	catch (Exception^ e)
-	{
-		textBox9Chosen->BackColor = Color::Red;
-	}
-}
-private: System::Void textBox10Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-	if (textBox10Chosen->Text == "")
-	{
-		textBox10Chosen->BackColor = Color::Red;
-		return;
-	}
-	try
-	{
-		int numbermin;
-		int numbermax;
-		int numberchosen;
+		try
+		{
+			int numbermin;
+			int numbermax;
+			int numberchosen;
 
-		numbermax = Convert::ToDouble(textBox10Max->Text);
-		numbermin = Convert::ToDouble(textBox10Min->Text);
-		numberchosen = Convert::ToDouble(textBox10Chosen->Text);
-		if (numbermin <= numberchosen && numberchosen <= numbermax) {
-			textBox10Chosen->BackColor = Color::White;
-			trackBar10->Value = numberchosen;
-			trackBar10->Refresh();
+			numbermax = Convert::ToDouble(textBox9Max->Text);
+			numbermin = Convert::ToDouble(textBox9Min->Text);
+			numberchosen = Convert::ToDouble(textBox9Chosen->Text);
+			if (numbermin <= numberchosen && numberchosen <= numbermax) {
+				textBox9Chosen->BackColor = Color::White;
+				chosen9Set = true;
+				trackBar9->Value = numberchosen;
+				trackBar9->Refresh();
+			}
+			else {
+				textBox9Chosen->BackColor = Color::Red;
+				chosen9Set = false;
+			}
 		}
-		else {
+		catch (Exception^ e)
+		{
+			textBox9Chosen->BackColor = Color::Red;
+			chosen9Set = false;
+		}
+	}
+	private: System::Void textBox10Chosen_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox10Chosen->Text == "")
+		{
+			chosen10Set = false;
 			textBox10Chosen->BackColor = Color::Red;
+			return;
+		}
+		try
+		{
+			int numbermin;
+			int numbermax;
+			int numberchosen;
+
+			numbermax = Convert::ToDouble(textBox10Max->Text);
+			numbermin = Convert::ToDouble(textBox10Min->Text);
+			numberchosen = Convert::ToDouble(textBox10Chosen->Text);
+			if (numbermin <= numberchosen && numberchosen <= numbermax) {
+				textBox10Chosen->BackColor = Color::White;
+				chosen10Set = true;
+				trackBar10->Value = numberchosen;
+				trackBar10->Refresh();
+			}
+			else {
+				chosen10Set = false;
+				textBox10Chosen->BackColor = Color::Red;
+			}
+		}
+		catch (Exception^ e)
+		{
+			textBox10Chosen->BackColor = Color::Red;
+			chosen10Set = false;
 		}
 	}
-	catch (Exception^ e)
-	{
-		textBox10Chosen->BackColor = Color::Red;
+	private: System::Void trackBar2_Scroll(System::Object^ sender, System::EventArgs^ e) {
+		textBox2Chosen->Text = trackBar2->Value.ToString();
 	}
-}
-private: System::Void trackBar2_Scroll(System::Object^ sender, System::EventArgs^ e) {
-	textBox2Chosen->Text = trackBar2->Value.ToString();
-}
-private: System::Void trackBar3_Scroll(System::Object^ sender, System::EventArgs^ e) {
-	textBox3Chosen->Text = trackBar3->Value.ToString();
-}
-private: System::Void trackBar4_Scroll(System::Object^ sender, System::EventArgs^ e) {
-	textBox4Chosen->Text = trackBar4->Value.ToString();
-}
-private: System::Void trackBar5_Scroll(System::Object^ sender, System::EventArgs^ e) {
-	textBox5Chosen->Text = trackBar5->Value.ToString();
-}
-private: System::Void trackBar6_Scroll(System::Object^ sender, System::EventArgs^ e) {
-	textBox6Chosen->Text = trackBar6->Value.ToString();
-}
-private: System::Void trackBar7_Scroll(System::Object^ sender, System::EventArgs^ e) {
-	textBox7Chosen->Text = trackBar7->Value.ToString();
-}
-private: System::Void trackBar8_Scroll(System::Object^ sender, System::EventArgs^ e) {
-	textBox8Chosen->Text = trackBar8->Value.ToString();
-}
-private: System::Void trackBar9_Scroll(System::Object^ sender, System::EventArgs^ e) {
-	textBox9Chosen->Text = trackBar9->Value.ToString();
-}
-private: System::Void trackBar10_Scroll(System::Object^ sender, System::EventArgs^ e) {
-	textBox10Chosen->Text = trackBar10->Value.ToString();
-}
+	private: System::Void trackBar3_Scroll(System::Object^ sender, System::EventArgs^ e) {
+		textBox3Chosen->Text = trackBar3->Value.ToString();
+	}
+	private: System::Void trackBar4_Scroll(System::Object^ sender, System::EventArgs^ e) {
+		textBox4Chosen->Text = trackBar4->Value.ToString();
+	}
+	private: System::Void trackBar5_Scroll(System::Object^ sender, System::EventArgs^ e) {
+		textBox5Chosen->Text = trackBar5->Value.ToString();
+	}
+	private: System::Void trackBar6_Scroll(System::Object^ sender, System::EventArgs^ e) {
+		textBox6Chosen->Text = trackBar6->Value.ToString();
+	}
+	private: System::Void trackBar7_Scroll(System::Object^ sender, System::EventArgs^ e) {
+		textBox7Chosen->Text = trackBar7->Value.ToString();
+	}
+	private: System::Void trackBar8_Scroll(System::Object^ sender, System::EventArgs^ e) {
+		textBox8Chosen->Text = trackBar8->Value.ToString();
+	}
+	private: System::Void trackBar9_Scroll(System::Object^ sender, System::EventArgs^ e) {
+		textBox9Chosen->Text = trackBar9->Value.ToString();
+	}
+	private: System::Void trackBar10_Scroll(System::Object^ sender, System::EventArgs^ e) {
+		textBox10Chosen->Text = trackBar10->Value.ToString();
+	}
 
-};
+	private: System::Void textBox1A_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberA;
+			numberA = Convert::ToDouble(textBox1A->Text);
+			textBox1A->BackColor = Color::White;
+			A1Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox1A->BackColor = Color::Red;
+			A1Set = false;
+		}
+	}
+	private: System::Void textBox2A_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberA;
+			numberA = Convert::ToDouble(textBox2A->Text);
+			textBox2A->BackColor = Color::White;
+			A2Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox2A->BackColor = Color::Red;
+			A2Set = false;
+		}
+	}
+	private: System::Void textBox3A_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberA;
+			numberA = Convert::ToDouble(textBox3A->Text);
+			textBox3A->BackColor = Color::White;
+			A3Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox3A->BackColor = Color::Red;
+			A3Set = false;
+		}
+	}
+	private: System::Void textBox4A_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberA;
+			numberA = Convert::ToDouble(textBox4A->Text);
+			textBox4A->BackColor = Color::White;
+			A4Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox4A->BackColor = Color::Red;
+			A4Set = false;
+		}
+	}
+	private: System::Void textBox5A_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberA;
+			numberA = Convert::ToDouble(textBox5A->Text);
+			textBox5A->BackColor = Color::White;
+			A5Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox5A->BackColor = Color::Red;
+			A5Set = false;
+		}
+	}
+	private: System::Void textBox6A_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberA;
+			numberA = Convert::ToDouble(textBox6A->Text);
+			textBox6A->BackColor = Color::White;
+			A6Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox6A->BackColor = Color::Red;
+			A6Set = false;
+		}
+	}
+	private: System::Void textBox7A_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberA;
+			numberA = Convert::ToDouble(textBox7A->Text);
+			textBox7A->BackColor = Color::White;
+			A7Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox7A->BackColor = Color::Red;
+			A7Set = false;
+		}
+	}
+	private: System::Void textBox8A_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberA;
+			numberA = Convert::ToDouble(textBox8A->Text);
+			textBox8A->BackColor = Color::White;
+			A8Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox8A->BackColor = Color::Red;
+			A8Set = false;
+		}
+	}
+	private: System::Void textBox9A_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberA;
+			numberA = Convert::ToDouble(textBox9A->Text);
+			textBox9A->BackColor = Color::White;
+			A9Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox9A->BackColor = Color::Red;
+			A9Set = false;
+		}
+	}
+	private: System::Void textBox10A_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberA;
+			numberA = Convert::ToDouble(textBox10A->Text);
+			textBox10A->BackColor = Color::White;
+			A10Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox10A->BackColor = Color::Red;
+			A10Set = false;
+		}
+	}
+	private: System::Void textBox1B_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberB;
+			numberB = Convert::ToDouble(textBox1B->Text);
+			textBox1B->BackColor = Color::White;
+			B1Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox1B->BackColor = Color::Red;
+			B1Set = false;
+		}
+	}
+	private: System::Void textBox2B_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberB;
+			numberB = Convert::ToDouble(textBox2B->Text);
+			textBox2B->BackColor = Color::White;
+			B2Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox2B->BackColor = Color::Red;
+			B2Set = false;
+		}
+	}
+	private: System::Void textBox3B_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberB;
+			numberB = Convert::ToDouble(textBox3B->Text);
+			textBox3B->BackColor = Color::White;
+			B3Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox3B->BackColor = Color::Red;
+			B3Set = false;
+		}
+	}
+	private: System::Void textBox4B_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberB;
+			numberB = Convert::ToDouble(textBox4B->Text);
+			textBox4B->BackColor = Color::White;
+			B4Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox4B->BackColor = Color::Red;
+			B4Set = false;
+		}
+	}
+	private: System::Void textBox5B_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberB;
+			numberB = Convert::ToDouble(textBox5B->Text);
+			textBox5B->BackColor = Color::White;
+			B5Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox5B->BackColor = Color::Red;
+			B5Set = false;
+		}
+	}
+	private: System::Void textBox6B_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberB;
+			numberB = Convert::ToDouble(textBox6B->Text);
+			textBox6B->BackColor = Color::White;
+			B6Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox6B->BackColor = Color::Red;
+			B6Set = false;
+		}
+	}
+	private: System::Void textBox7B_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberB;
+			numberB = Convert::ToDouble(textBox7B->Text);
+			textBox7B->BackColor = Color::White;
+			B7Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox7B->BackColor = Color::Red;
+			B7Set = false;
+		}
+	}
+	private: System::Void textBox8B_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberB;
+			numberB = Convert::ToDouble(textBox8B->Text);
+			textBox8B->BackColor = Color::White;
+			B8Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox8B->BackColor = Color::Red;
+			B8Set = false;
+		}
+	}
+	private: System::Void textBox9B_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberB;
+			numberB = Convert::ToDouble(textBox9B->Text);
+			textBox9B->BackColor = Color::White;
+			B9Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox9B->BackColor = Color::Red;
+			B9Set = false;
+		}
+	}
+	private: System::Void textBox10B_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberB;
+			numberB = Convert::ToDouble(textBox10B->Text);
+			textBox10B->BackColor = Color::White;
+			B10Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox10B->BackColor = Color::Red;
+			B10Set = false;
+		}
+	}
+	private: System::Void textBox1C_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberC;
+			numberC = Convert::ToDouble(textBox1C->Text);
+			textBox1C->BackColor = Color::White;
+			C1Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox1C->BackColor = Color::Red;
+			C1Set = false;
+		}
+	}
+	private: System::Void textBox2C_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberC;
+			numberC = Convert::ToDouble(textBox2C->Text);
+			textBox2C->BackColor = Color::White;
+			C2Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox2C->BackColor = Color::Red;
+			C2Set = false;
+		}
+	}
+	private: System::Void textBox3C_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberC;
+			numberC = Convert::ToDouble(textBox3C->Text);
+			textBox3C->BackColor = Color::White;
+			C3Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox3C->BackColor = Color::Red;
+			C3Set = false;
+		}
+	}
+	private: System::Void textBox4C_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberC;
+			numberC = Convert::ToDouble(textBox4C->Text);
+			textBox4C->BackColor = Color::White;
+			C4Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox4C->BackColor = Color::Red;
+			C4Set = false;
+		}
+	}
+	private: System::Void textBox5C_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberC;
+			numberC = Convert::ToDouble(textBox5C->Text);
+			textBox5C->BackColor = Color::White;
+			C5Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox5C->BackColor = Color::Red;
+			C5Set = false;
+		}
+	}
+	private: System::Void textBox6C_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberC;
+			numberC = Convert::ToDouble(textBox6C->Text);
+			textBox6C->BackColor = Color::White;
+			C6Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox6C->BackColor = Color::Red;
+			C6Set = false;
+		}
+	}
+	private: System::Void textBox7C_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberC;
+			numberC = Convert::ToDouble(textBox7C->Text);
+			textBox7C->BackColor = Color::White;
+			C7Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox7C->BackColor = Color::Red;
+			C7Set = false;
+		}
+	}
+	private: System::Void textBox8C_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberC;
+			numberC = Convert::ToDouble(textBox8C->Text);
+			textBox8C->BackColor = Color::White;
+			C8Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox8C->BackColor = Color::Red;
+			C8Set = false;
+		}
+	}
+	private: System::Void textBox9C_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberC;
+			numberC = Convert::ToDouble(textBox9C->Text);
+			textBox9C->BackColor = Color::White;
+			C9Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox9C->BackColor = Color::Red;
+			C9Set = false;
+		}
+	}
+	private: System::Void textBox10C_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberC;
+			numberC = Convert::ToDouble(textBox10C->Text);
+			textBox10C->BackColor = Color::White;
+			C10Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox10C->BackColor = Color::Red;
+			C10Set = false;
+		}
+	}
+	private: System::Void textBox1D_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberD;
+			numberD = Convert::ToDouble(textBox1D->Text);
+			textBox1D->BackColor = Color::White;
+			D1Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox1D->BackColor = Color::Red;
+			D1Set = false;
+		}
+	}
+	private: System::Void textBox2D_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberD;
+			numberD = Convert::ToDouble(textBox2D->Text);
+			textBox2D->BackColor = Color::White;
+			D2Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox2D->BackColor = Color::Red;
+			D2Set = false;
+		}
+	}
+	private: System::Void textBox3D_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberD;
+			numberD = Convert::ToDouble(textBox3D->Text);
+			textBox3D->BackColor = Color::White;
+			D3Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox3D->BackColor = Color::Red;
+			D3Set = false;
+		}
+	}
+	private: System::Void textBox4D_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberD;
+			numberD = Convert::ToDouble(textBox4D->Text);
+			textBox4D->BackColor = Color::White;
+			D4Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox4D->BackColor = Color::Red;
+			D4Set = false;
+		}
+	}
+	private: System::Void textBox5D_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberD;
+			numberD = Convert::ToDouble(textBox5D->Text);
+			textBox5D->BackColor = Color::White;
+			D5Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox5D->BackColor = Color::Red;
+			D5Set = false;
+		}
+	}
+	private: System::Void textBox6D_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberD;
+			numberD = Convert::ToDouble(textBox6D->Text);
+			textBox6D->BackColor = Color::White;
+			D6Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox6D->BackColor = Color::Red;
+			D6Set = false;
+		}
+	}
+	private: System::Void textBox7D_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberD;
+			numberD = Convert::ToDouble(textBox7D->Text);
+			textBox7D->BackColor = Color::White;
+			D7Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox7D->BackColor = Color::Red;
+			D7Set = false;
+		}
+	}
+	private: System::Void textBox8D_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberD;
+			numberD = Convert::ToDouble(textBox8D->Text);
+			textBox8D->BackColor = Color::White;
+			D8Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox8D->BackColor = Color::Red;
+			D8Set = false;
+		}
+	}
+	private: System::Void textBox9D_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberD;
+			numberD = Convert::ToDouble(textBox9D->Text);
+			textBox9D->BackColor = Color::White;
+			D9Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox9D->BackColor = Color::Red;
+			D9Set = false;
+		}
+	}
+	private: System::Void textBox10D_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberD;
+			numberD = Convert::ToDouble(textBox10D->Text);
+			textBox10D->BackColor = Color::White;
+			D10Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox10D->BackColor = Color::Red;
+			D10Set = false;
+		}
+	}
+	private: System::Void textBox1E_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberE;
+			numberE = Convert::ToDouble(textBox1E->Text);
+			textBox1E->BackColor = Color::White;
+			E1Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox1E->BackColor = Color::Red;
+			E1Set = false;
+		}
+	}
+	private: System::Void textBox2E_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberE;
+			numberE = Convert::ToDouble(textBox2E->Text);
+			textBox2E->BackColor = Color::White;
+			E2Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox2E->BackColor = Color::Red;
+			E2Set = false;
+		}
+	}
+	private: System::Void textBox3E_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberE;
+			numberE = Convert::ToDouble(textBox3E->Text);
+			textBox3E->BackColor = Color::White;
+			E3Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox3E->BackColor = Color::Red;
+			E3Set = false;
+		}
+	}
+	private: System::Void textBox4E_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberE;
+			numberE = Convert::ToDouble(textBox4E->Text);
+			textBox4E->BackColor = Color::White;
+			E4Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox4E->BackColor = Color::Red;
+			E4Set = false;
+		}
+	}
+	private: System::Void textBox5E_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberE;
+			numberE = Convert::ToDouble(textBox5E->Text);
+			textBox5E->BackColor = Color::White;
+			E5Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox5E->BackColor = Color::Red;
+			E5Set = false;
+		}
+	}
+	private: System::Void textBox6E_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberE;
+			numberE = Convert::ToDouble(textBox6E->Text);
+			textBox6E->BackColor = Color::White;
+			E6Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox6E->BackColor = Color::Red;
+			E6Set = false;
+		}
+	}
+	private: System::Void textBox7E_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberE;
+			numberE = Convert::ToDouble(textBox7E->Text);
+			textBox7E->BackColor = Color::White;
+			E7Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox7E->BackColor = Color::Red;
+			E7Set = false;
+		}
+	}
+	private: System::Void textBox8E_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberE;
+			numberE = Convert::ToDouble(textBox8E->Text);
+			textBox8E->BackColor = Color::White;
+			E8Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox8E->BackColor = Color::Red;
+			E8Set = false;
+		}
+	}
+	private: System::Void textBox9E_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberE;
+			numberE = Convert::ToDouble(textBox9E->Text);
+			textBox9E->BackColor = Color::White;
+			E9Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox9E->BackColor = Color::Red;
+			E9Set = false;
+		}
+	}
+	private: System::Void textBox10E_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		try
+		{
+			int numberE;
+			numberE = Convert::ToDouble(textBox10E->Text);
+			textBox10E->BackColor = Color::White;
+			E10Set = true;
+		}
+		catch (Exception^ e)
+		{
+			textBox10E->BackColor = Color::Red;
+			E10Set = false;
+		}
+	}
+	private: System::Void buttonStart_Click(System::Object^ sender, System::EventArgs^ e) { // TODO
+	}
+	private: System::Void buttonStop_Click(System::Object^ sender, System::EventArgs^ e) {// TODO
+	}
+	private: System::Void buttonStep_Click(System::Object^ sender, System::EventArgs^ e) {// TODO
+	}
+	private: System::Void buttonClear_Click(System::Object^ sender, System::EventArgs^ e) {// TODO
+	}
+	};
 }
