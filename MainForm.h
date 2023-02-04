@@ -215,10 +215,11 @@ namespace GSA {
 	private: System::Windows::Forms::Label^ labelStatus;
 	private: System::Windows::Forms::DataVisualization::Charting::Series^ series1;
 
-	private: System::Windows::Forms::Button^ buttonStart;
-	private: System::Windows::Forms::Button^ buttonStep;
-	private: System::Windows::Forms::Button^ buttonStop;
-	private: System::Windows::Forms::Button^ buttonApply;
+		   System::Windows::Forms::Button^ buttonStart;
+		   System::Windows::Forms::Button^ buttonStep;
+		   System::Windows::Forms::Button^ buttonStop;
+		   System::Windows::Forms::Button^ buttonApply;
+		   System::Windows::Forms::Button^ buttonClear;
 
 		   List<CheckBox^>^ listCheckBoxes;
 	private: System::Windows::Forms::CheckBox^ checkBoxDim1;
@@ -347,9 +348,6 @@ namespace GSA {
 		   bool max8Set = false;
 		   bool max9Set = false;
 		   bool max10Set = false;
-	private: System::Windows::Forms::Button^ buttonClear;
-
-	protected:
 
 	private:
 		/// <summary>
@@ -2224,7 +2222,6 @@ namespace GSA {
 
 		}
 	}
-
 	private: System::Void checkBoxDim1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 		if (checkBoxDim1->Checked)
 		{
