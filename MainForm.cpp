@@ -4,7 +4,6 @@
 using namespace GSA;
 
 [STAThread]
-
 void main(array<String^>^ args)
 {
     Application::EnableVisualStyles();
